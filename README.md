@@ -6,3 +6,7 @@
 * Commit your solution
 * Push to GitHub
 * Create a pull request
+
+Resources:
+- UI Design (XD File)
+https://drive.google.com/file/d/12xFxl29XPYFonTA8kgRgGl9fR0AzHn13/view?usp=sharing
