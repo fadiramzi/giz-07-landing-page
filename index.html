@@ -4,9 +4,272 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Khoomi - Landing Page</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
+
+
+    <!-- Start Header -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar__header">
+                <img src="assets/imgs/logo.svg" alt="logo" class="navbar__logo">
+                <div class="navbar__search-bar">
+                    <input type="text" class="navbar__search-bar__input" placeholder="Search For Products, Brands & Categories">
+                    <img src="assets/imgs/search.svg" alt="search logo" class="navbar__search-bar__logo" width="20" height="20">
+                </div>
+                
+                <div class="navbar__icons">
+                    <div class="navbar__icons__heart">
+                        <img src="assets/imgs/heart.svg" alt="heart" class="heart__icon">
+                        <span class="badge">0</span>
+                    </div>
+                    <div class="navbar__icons__profile">
+                        <img src="assets/imgs/person.svg" alt="profile" class="profile__icon">
+                    </div>
+                    <div class="navbar__icons__cart">
+                        <img src="assets/imgs/cart.svg" alt="cart" class="cart__icon">
+                        <span class="badge">0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item"><img src="assets/imgs/toggle.svg" alt="toggle icon" class="toggle__icon">&nbsp;&nbsp;All Categories&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/imgs/arrow-down.svg" alt="arrow down icon" class="arrow__down"></li>
+                <li class="navbar__menu__item active">Home</li>
+                <li class="navbar__menu__item">New Arrivals</li>
+                <li class="navbar__menu__item">Trending</li>
+                <li class="navbar__menu__item">Deals For You</li>
+                <li class="navbar__menu__item">Discounts</li>
+                <li class="navbar__menu__item">Weekly Offers</li>
+                <li class="navbar__menu__item">Become A Vendor</li>
+            </ul>
+        </nav>
+        <div class="hero-image">
+            <div class="opacity"></div>
+            <div class="hero-image__content">
+                <div class="hero-image__text">
+                    <h1>GET THE NEW IPHONE 12 PRO</h1>
+                    <p>A transformative triple‑camera system that adds tons of capability without complexity</p>
+                </div>
+                <div class="hero-image__buttons">
+                    <button class="shop">Buy Now<span class="shop-icon"><img src="assets/imgs/shopping.svg" alt=""></span></button>
+                    <button class="deal">With $599 with trade-in</button>
+                </div>
+            </div>
+            <div class="phones"></div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Last Products Section -->
+    <section class="product-section">
+        <p class="section-desc">Explore Awesome Products</p>
+        <h3 class="section-title">Recommended For You</h3>
+        <div class="products">
+            <div class="product">
+                <img src="assets/imgs/watch1.jpg" alt="product image" class="product__image">
+                <p class="product__name">Single Tour</p>
+                <span class="product__price">$990</span>
+            </div>
+            <div class="product">
+                <img src="assets/imgs/watch2.jpg" alt="product image" class="product__image">
+                <p class="product__name">Single Tour</p>
+                <span class="product__price">$990</span>
+            </div>
+            <div class="product">
+                <img src="assets/imgs/watch3.jpg" alt="product image" class="product__image">
+                <p class="product__name">Single Tour</p>
+                <span class="product__price">$990</span>
+            </div>
+            <div class="product">
+                <img src="assets/imgs/watch4.jpg" alt="product image" class="product__image">
+                <p class="product__name">Single Tour</p>
+                <span class="product__price">$990</span>
+            </div>
+        </div>
+        <button class="products-button">Explore Other Products</button>
+    </section>
+    <!-- End Last Products Section -->
+
+    <div class="ads">
+        <div class="opacity"></div>
+        <h3 class="ad__title">Sneakers Never Run Out Of Style Get 50% Off Sitewide</h3>
+        <button class="ad__button">Start Shopping</button>
+    </div>
+
+    <!-- Start New Collections Section -->
+    <section class="new-c-section">
+        <p class="section-desc">Straight From Nike</p>
+        <h3 class="section-title">New Collection</h3>
+        <div class="collections">
+            <div class="item">
+                <img src="assets/imgs/shoe1.jpg" alt="">
+                <div class="item__body">
+                    <p class="item__name">Nike Air Force 1</p>
+                    <span class="item__price">$99</span>
+                </div>
+            </div>
+            <div class="item">
+                 <img src="assets/imgs/shoe2.jpg" alt="">
+                 <div class="item__body">
+                     <p class="item__name">NikeCourt Air </p>
+                     <span class="item__price">$99</span>
+                 </div>
+            </div>
+            <div class="item">
+                 <img src="assets/imgs/shoe5.jpg" alt="">
+                 <div class="item__body">
+                    <p class="item__name">Nike SB Zoom</p>
+                    <span class="item__price">$99</span>
+                 </div>
+            </div>
+            <div class="item">
+                 <img src="assets/imgs/shoe4.jpg" alt="">
+                 <div class="item__body">
+                     <p class="item__name">Nike Signal</p>
+                     <span class="item__price">$99</span>
+                 </div>   
+            </div>
+            <div class="item">
+                 <img src="assets/imgs/shoe3.jpg" alt="">
+                 <div class="item__body">
+                    <p class="item__name">Nike Air Force 1 Shadow</p>
+                    <span class="item__price">$99</span>
+                    <span class="item__brand">Brand: Nike</span>
+                 </div>
+            </div>
+        </div>
+        <button class="products-button">Explore Other Products</button>
+    </section>
+    <!-- End New Collections Section -->
+
+    <div class="ads">
+        <div class="opacity"></div>
+        <h3 class="ad__title">Sneakers Never Run Out Of Style Get 50% Off Sitewide</h3>
+        <button class="ad__button">Start Shopping</button>
+    </div>
+
+    <!-- Start Trending Section -->
+    <section class="trending">
+        <p class="section-desc">TOP PRODUCTS</p>
+        <h3 class="section-title">Trending This Week</h3>
+        <div class="items">
+            <div class="item">
+                <div class="item__image"><img src="assets/imgs/shoe1.jpg" alt="" class="item__image"></div>
+                <div class="item__body">
+                    <p class="item__name">Nike Court Air</p>
+                    <span class="item__price">$58</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item__image"><img src="assets/imgs/shoe5.jpg" alt="" class="item__image"></div>
+                <div class="item__body">
+                    <p class="item__name">Nike SB Air</p>
+                    <span class="item__price">$58</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item__image"><img src="assets/imgs/shoe4.jpg" alt="" class="item__image"></div>
+                <div class="item__body">
+                    <p class="item__name">Nike FIRE Air</p>
+                    <span class="item__price">$58</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item__image"><img src="assets/imgs/shoe2.jpg" alt="" class="item__image"></div>
+                <div class="item__body">
+                    <p class="item__name">Nike Zoom Air</p>
+                    <span class="item__price">$58</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item__image"><img src="assets/imgs/shoe5.jpg" alt="" class="item__image"></div>
+                <div class="item__body">
+                    <p class="item__name">Nike Air</p>
+                    <span class="item__price">$58</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item__image"><img src="assets/imgs/shoe1.jpg" alt="" class="item__image"></div>
+                <div class="item__body">
+                    <p class="item__name">Nike FOX</p>
+                    <span class="item__price">$58</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item__image"><img src="assets/imgs/shoe2.jpg" alt="" class="item__image"></div>
+                <div class="item__body">
+                    <p class="item__name">Nike Court Air</p>
+                    <span class="item__price">$58</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item__image"><img src="assets/imgs/shoe4.jpg" alt="" class="item__image"></div>
+                <div class="item__body">
+                    <p class="item__name">Nike Court Air</p>
+                    <span class="item__price">$58</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Trending Section -->
+
+    <div class="ads">
+        <div class="opacity"></div>
+        <h3 class="ad__title">Sneakers Never Run Out Of Style Get 50% Off Sitewide</h3>
+        <button class="ad__button">Start Shopping</button>
+    </div>
     
+    <footer>
+        <div class="description">
+            <img src="assets/imgs/logo.svg" alt="logo image" class="logo">
+            <div class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+        </div>
+
+        <ul class="product-list">
+            <li class="product__item">Products</li>
+            <li class="product__item">Trending</li>
+            <li class="product__item">My Account</li>
+            <li class="product__item">Vendors</li>
+            <li class="product__item">Brands</li>
+            <li class="product__item">Storefront</li>
+        </ul>
+
+        <ul class="legals-list">
+            <li class="legals__item">Legals</li>
+            <li class="legals__item">License</li>
+            <li class="legals__item">Refund Policy</li>
+            <li class="legals__item">About Us</li>
+            <li class="legals__item">Contacts</li>
+        </ul>
+
+        <ul class="contacts-list">
+            <li class="contacts__item">Contacts</li>
+            <li class="contacts__item">Fell free get in touch with us via phone or send us a message</li>
+            <li class="contacts__item">+1 234 567 89 10</li>
+            <li class="contacts__item">support@khoomi.com</li>
+        </ul>
+    </footer>
+
 </body>
 </html>
