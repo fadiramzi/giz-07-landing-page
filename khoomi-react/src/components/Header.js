@@ -1,5 +1,5 @@
 import InputBox from "./InputBox"
-import './Component.css'
+import './HeaderStyle.css'
 import logo from './assisst/logo.png'
 import TableHeader from "./TableHeader"
 
