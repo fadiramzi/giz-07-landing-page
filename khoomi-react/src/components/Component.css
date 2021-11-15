@@ -1,0 +1,28 @@
+.searchInput {
+	background-color: var(--white);
+	border: 1px solid #dfdfdf;
+	border-radius: 5px;
+	height: 48px;
+	width: 557px;
+	color: #686868;
+	font-family: var(--font-family-roboto);
+	font-size: var(--font-size-s);
+	font-weight: 300;
+	transform: translatex(318px);
+}
+.searchDiv {
+	transform: translateY(34px);
+}
+.headercls {
+	width: 1366px;
+	height: 104px;
+}
+
+.imgDiv {
+	width: 88px;
+	height: 59px;
+	transform: translate(92px, -30%);
+}
+.table {
+	width: 100%;
+}
