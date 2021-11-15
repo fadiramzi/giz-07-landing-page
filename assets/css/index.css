@@ -349,6 +349,7 @@ header .hero-image .hero-image__buttons .deal {
 .collections .item {
     position: relative;
     background-color: #F5F5F5;
+    border-radius: 10px;
 }
 
 .collections .item:last-child {
