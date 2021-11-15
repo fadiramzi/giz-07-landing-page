@@ -422,6 +422,7 @@ header .hero-image .hero-image__buttons .deal {
 
 .trending {
     padding: 50px 82px 240px 82px;
+    background-color: white;
 }
 
 .trending .items {
