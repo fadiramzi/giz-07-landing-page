@@ -6,7 +6,7 @@ const BodyPart1 = () => {
             <table className={'tableBody'}>
                 <tbody>
                     <tr>
-                        <td style={{width: "50%", height: "100px" }}>
+                        <td style={{width: "700px", height: "100px" }}>
                             <h1 style = {{color : "white"}}>GET THE NEW IPHONE 12 PRO</h1>
                             <br />
                             <h4 style = {{color : "white"}}>A transformative triple‑camera system that adds tons of capability without complexity</h4>
@@ -16,7 +16,7 @@ const BodyPart1 = () => {
                                 <button className = {'btnAqua'}>With $599 with trade-in</button>
                             </div>
                             </td>
-                        <td style={{width: "50%", height: "100px"}}>
+                        <td style={{width: "700px", height: "100px"}}>
                         <img  src={part11} alt='part11' className={'part11img'} />
                         </td>
                     </tr>

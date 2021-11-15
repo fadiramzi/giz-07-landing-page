@@ -1,16 +1,14 @@
 .part11img {
-	width: 674px;
-	height: 552px;
+	width: 697px;
+	height: 559px;
 }
 .part1Div {
-	width: 100%;
-	height: 664px;
+	width: 1370px;
 	padding-top: 104px;
 	background-image: url("./assisst/part1.png");
 	background-repeat: no-repeat;
 }
 .tableBody {
-	width: 100%;
 	border-collapse: collapse;
 }
 .btnOrange {
@@ -26,4 +24,20 @@
 	background-color: transparent;
 	color: white;
 	font-weight: bold;
+}
+.center {
+	text-align: center;
+	align-items: center;
+	align-content: center;
+}
+.padding {
+	padding-left: 100px;
+}
+.btn2 {
+	background-color: white;
+	width: 224px;
+	height: 57px;
+	margin: auto;
+	display: block;
+	border-radius: 10px;
 }
