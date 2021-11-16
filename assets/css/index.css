@@ -561,6 +561,10 @@ footer .lists {
     header .navbar__menu {
         display: none;
     }
+
+    h1 {
+        font-size: 30px;
+    }
  }
 
  @media (max-width: 991.98px) { 
@@ -600,10 +604,6 @@ footer .lists {
         margin-bottom: 15px;
     }
 
-    h1 {
-        font-size: 30px;
-    }
-
     .product-section .product {
         max-width: calc((100% - 40px)/3);
         padding-bottom: 15px;
@@ -621,13 +621,12 @@ footer .lists {
         font-size: 14px;
     }
 
- }
-
-@media  (max-width: 949.98px){
     header .hero-image .phones {
         display: none;
     }
-}
+    
+ }
+
 
 @media (max-width: 767.98px) { 
    .trending .item {
