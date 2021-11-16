@@ -514,6 +514,19 @@ footer .lists {
     column-gap: 30px;
 }
 
+
+/* Transitions */
+
+header .navbar__menu__item:hover,
+footer .lists li:hover,
+footer .contacts-list li:hover,
+.trending .item:hover,
+.product-section .product:hover,
+.collections .item:hover {
+    color: #FF4F04;
+    cursor: pointer;
+}
+
 @media (max-width: 1399.98px) { 
     h1 {
         font-size: 40px;
