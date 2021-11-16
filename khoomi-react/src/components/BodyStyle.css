@@ -41,3 +41,9 @@
 	display: block;
 	border-radius: 10px;
 }
+.part3Div {
+	width: 1370px;
+	height: 256px;
+	background-image: url("./assisst/part3.png");
+	background-repeat: no-repeat;
+}

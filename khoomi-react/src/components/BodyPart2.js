@@ -31,9 +31,7 @@ const BodyPart2 = () => {
             </table>
             <br />
             <button className={'btn2'} >Explore Other Products</button>
-
-
-
+            <br />
         </>
     )
 }

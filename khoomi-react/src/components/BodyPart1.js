@@ -1,5 +1,4 @@
 import part11 from './assisst/part11.png';
-import './BodyStyle.css'
 const BodyPart1 = () => {
     return (
         <div className={'part1Div'}>
