@@ -1,0 +1,199 @@
+
+
+.top-navbar{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.search-bar {
+    
+    background-color: #f5f5f5;
+    width: 500px;
+    height: 44px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border:solid 1px rgb(255, 255, 255)
+  }
+  header{
+      padding-left: 25;
+      padding-right: 25;
+      padding-top: 10px;
+  }
+  .searchInput {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+  .button-navbar{
+      display: flex;
+    
+      border: 2px solid rgb(228, 225, 225) ;
+
+
+    
+  }
+  .icons-dev{
+  width: 100px;
+  height: 40px;
+   display: flex;
+   justify-content: space-between;
+   padding-top: 6px;
+  }
+  .icons-dev li{
+   width: 20px;
+   
+   height: 20px;
+ 
+  }
+  .nav-list{
+    padding-top: 12px;
+    justify-content: space-between;
+    display: flex;
+    
+
+    
+  }
+  .nav-list li{
+    margin-left: 50px;
+     justify-content: space-between;
+  }
+  #home-button{
+      color: rgb(255, 167, 167);
+      text-decoration: underline;
+  }
+
+  .AllCategories-box{
+      background-color: rgb(252, 239, 239);
+      width: 198px;
+      height: 44;
+      text-align: center;
+      padding-top: 22px;
+      border-radius: 3px;
+      color: black;
+      border: 1px solid brown;
+      margin-bottom: 3px;
+      margin-top: 3px;
+          
+
+  }
+  .backround-cover{
+      background-image: url('./images/Mask.png');
+      height: 550px;
+      width: 100%;
+     
+      display: flex;
+      top: 0;
+      left: 0;
+
+  }
+  
+
+
+   .buy-buttons{
+     padding-left: 220px;
+     color: rgb(255, 255, 255);
+     padding-top: 100px;
+    
+
+   }
+
+  .mobiles-image {
+   background-image: url('./images/Mask\ Group\ 1.png');
+    width: 700px;
+    height: 550px;
+   
+
+  
+  }
+  .products-contianer{
+    background-color:rgb(241, 238, 238) ;
+    margin-top: 0;
+    padding-top: 3px;
+    padding-bottom: 12px;
+
+  }
+  .products-contianer h3{ 
+    border-radius: 3px;
+    border: solid 0.5px rgb(167, 164, 164);
+    width: 300px;
+    height: 50px;
+    padding-top: 18px;
+    text-align: center;
+    margin-left: 480px;
+  }
+  .text-recommended{
+    text-align: center;
+  }
+  .mobile-carts{
+    display: flex;
+
+  }
+  .mobile-carts div{
+
+    width: 300px;
+    margin-left: 4px;
+    height: 360px;
+    margin-left: 10px;
+    padding-left: 20px;
+  
+
+  }
+  .mobile-cart span{
+    display: flex;
+    text-align: center;
+    flex-direction:column;
+    background-color: beige;
+    margin-bottom: 7px;
+    }
+    #product-name{
+      background-color:rgb(241, 238, 238);
+      margin-top: 7px; 
+     font-weight: 900;
+    }
+    #product-price{
+      border-radius: 4px;
+      background-color: rgb(255, 224, 221);
+      width: 55px;
+      color: crimson;
+      margin-left: 120px;
+      margin-top: 10px;
+    }
+
+
+
+    .shopping-div{
+      background-image: url('./images/Rectangle1.png');
+      width: 100%;
+      height: 250px;
+    
+     
+
+    }
+    .shopping-div div{
+      display: flex;
+      justify-content: space-between;
+      width: 900px;
+      padding-top: 100px;
+      padding-left: 130px;
+    }
+
+    .shopping-div span{
+      color: white;
+      size: 24px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .shopping-div button{
+      background: transparent;
+      color: white;
+      border: solid  1px white;
+      width: 160px;
+    }
