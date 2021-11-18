@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    
+  }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 40px;
+}
+.searchbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    padding: 15px 20px;
+    border-style: solid;
+    border-color: #DFDFDF;
+    border-width: 1px;
+    border-radius: 5px;
+
+}
+.searchbar input{
+    border: none;
+    height: 75%;
+    width: 75%;
+    background: none;
+}
+.searchbar input:focus{
+    outline: none;
+}
+.searchbar input::placeholder {
+    color: #686868;
+    font-size: 14px;
+    opacity: 92;
+    font-weight: 300;
+}
+.iconcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.iconcontainer a {
+    padding: 10px;
+}
+.subnav {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+    
+    border-style: solid;
+    border-color: #DFDFDF;
+    border-width: 1px;
+       
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F8F8;
+    width: auto;
+    padding: 17px 20px;
+    border-style: solid;
+    border-color: #EFEFEF;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-left: 30px;
+  }
+  .dropdown a {
+      margin: 10px;
+  }
+  .dropdown span {
+      font-size: 14px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(165, 165, 165, 0.2);
+    border-style: solid;
+    border-color: #EFEFEF;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.links {
+    margin-left: 4rem;
+    display: block;
+}
+.links a {
+    text-decoration: none;
+    padding: 25px 30px;
+    color: #302F2F;
+    font-size: 14px;
+}
+.links a:first-child {   
+    color: #FF4F04;
+    border-bottom: 3px solid #FF4F04;
+    
+}
+main {
+    background-color: rgb(238, 238, 238);
+    height: 80vh;
+    min-height: 600px;
+    background-image: url("/Asset/bg\ img.png");
+    background-repeat:no-repeat ;
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+.leftmain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+    width: 100%;
+    color: white;
+    
+}
+.leftmain h1{
+    
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+}
+.leftmain p {
+    
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 2rem;
+    margin-bottom: 30px;
+}
+.mainbtn {
+    display: flex;
+    align-items: center;
+    
+}
+.orgbtn {
+    background-color: #FF4F04;
+    padding: 15px 30px;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    color:white;
+}
+.orgbtn span {
+    font-size: 16px;
+    margin-right: 5px;
+    font-weight: 700;
+}
+.whbtn {
+    background-color: rgba(255, 255, 255, 0.2) ;
+    padding: 18px 30px;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    color:white;
+}
+.whbtn span {
+    font-size: 16px;
+    margin-right: 5px;
+    font-weight: 400;
+}
+.rightmain img {
+    width: auto;
+    height: 100%;
+}
+.secmain {
+    background: rgb(248,248,248);
+    background: linear-gradient(180deg, rgba(248,248,248,1) 50%, rgba(255,255,255,1) 50%);
+    height: 40vh;
+    min-height: 700px;
+    
+}
+.sectextmain {
+    text-align: center;
+    padding: 80px 0px;
+    
+    
+}
+.sectextmain p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.sectextmain h1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+.cardsclass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cardclass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+}
+.cardclass h1 {
+    font-size: 16px;
+    padding: 10px;
+}
+.cardclass span {
+    font-size: 14px;
+    font-weight: 500;
+    background: rgba(255, 79, 4, 0.1);    
+    color: #FF4F04;
+    padding: 8px 13px;
+    border-radius: 50px;
+}
+.sectBtn {
+    text-align: center;
+    margin-top: 80px;
+    
+}
+.sectBtn a {
+    border-style: solid;
+    border-color: #707070;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 18px 30px;
+    text-decoration: none;
+    color: #302F2F;
+}
+.subsection {
+    height: 30vh;
+    min-height: 300px;
+    background-image: url("/Asset/Subsection.png");
+    background-repeat:no-repeat ;
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 75px;
+
+}
+.subsection div{
+    margin: 0px 150px ;
+}
+.subsection h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.secsBtn a{
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 18px 30px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.shoesone {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.shoesright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+    width: 100%;
+    background-color: #F5F5F6;
+    border-radius: 15px;
+}
+.shoesright div,h1,span {
+    margin: 10px 15px;
+}
+.shoesright div {
+    display: flex;
+    justify-content: space-between;
+}
+.blackshoes {
+    font-size: 14px;
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0.9);    
+    color: #ffffff;
+    padding: 8px 13px;
+    border-radius: 50px;
+}
+.orgshoes {
+    font-size: 14px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.9);    
+    color: #FF4F04;
+    padding: 8px 13px;
+    border-radius: 50px;
+}
+.shoesright h1 {
+    font-size: 25px;
+    color: #111111;
+    font-weight: bold;
+}
+.brandshoes{
+    font-size: 14px;
+    color: #7A7A7A;
+    font-weight: 400;
+}
+.boxshoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 10px;
+    background-color: #F5F5F6;
+    border-radius: 15px;
+    width: 50%;
+}
+.boxshoes div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.rweeshoes {
+    display: flex;
+    margin: 10px;
+}
+.rweeshoes div {
+    margin: 0px 10px;
+}
+.sec3th {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
