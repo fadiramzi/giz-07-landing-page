@@ -1,12 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,900;1,100;1,300&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="header-bottom">
+            <a href=""><img src="./images/logo.svg" alt="logo"></a>
+
+            <div class="search">
+                <label for="search">Search For Product ,Brand And Category</label>
+                <input type="text" name="search" id="" placeholder="">
+                <i class="bi bi-search"></i>
+
+            </div>
+
+            <div class="icons">
+                <div class="heart">
+                    <i class="bi bi-heart"></i>
+                    <span class="notification"><span>3</span></span>
+                </div>
+
+
+
+                <div class="person">
+                    <i class="bi bi-person"></i>
+                    <span class="notification"><span>8</span></span>
+                </div>
+
+                <div class="cart">
+                    <i class="bi bi-cart"></i>
+                    <span class="notification"><span>1</span></span>
+                </div>
+
+            </div>
+            <i class="bi bi-search responsive_icon"></i>
+
+        </div>
+
+    </header>
+
+
+    <hr>
+
+
+
+
+    <nav>
+        <div class="category-list">
+            <i class="bi bi-list"></i>
+            <span>All Categories</span>
+            <i class="bi bi-caret-down-fill"></i>
+
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <i class="bi bi-x-lg close" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Deals For You</a></li>
+                <li><a href="#">Discounts</a></li>
+                <li><a href="#">Weekly Offers</a></li>
+                <li><a href="#">Become A Vendor</a></li>
+            </ul>
+        </div>
+        <i class="bi bi-list list" id='list' onclick="showMenu()"></i>
+    </nav>
+
+
+    <section class="mask">
+        <div class="mask-group">
+            <img src=".//images/Mask Group 1.png" alt="">
+            <div class="header-hero">
+                <h1>GET THE NEW IPHONE 12 PRO</h1>
+                <p>A transformative triple‑camera system that adds tons of capability without complexity</p>
+                <div class="btn-group">
+                    <button class="buy-now"> Buy Now
+                        <i class="bi bi-bag-plus-fill"></i>
+                    </button>
+
+                    <button class="transparant-btn">With $599 with trade-in</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="brand">
+
+
+        <div class="recommeded">
+            <span>Explore Awesome Products</span>
+            <h2>Recommended For You</h2>
+        </div>
+
+
+        <div class="gallary">
+
+            <div class="card">
+                <img src="/images/2.png" alt="">
+                <p>Single Tour</p>
+                <button class="card-button">$900</button>
+            </div>
+
+            <div class="card">
+                <img src="/images/1.png" alt="">
+                <p>Single Tour</p>
+                <button class="card-button">$900</button>
+            </div>
+
+            <div class="card">
+                <img src="/images/2.png" alt="">
+                <p>Single Tour</p>
+                <button class="card-button">$900</button>
+            </div>
+
+        </div>
+
+        <button class="recommeded-btn">
+            Explore Other Products
+        </button>
+
+
+    </section>
+
+    <section class="offers">
+        <h2>
+            Sneakers Never Run Out Of Style
+            Get 50% Off Sitewide
+        </h2>
+
+    </section>
+
+    <section class="collection">
+
+        <div class="recommeded recommeded-store">
+            <span>Straight From Nike</span>
+            <h2>New Collection</h2>
+        </div>
+
+        <div class="store">
+
+            <div class="store-card item1">
+                <img src="/images/Image5.png" alt="">
+                <div class="card-flex">
+                    <p>Nike Air Force 1 </p>
+                    <button class="store-button">$90</button>
+                </div>
+            </div>
+
+            <div class="store-card item2">
+                <img src="/images/Image.png" alt="">
+                <div class="card-flex">
+                    <p>Nike Air Force 1 </p>
+                    <button class="store-button">$90</button>
+                </div>
+            </div>
+
+            <div class="store-card item3">
+                <img src="/images/Image3.png" alt="">
+                <div class="card-flex">
+                    <p>Nike Air Force 1 </p>
+                    <button class="store-button">$90</button>
+                </div>
+            </div>
+
+            <div class="store-card item4">
+                <img src="/images/Image4.png" alt="">
+                <div class="card-flex">
+                    <p>Nike Air Force 1 </p>
+                    <button class="store-button">$90</button>
+                </div>
+            </div>
+
+            <div class="item5">
+                <!-- <img src="/images/Image1.png"  alt=""> -->
+                <button class="store-button btn-black">SALE -50%</button>
+                <button class="store-button btn-right">$90</button>
+                <div class="">
+                    <h5>Nike Air Force 1 Shadow</h5>
+                    <span class="spanEle">Brand: Nike</span>
+                </div>
+            </div>
+        
+        </div>
+
+        <button class="recommeded-btn mt-4">
+            Explore Other Products
+        </button>
+
+    </section>
+
+    <section class="offers mt-8">
+        <h2>
+            Sneakers Never Run Out Of Style
+            Get 50% Off Sitewide
+        </h2>
+    </section>
+
+    <section class="tranding">
+        <div class="recommeded recommeded-store">
+            <span>TOP PRODUCTS</span>
+            <h2>Trending This Week</h2>
+        </div>
+
+        <div class="tranding-gallary">
+            <div class="">
+                <img src="./images/Image.png" alt="">
+                <div class="">
+                    <h5>Nike Court Air </h5>
+                    <button class="card-button">$65</button>
+                </div>
+            </div>
+
+            <div class="">
+                <img src="./images/Image4.png" alt="">
+                <div class="">
+                    <h5>Nike Court Air </h5>
+                    <button class="card-button">$65</button>
+                </div>
+            </div>
+
+            <div class="">
+                <img src="./images/Image5.png" alt="">
+                <div class="">
+                    <h5>Nike Court Air </h5>
+                    <button class="card-button">$65</button>
+                </div>
+            </div>
+
+            <div class="">
+                <img src="./images/Image3.png" alt="">
+                <div class="">
+                    <h5>Nike Court Air </h5>
+                    <button class="card-button">$65</button>
+                </div>
+            </div>
+
+            <div class="">
+                <img src="./images/Image.png" alt="">
+                <div class="">
+                    <h5>Nike Court Air </h5>
+                    <button class="card-button">$65</button>
+                </div>
+            </div>
+
+            <div class="">
+                <img src="./images/Image4.png" alt="">
+                <div class="">
+                    <h5>Nike Court Air </h5>
+                    <button class="card-button">$65</button>
+                </div>
+            </div>
+
+            <div class="">
+                <img src="./images/Image5.png" alt="">
+                <div class="">
+                    <h5>Nike Court Air </h5>
+                    <button class="card-button">$65</button>
+                </div>
+            </div>
+
+            <div class="">
+                <img src="./images/Image3.png" alt="">
+                <div class="">
+                    <h5>Nike Court Air </h5>
+                    <button class="card-button">$65</button>
+                </div>
+            </div>
+
+            
+           
+        </div>
+    </section>
+
+    <section class="offers">
+        <h2>
+            Sneakers Never Run Out Of Style
+            Get 50% Off Sitewide
+        </h2>
+    </section>
+
+    <div class="footer">
+
+        <div class="content">
+            <div class="left-side">
+                <img src="./images/logo.svg" alt=""> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem impedit sed aut reprehenderit, nulla autem, odit, vero recusandae itaque ipsa temporibus quidem dolorum reiciendis.</p>
+             </div>
+             <div class="right-side">
+                <div class="">
+                    <h5>Products</h5>
+                    <ul>
+                        <li><a href="">Trending</a></li>
+                        <li><a href="">My Account</a></li>
+                        <li><a href="">Vendors</a></li>
+                        <li><a href="">Brands</a></li>
+                        <li><a href="">Storefront</a></li>
+                    </ul>
+                </div>
+
+                <div class="">
+                    <h5>Legals</h5>
+                    <ul>
+                        <li><a href="">License</a></li>
+                        <li><a href="">Refund Policy</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contacts</a></li>
+                    </ul>
+                </div>
+
+                <div class="">
+                    <h5>Contacts</h5>
+                    <ul>
+                        <li><a href="">Fell free get in touch with us via phone or send us a message</a></li>
+                        <li><a href="">+1 234 567 89 10</a></li>
+                        <li><a href="">support@khoomi.com</a></li>
+                    </ul>
+                </div>
+             </div>
+        </div>
+        
+
+
+    </div>
+
+
+
+    <script>
+        var navLinks = document.getElementById('navLinks')
+        var list = document.getElementById('list')
+        function hideMenu() {
+            navLinks.style.right = "-400px"
+            list.style.display = "block"
+
+        }
+        function showMenu() {
+            navLinks.style.right = "0"
+            list.style.display = "none"
+
+
+        }
+    </script>
+
 </body>
+
 </html>
