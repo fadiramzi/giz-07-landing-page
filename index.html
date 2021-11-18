@@ -4,33 +4,200 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./index.css">
     <title>Document</title>
-    <link href="./index.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
 </head>
 <body>
-    <header id="header">
-        <div id="header-container">
-            <!-- Top Div (search) -->
-            <div>
-                <div id="header-div-top">
-                    <img width="90px" src="./assets/images/1.jpg" />
-                    <input id="search" type="text" class="my-inputs"/>
-                    <!-- 3rd comp that contains icons -->
-                    <div id="icons">
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-user"></i>
-                        <i class="far fa-shopping-cart"></i>
+
+    <div class="res-nav" id="res-nav">
+        
+        <button class="btn-burger-mene-close" onclick="closenav()">
+            <img src="./assets/images/closenav.svg" alt="">
+        </button>
+
+        <div class="sub-res-nav">
+            
+            <div class="f-menu">
+                <select class="s-menu" name="" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <a href="#" class="a-active">Home</a>
+            <a href="#" class="a-unactivate">New Arrivals</a>
+            <a href="#" class="a-unactivate">Trending</a>
+            <a href="#" class="a-unactivate">Deals For You</a>
+            <a href="#" class="a-unactivate">Discounts</a>
+            <a href="#" class="a-unactivate">Weekly Offers</a>
+            <a href="#" class="a-unactivate">Become A Vendor</a>
+    
+        </div>
+    </div>
+    <header>
+            <div class="container">
+                <!-- LOGO DIV -->
+                <div class="d-logo">
+                    <img src="./assets/images/logo.svg" class="img-logo">
+                </div>
+                
+                <!-- SEARCH DiV -->
+                <div class="d-search">
+                    <form action="#" class="f-search">
+                        <div class="f-d-search">
+                            <input type="text" class="inp-search" placeholder="Search For Products, Brands & Categories">
+                            <svg class="svg-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">A magnifying glass icon.</desc><g class="search-path" fill="none" stroke="#848F91"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+                            <!-- <input type="submit" class="inp-submit"> -->
+                        </div>
+                    </form>
+                </div>
+
+                <!-- ICONS DIV -->
+                <div class="d-icons">
+                    <div class="d-a-icons">
+                        
+                        <a href="#" class="a-icons"> 
+                            <img src="./assets/images/favorite.svg">
+                            <img src="./assets/images/red-circle.svg" class="svg-circle-favorite">
+                            <p class="p-favorite">
+                                1
+                            </p>
+                        </a>
+                        
+                        <a href="#" class="a-icons">
+                            <img src="./assets/images/674aaa8a5939fb3fb007e77121fb1581.svg">
+                        </a>
+                        
+                        <a href="#" class="a-icons">
+                            <img src="./assets/images/card.svg">
+                            <img src="./assets/images/red-circle.svg" class="svg-circle-card">
+                            <p class="p-card">
+                                2
+                            </p>
+                        </a>
+                        <!--  ----  ----  ----  ----  ----  -->
+                        <button class="btn-burger-mene" id="btn-burger-mene" onclick="opennav()">
+                            <svg viewBox="0 0 100 80" width="40" height="20">
+                                <rect width="100" height="20"></rect>
+                                <rect y="30" width="100" height="20"></rect>
+                                <rect y="60" width="100" height="20"></rect>
+                            </svg>
+                        </button>
+                        <!--  ----  ----  ----  ----  ----  -->
                     </div>
-                    <i id="menu" class="fas fa-bars"></i>
                 </div>
             </div>
-            <!-- Bottom Div (menu items) -->
-            <div>
 
+            <!-- MENU -->
+            <div class="menu">
+                <div class="sub-menu">
+                    <div class="f-menu">
+                        <select class="s-menu" name="" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <a href="#" class="a-active">Home</a>
+                    <a href="#" class="a-unactivate">New Arrivals</a>
+                    <a href="#" class="a-unactivate">Trending</a>
+                    <a href="#" class="a-unactivate">Deals For You</a>
+                    <a href="#" class="a-unactivate">Discounts</a>
+                    <a href="#" class="a-unactivate">Weekly Offers</a>
+                    <a href="#" class="a-unactivate">Become A Vendor</a>
+                </div>
+            </div>
+
+    </header>
+
+    <div class="bg-phones">
+
+    </div>
+
+    <div class="title">
+        <center>
+            <p>Explore Awesome Products</p>
+            <h3>Recommended For You</h3>
+        </center>
+    </div>
+
+
+    <div class="items">
+        <div class="sub-items">
+
+            <div class="one-item">
+                <div class="pro-img">
+                    <img src="./assets/images/1.png" alt="">
+                </div>
+
+                <div class="pro-description">
+                    <span>Single Tour</span>
+                    <br>
+                    <button class="btn-price"> $990 </button>
+                </div>
+            </div>
+
+            <div class="one-item">
+                <div class="pro-img">
+                    <img src="./assets/images/2.png" alt="">
+                </div>
+
+                <div class="pro-description">
+                    <span>Single Tour</span>
+                    <br>
+                    <button class="btn-price"> $990 </button>
+                </div>
+            </div>
+
+            <div class="one-item">
+                <div class="pro-img">
+                    <img src="./assets/images/3.png" alt="">
+                </div>
+
+                <div class="pro-description">
+                    <span>Single Tour</span>
+                    <br>
+                    <button class="btn-price"> $990 </button>
+                </div>
+            </div>
+
+            <div class="one-item">
+                <div class="pro-img">
+                    <img src="./assets/images/4.png" alt="">
+                </div>
+
+                <div class="pro-description">
+                    <span>Single Tour</span>
+                    <br>
+                    <button class="btn-price"> $990 </button>
+                </div>
             </div>
         </div>
-    </header>
+        
+        <div class="other">
+            <button class="btn-other"> Explore Other Products </button>
+        </div>
+    </div>
+
+    
+    <div class="second-bg-phones">
+
+    </div>
+
+
+    <div class="title2">
+        <center>
+            <p>Straight From Nike</p>
+            <h3>New Collection</h3>
+        </center>
+    </div>
+
+
+    <script src="./index.js"></script>
 </body>
 </html>
+
+
+
+<!--  transition: width 4s; -->
