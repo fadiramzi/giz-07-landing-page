@@ -1,0 +1,138 @@
+
+
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+
+.spanic1{
+    background-color: red;
+    color:#FFF;padding: 5px;
+    width: 8px;
+    text-align: justify-all;
+    height: 8px;
+    left: 67px;
+    right: 10px;
+    border-radius: 50%;
+    position: absolute
+}
+.spanic2{
+    background-color: red;
+    color:#FFF;padding: 5px;
+    width: 8px;
+    text-align: center;
+    /*font-size: 25px;*/
+    height: 8px;
+    left: 109px;
+    right: 10px;
+    border-radius: 50%;
+    position: absolute
+}
+.spanic3{
+    background-color: red;
+    color:#FFF;padding: 5px;
+    width: 8px;
+    text-align: center;
+    height: 8px;
+    left: 153px;
+    right: 10px;
+    border-radius: 50%;
+    position: absolute
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+.container1{
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+.p22{
+    font-size:50px;height: 10px;color: white;
+    position: absolute ;
+    left: 95px
+}
+.p23{
+    font-size:50px;
+    padding-top: 60px;
+    height: 40px;
+    color: white;
+    position: absolute ;
+    left: 95px
+}
+
+.p24{
+    font-size:20px;
+    padding-top: 140px;
+    color: white;
+    position: absolute ;
+    left: 95px
+}
+
+.p25{
+    font-size:25px;
+    padding-top: 170px;
+    color: white;
+    position: absolute ;
+    left: 95px
+}
+.div29{
+    font-size:30px;
+    padding-top: 200px;
+    height: 40px;
+    color: white;
+    background: coral;
+    border-radius: 25px;
+    position: absolute ;
+    left: 95px
+}
+
+.tdiv{
+    padding-right: 100px;
+    /*padding-top: 50px;*/
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.qdiv{
+    position: relative;
+    display: inline-block;
+    justify-content: space-between;
+    padding: 50px;
+    padding-right: 100px;
+    /*padding-top: 23px;*/
+
+}
+
+.ki{
+    width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.kp {
+    font-family: verdana;
+    padding-left: 75px  ;
+    padding-right: 75px  ;
+    color: black;
+}
+p {
+    text-align: center;
+    color: red;
+}
