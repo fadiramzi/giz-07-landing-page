@@ -1,55 +1,436 @@
-body{
-    background-color: bisque;
-}
 *{
-    margin: 0px;
-    padding: 0px;
-}
-#header{
-    min-height: 173px;
-    background-color: white;
-    padding-top: 30px;
-    box-sizing: border-box;
-    padding-right:50px;
-    padding-left:50px;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
 }
 
-#header-container{
-    /* background-color: blueviolet; */
-    min-height: 150px;
-    box-sizing: border-box;
-}
-.my-inputs{
-    width: 500px;
-    height: 40px;;
+html,body {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
 }
 
-#header-div-top{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+/* Start Header (top-part)*/
+.top-part-header {
+  padding: 25px 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(226, 226, 226);
 }
 
-#header-div-top i.far{
-    margin-left: 25px;
+.top-part-header .search-field {
+  position: relative;
 }
 
-#menu{
-    display: none;
-    font-size: 32px;
+.top-part-header .search-field input {
+  width: 450px;
+  height: 30px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 5px;
 }
 
+.top-part-header .search-field .search-icon {
+  position: absolute;
+  right: 15px;
+  top: 17px;
+  font-size: 18px;
+  color: rgb(192, 191, 191)
+}
+
+.top-part-header .header-icons {
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.top-part-header .header-icons i.far {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#menu1{
+  display: none;
+  font-size: 32px;
+  color: #5a5959
+}
+
+/* Header (bottom-part) */
+.bottom-part-header {
+  padding: 25px 25px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-part-header .catigories-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+  height: 25px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.bottom-part-header .catigories-selector .span-category {
+  color: rgb(114, 113, 113);
+  font-size: 18;
+}
+
+.bottom-part-header nav .navbar-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  cursor: pointer;
+}
+
+.bottom-part-header nav .navbar-list li {
+  color: rgb(114, 113, 113);
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.bottom-part-header nav .navbar-list .home{
+  height: 25px;
+  border-bottom: 3px solid rgba(255, 68, 0, 0.801);
+  color: orangered;
+}
+
+#menu2{
+  display: none;
+  font-size: 32px;
+  color: #5a5959
+}
+
+/* main section */
+.main-container {
+  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.781) , rgba(0, 0, 0, 0.795)), url('./assets/images/Mask.png') no-repeat;
+  height: 595px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding-left: 50px;
+}
+
+main .main-text h1{
+  font-size: 50px;
+}
+
+main .main-text p {
+  margin: 40px 0;
+  font-size: 20px;
+}
+
+main .main-text .button-1 {
+  width: 130px;
+  padding: 15px;
+  margin-right: 25px;
+  font-size: 18px;
+  color: white;
+  background-color: rgba(245, 71, 8, 0.849);
+  border: 1px solid rgba(245, 71, 8, 0.849);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+main .main-text .button-2 {
+  width: 300px;
+  padding: 15px;
+  font-size: 18px;
+  color: white;
+  background-color: rgba(224, 221, 221, 0.418);
+  border: 1px solid transparent;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.img-phones {
+  background-size: 100%;
+}
+
+/* Recommended-products section */
+.recommended-products {
+  background-color: #eee;
+  padding: 50px 0;
+  line-height: 1.7;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.recommended-products .recommended-products-title {
+  margin-bottom: 30px;
+}
+
+.recommended-products .prodects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 22%;
+  height: 400px;
+  margin-bottom: 50px;
+}
+
+.product-card .product-name {
+  font-size: 19px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-card .product-price {
+  background-color: bisque;
+  color: orangered;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.transparent-button {
+  width:250px;
+  height: 50px;
+  padding: 15px;
+  border-radius: 7px;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+} 
+
+.button-3 {
+  margin-top: 50px;
+  color: rgb(131, 129, 129);
+  border: 1px solid #949292;
+}
+
+/* offer-section */
+.container-offer-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.481) , rgba(0, 0, 0, 0.795)), url('./assets/images/Rectangle1.png') no-repeat;
+  background-size: cover;
+  min-height: 200px;
+}
+.container-offer-section .offer-section {
+  color: #fff;
+  padding: 40px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-offer-section .offer-section button {
+  border: 1px solid #eee;
+  color: #fff;
+
+}
+
+/* trend-products-section */
+.trend-products-section {
+  margin-top: 40px;
+  padding: 25px;
+  min-height: 1000px;
+}
+
+.trend-products-title {
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.trend-products-title p {
+  color:#7c7c7c
+}
+
+.trend-products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.trend-product-card {
+  margin-bottom: 35px;
+}
+
+.trend-product-card img {
+  width: 310px;
+  height: 310px;
+  border-radius: 15px;
+}
+
+.trend-product-card .product-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trend-product-card span {
+  background-color: bisque;
+  color: orangered;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+/* footer */
+footer {
+  background-color: #fff;
+  min-height: 250px;
+  padding: 50px 25px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-intro {
+  padding: 20px;
+}
+
+.footer-intro img {
+  width: 150px;
+}
+
+.footer-intro p {
+  color: #5a5959;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.footer-lists {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-lists ul {
+  list-style: none;
+  color: #727171;
+  margin-left: 100px;
+  line-height: 2;
+}
+
+.footer-lists ul .header-of-list {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+
+
+/* Resposive header */
 @media screen and (max-width:900px)
 {
-    #search{
-        display: none;
-        
-    }
-    #icons{
-        display: none;
-    }
-    #menu{
-        display: inline;
-    }
+  #search{
+    display: none;
+  }
+  #icons{
+    display: none;
+  }
+  #menu1{
+    display: inline;
+  }
 }
+
+@media screen and (max-width:1200px) 
+{
+  #navbar-list {
+    display: none;
+  }
+  #menu2{
+    display: inline;
+  }
+}
+
+
+/* responsive main section */
+@media screen and (max-width:996px)
+{
+  #img-phones {
+    width: 50%;
+  }
+
+  #main-heading {
+    font-size: 35px;
+  }
+
+  main .main-text .button-1 {
+    width: 100px;
+    padding: 15px;
+    margin-right: 10px;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  
+  main .main-text .button-2 {
+    width: 200px;
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:676px)
+{
+  #img-phones {
+    width: 50%;
+  }
+
+  #main-heading {
+    font-size: 30px;
+  }
+
+  #main-p {
+    font-size: 16px;
+  }
+
+  main .main-text .button-1 {
+    margin-top: 30px;
+    padding: 10px;
+  }
+  
+  main .main-text .button-2 {
+    margin-top: 20px;
+    padding: 10px;
+  }
+}
+
+/* Responsive recommended products section */
+@media screen and (max-width:1000px) {
+  .product-card {
+    width: 44%;
+  }
+}
+
+@media screen and (max-width:620px) {
+  .product-card {
+    width: 66%;
+  }
+}
+
+
+/* footer */
+@media screen and (max-width:823px)
+{
+  .footer-lists {
+    margin-left: -100px;
+  }
+}
+
