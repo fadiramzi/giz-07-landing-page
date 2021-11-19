@@ -13,7 +13,7 @@ html,body{
     box-sizing: border-box;
     padding-right:50px;
     padding-left:50px;
-    position: sticky;
+    position:static;;
 }
 
 
@@ -315,9 +315,9 @@ color: #111;
     text-align: center;
     
     
-  }
+}
 
-  .price {
+.price {
     font-family: Roboto;
     font-weight: 500;
     font-size: 14px;
@@ -329,5 +329,49 @@ color: #111;
     height: 31px;
     border-radius: 15.5px;
     background: rgba(255, 79, 4, 0.09);
+}
+
+.container-offer-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.481) , rgba(0, 0, 0, 0.795)), url('./assets/Group.png') no-repeat;
+    background-size: 100%;
+    height: 200px;
+    margin-top: 380px;
+
   }
+
+
+.container-offer-section .offer-section {
+    color: #fff;
+    padding: 40px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .container-offer-section .offer-section button {
+    border: 1px solid #eee;
+    color: #fff;
+    width: 224.22px;
+height: 56.19px;
+background: transparent;
+
+  }
+/* .discount .dicountImage img{
+    width: 100vw;
+    height: 251px;
+    background: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+.discount .dicountImage .space{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+} */
+
 

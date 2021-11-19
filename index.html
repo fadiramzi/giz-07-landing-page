@@ -16,7 +16,7 @@
                 <div>
                     <div id="header-div-top">
                         <img width="90px" src="./assets/images/WhatsApp Image 2021-03-10 at 11.31.14.png" />
-                       
+
                         <input id="search" type="text" placeholder="Search For new items" class="my-inputs"/>
                         <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
                         <!-- 3rd comp that contains icons -->
@@ -95,17 +95,16 @@
 
         </section>
         </main>
+
+       
+       
         <!-- our products section -->
-        <section id="ourProducts">
+        <div id="ourProducts">
             <div id="details">
                 <p> Explore Awesome Products </p>
                 <h1> Recommended For You </h1>
-
-
             </div>
             <div id="card"> 
-
-          
             <div class="product">
                 <div class="image-box">
                   <div class="images" id="image-1"></div>
@@ -141,36 +140,24 @@
                   <div class="images" id="image-4"></div>
                 </div>
                 <div class="text-box">
-                  <h2 class="item">Single Tour</h2>
-                  
+                <h2 class="item">Single Tour</h2>
+
                     <h3 class="price">980</h3>
 
-               
-                  
-                 
+
                 </div>
-              </div>
+                </div>
             </div>
+        </div>
+
+        <!-- discount section -->
+        <div class="container-offer-section">
+            <div class="offer-section">
+              <h1>Sneakers Never Run Out Of Style <br/>Get 50% Off Sitewide</h1>
+              <button class="transparent-button">Start Shopping</button>
+            </div>
+          </div>
 
 
-
-
-        </section>
     </body>
     </html>
-    <script>
-        let nav = document.querySelector('#header');
-let lastScrollTop;
-
-window.addEventListener("scroll", function() {  // listen for the scroll 
-  var st = window.pageYOffset || document.documentElement.scrollTop;
-  if (st > lastScrollTop) 
-  header.style.opacity = 0; // hide the nav-bar when going down
-  else 
-  header.style.opacity = 1; // display the nav-bar when going up
-  
-  lastScrollTop = st;
-
-  header.style.top = `${st}px`; // set the position of the nav-bar to the current scroll
-}, false);
-    </script>
