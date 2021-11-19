@@ -15,7 +15,10 @@
             <div id="logo">
                 <img src="assets/logo.svg" alt="Logo"/>
             </div>
-            <input id="search" type="text" class="search"/>
+            <div class="search">
+                <input type="text" placeholder="Search"/>
+                <img src="assets/search.svg" alt="Search">
+            </div>
             <div id="icons">
                 <img class="favorites" src="assets/favorites.svg" alt="Favorites"/>
                 <img src="assets/user.svg" alt="User"/>
@@ -34,5 +37,21 @@
             <li>Become A Vendor</li>
         </ul>
     </nav>
+    <section class="hero">
+        <div class="hero_container">
+            <div class="hero_content">
+                <h1>Get the new iphone 12 pro</h1>
+                <p>A transformative triple‑camera system that adds tons of capability without complexity</p>
+                <button class="call_to_action">Shop Now</button>
+                <button>With $599 with trade-in</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        function toggleMenu() {
+            let menu = document.querySelector(".nav_container");
+            menu.classList.toggle("menu-opened");
+        }
+    </script>
 </body>
 </html>
