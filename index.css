@@ -1,0 +1,336 @@
+html,body{
+    overflow: visible;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+}
+#header{
+    min-height: 173px;
+    background-color: white;
+    padding-top: 30px;
+    box-sizing: border-box;
+    padding-right:50px;
+    padding-left:50px;
+    position: sticky;
+}
+
+
+#header-container{
+    
+    min-height: 150px;
+    box-sizing: border-box;
+    @media (max-width: 768px) {
+        display: block;
+      }
+}
+.my-inputs{
+    width: 500px;
+    height: 40px;
+    border-radius: 5px;
+    opacity: 20%;
+}
+/* .my-inputs i.fa{
+    padding-left: 50px;
+
+} */
+
+
+#header-div-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+#header-div-top i.far{
+    margin-left: 25px;
+}
+
+#menu{
+    display: none;
+    font-size: 32px;
+}
+
+@media screen and (max-width:900px)
+{
+    #search{
+        display: none;
+        
+    }
+    #icons{
+        display: none;
+    }
+    #menu{
+        display: inline;
+    }
+}
+#header-div-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-div-bottom #bot-icons {
+    width: 190px;
+height: 44px;
+background: #f8f8f8;
+
+
+}
+#header-div-bottom #bot-icons i.fas{
+    padding: 10px;
+}
+#header-div-bottom #open-navbar1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: auto;
+    @media (max-width: 768px) {
+        display: none;
+        text-align: center;
+      }
+  
+}
+.navbar-nav {
+    margin-left: auto;
+    flex-direction: row;
+    display: flex;
+    padding-right: 200px;
+    margin-bottom: 0;
+    list-style: none;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      display: block;
+      border-top: 1px solid #EEE;
+      margin-top: 1rem;
+    }
+}
+.navbar-nav li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: left;
+    color: #302f2f;
+    opacity: 0.92;
+}
+.navbar-nav a{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 32px;
+    text-align: left;
+    color: #302f2f;
+    opacity: 0.92;
+    text-decoration: none;
+    display: inline-block;
+     padding-right: 55px;
+
+}
+.navbar-nav a:hover{
+    text-decoration: underline;
+    color: #ff4f04;
+}
+#header-div-bottom #bot-icons span{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: left;
+    color: #302f2f;
+    opacity: 0.92;
+
+    
+}
+#background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/images/back.png');
+    background-size: contain;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#background #title h1{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 54px;
+    letter-spacing: -0.05em;
+    text-align: center;
+    color: #fff;
+    padding-top: 200px; 
+    position: relative;
+    left: -480px;   
+}
+#background #description{
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    line-height: 32px;
+    color: #fff;
+    opacity: 0.92;
+    padding-left: 100px;
+    margin: 13px;
+}
+#background #buying{
+    display: inline-block;
+    margin: 15px;
+    padding: 15px;
+    padding-left: 90px;
+
+}
+
+#background #buying #button1 {
+width: 137px;
+height: 50px;
+border-radius: 5px;
+background: #ff4f04;
+font-family: Heebo;
+font-weight: 500;
+font-size: 16px;
+letter-spacing: -0.02em;
+text-align: center;
+color: #fff;
+
+}
+
+#background #buying #button2 {
+    font-family: Heebo;
+font-weight: 500;
+font-size: 16px;
+letter-spacing: -0.02em;
+text-align: center;
+color: #fff;
+width: 224px;
+height: 50px;
+background: transparent;
+}
+#ourProducts #details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px
+
+}
+#ourProducts #details p{
+font-size: 14px;
+color: #302f2f;
+font-family: Poppins;
+
+}
+#ourProducts #details h1{
+font-weight: 600;
+font-size: 25px;
+line-height: 56px;
+color: #111;
+}
+
+#ourProducts #card{
+    width: 100%;
+    float: left;
+    padding: 1%;
+    border-bottom: 0.01em solid #dddbdb;
+}
+.product {
+    float: left;
+    width: 23%;
+    border-radius: 2%;
+    margin: 1%;
+  }
+  
+  .product:hover {
+    box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);  
+    -moz-box-shadow:    1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
+  }
+  
+  .image-box {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 2% 2% 0 0;
+  }
+  
+  .images {
+    height: 15em;
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    border-radius: 2% 2% 0 0;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+  }
+  
+  .images:hover {
+    transform: scale(1.2);
+    overflow: hidden;
+    border-radius: 2%;
+  }
+  
+  /* IMAGES */
+  #image-1 {background-image: url("./assets/images/1.png");}
+  
+  #image-2 {background-image: url("./assets/images/2.png")}
+  
+  #image-3 {background-image: url("./assets/images/3.png")}
+  
+  #image-4 {background-image: url("./assets/images/4.png")}
+  
+
+  
+  .text-box {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.03em;
+    line-height: 30px;
+    text-align: center;
+    color: #111;
+    
+  }
+  
+  h2, h3 {
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin: 0.2em auto;
+  }
+  
+  .item, .price {
+    clear: left;
+    width: 100%;
+    text-align: center;
+    
+    
+  }
+  .price-contain{
+    width: 56px;
+    height: 31px;
+    border-radius: 15.5px;
+    background: rgba(255, 79, 4, 0.09);
+    
+  }
+  
+  .price {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #ff4f04;
+ 
+  }
+

@@ -1,12 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>landing page </title>
+        <link href="./index.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     
-</body>
-</html>
+    </head>
+    <body>
+        <header id="header">
+            <div id="header-container">
+                <!-- Top Div (search) -->
+                <div>
+                    <div id="header-div-top">
+                        <img width="90px" src="./assets/images/WhatsApp Image 2021-03-10 at 11.31.14.png" />
+                       
+                        <input id="search" type="text" placeholder="Search For new items" class="my-inputs"/>
+                        <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
+                        <!-- 3rd comp that contains icons -->
+                        <div id="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-user"></i>
+                            <i class="far fa-shopping-cart"></i>
+                        </div>
+                        <i id="menu" class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <!-- Bottom Div (menu items) -->
+                <div>
+                    <div id="header-div-bottom"> 
+                        <div id="bot-icons">
+                            <i class="fas fa-bars"></i>
+                            <span>All Categories</span>
+                            <i class="fas fa-caret-down"></i>
+
+                        </div>
+
+
+                        <!-- navigation -->
+                        <div>
+                            <div class="navbar-menu" id="open-navbar1">
+                                <ul class="navbar-nav">
+                                  <li class="active"><a href="#">Home</a></li>
+                                  <li><a href="#">New Arrivals</a></li>
+                                  <li><a href="#">Trending</a></li>
+                                  <li><a href="#">Deals For You</a></li>
+                                  <li><a href="#">Discounts</a></li>
+                                  <li><a href="#">Weekly Offers</a></li>
+                                  <li><a href="#">Become A Vendor</a></li>
+                                </ul>
+                              </div>
+                            
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div>
+    
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- main section -->
+        <section id="background">
+            <div id="carousal"> 
+
+            
+            <div id="title">
+                <h1> GET THE NEW IPHONE 12 <br> PRO </h1>
+            </div>
+            <div  id="description">
+                <span>
+                    A transformative triple‑camera system that adds tons of capability without <br> complexity
+
+                </span>
+            </div>
+            <div id="buying"> 
+                <button id="button1">
+                    Buy Now
+
+                </button>
+
+                <button id="button2">
+                    With $599 with trade-in
+
+                </button>
+            </div>
+        </div>
+           
+
+        </section>
+        </main>
+        <!-- our products section -->
+        <section id="ourProducts">
+            <div id="details">
+                <p> Explore Awesome Products </p>
+                <h1> Recommended For You </h1>
+
+
+            </div>
+            <div id="card"> 
+
+          
+            <div class="product">
+                <div class="image-box">
+                  <div class="images" id="image-1"></div>
+                </div>
+                <div class="text-box">
+                  <h2 class="item">Single Tour</h2>
+                  <h3 class="price">980</h3>
+                 
+                </div>
+              </div>
+              <div class="product">
+                <div class="image-box">
+                  <div class="images" id="image-2"></div>
+                </div>
+                <div class="text-box">
+                  <h2 class="item">Single Tour</h2>
+                  <h3 class="price">980</h3>
+                 
+                </div>
+              </div>
+              <div class="product">
+                <div class="image-box">
+                  <div class="images" id="image-3"></div>
+                </div>
+                <div class="text-box">
+                  <h2 class="item">Single Tour</h2>
+                  <h3 class="price">980</h3>
+                 
+                </div>
+              </div>
+              <div class="product">
+                <div class="image-box">
+                  <div class="images" id="image-4"></div>
+                </div>
+                <div class="text-box">
+                  <h2 class="item">Single Tour</h2>
+                  <div class="price-contain"> 
+                    <h3 class="price">980</h3>
+
+                  </div>
+                  
+                 
+                </div>
+              </div>
+            </div>
+
+
+
+
+        </section>
+    </body>
+    </html>
+    <script>
+        let nav = document.querySelector('#header');
+let lastScrollTop;
+
+window.addEventListener("scroll", function() {  // listen for the scroll 
+  var st = window.pageYOffset || document.documentElement.scrollTop;
+  if (st > lastScrollTop) 
+  header.style.opacity = 0; // hide the nav-bar when going down
+  else 
+  header.style.opacity = 1; // display the nav-bar when going up
+  
+  lastScrollTop = st;
+
+  header.style.top = `${st}px`; // set the position of the nav-bar to the current scroll
+}, false);
+    </script>
