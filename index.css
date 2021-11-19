@@ -101,12 +101,11 @@
   font-size: 32px;
   color: #5a5959
 }
-
+/* linear-gradient(rgba(0, 0, 0, 0.481) , rgba(0, 0, 0, 0.795)) */
 /* main section */
 main {
-  background: linear-gradient(rgba(0, 0, 0, 0.481) , rgba(0, 0, 0, 0.795)), url('./assets/images/Mask.png') no-repeat;
+  background: url('./assets/images/Mask.png') no-repeat;
   background-size: 100%;
-  height: 590px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,7 +114,7 @@ main {
 }
 
 main .main-text h1{
-  font-size: 60px;
+  font-size: 50px;
 }
 
 main .main-text p {
@@ -124,44 +123,49 @@ main .main-text p {
 }
 
 main .main-text .button-1 {
-  color: white;
+  width: 130px;
   padding: 15px;
   margin-right: 25px;
   font-size: 18px;
-  width: 130px;
+  color: white;
   background-color: rgba(245, 71, 8, 0.849);
-  border-radius: 7px;
   border: 1px solid rgba(245, 71, 8, 0.849);
+  border-radius: 7px;
   cursor: pointer;
 }
 
 main .main-text .button-2 {
-  color: white;
+  width: 300px;
   padding: 15px;
   font-size: 18px;
-  width: 300px;
+  color: white;
   background-color: rgba(224, 221, 221, 0.418);
-  border-radius: 7px;
   border: 1px solid transparent;
+  border-radius: 7px;
   cursor: pointer;
 }
 
-/* Second Section */
-.second-section {
+.img-phones {
+  background-size: 100%;
+}
+
+/* Recommended-products section */
+.recommended-products {
   background-color: #eee;
   padding: 50px 0;
   line-height: 1.7;
   text-align: center;
+  box-sizing: border-box;
 }
 
-.second-section .sec-section-title {
+.recommended-products .recommended-products-title {
   margin-bottom: 30px;
 }
 
-.second-section .prodects {
+.recommended-products .prodects {
   display: flex;
   justify-content: space-around;
-  margin: 0 50px;
+  flex-wrap: wrap;
 }
 
 .product-card {
@@ -169,9 +173,11 @@ main .main-text .button-2 {
   flex-direction: column;
   align-items: center;
   background-color: #fff;
+  border: 1px solid #ccc;
   border-radius: 10px;
-  width: 300px;
+  width: 22%;
   height: 400px;
+  margin-bottom: 50px;
 }
 
 .product-card .product-name {
@@ -188,11 +194,11 @@ main .main-text .button-2 {
   padding: 7px;
 }
 
-.second-section .button-3 {
-  margin-top: 100px;
+.transparent-button {
+  margin-top: 50px;
   width: 250px;
   height: 50px;
-  color: rgb(141, 140, 140);
+  color: rgb(131, 129, 129);
   padding: 15px;
   font-size: 18px;
   background-color: #fff;
@@ -350,3 +356,21 @@ footer {
     display: inline;
   }
 }
+
+
+    /* Responsive recommended products section */
+    @media screen and (max-width:1000px) {
+      .product-card {
+        width: 44%;
+      }
+    }
+
+    @media screen and (max-width:620px) {
+      .product-card {
+        width: 66%;
+      }
+    }
+/* @media screen and (max-width:1225px)
+{
+
+} */
