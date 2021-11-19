@@ -1,0 +1,326 @@
+*{
+  font-family:'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  text-align: left;
+  background-color: white;
+  font-size: 14px;
+}
+
+header {
+  background-color: white;
+}
+
+.nav1 {
+  border-bottom: 1px solid #f2f2f2;
+  height: 110px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.khoomi-logo{
+  height: 60px;
+  align-self: center;
+}
+
+.search-bar{
+  align-self: center;
+  width: fit-content;
+  height: fit-content;
+  border-color: transparent;
+  border-radius: 5px;
+  outline: 1px solid #DFDFDF;
+  padding: 0 10px;
+}
+
+.nav1 .search-bar input{
+  width: 560px;
+  height: 50px;
+  border: none;
+  outline: none;
+}
+
+.nav-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  gap: 30px;
+}
+
+.nav-icon{
+  font-size: 200;
+  cursor: pointer;
+}
+
+.nav2{
+  height: 60px;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 0 0 50px;
+  padding: 0 0 0 50px;
+}
+
+select{
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 10px 25px;
+  background-color: #f8f8f8;
+  border-color: #efefef;
+  align-self: center;
+  outline: none;
+}
+
+.nav-links{
+  height: 60px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 100px 0 0;
+  /* padding: 0 100px 0 0; */
+  gap: 70px;
+}
+
+.nav-links li{
+  color: #302F2F;
+  font-size: 14px;
+  font-weight: 500;
+  align-self:flex-end;
+  height: 40px;
+  cursor: pointer;
+}
+
+.nav-links li:hover{
+  color: #FF4F04;
+}
+
+.nav-links li#active{
+  color: #FF4F04;
+  border-bottom: 3px solid #FF4F04;
+  border-spacing: 100px;
+}
+
+/* iphone12 */
+.iphone12{
+  background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../img/Mask.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "main sidebar"
+  "main sidebar";
+}
+
+.iphone12 #text{
+  margin: auto;
+  margin-left: 110px;
+}
+
+.iphone12 h1{
+  font-size: 54px;
+  margin: 0;
+}
+
+#orange-button{
+  background-color: #FF4F04;
+  color: white;
+  border: none;
+}
+
+#transparent-button{
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  margin-left: 10px;
+}
+
+.iphone12-mask{
+  float: right;
+}
+
+#background-move {
+  /* position: absolute; */
+  animation: mymove 8s infinite;
+}
+
+@keyframes mymove {
+  50% {background-position: 0% 15%;}
+}
+
+.recommended{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+#two-colors{
+  background: linear-gradient(180deg, #f8f8f8 50%, white 50%);
+}
+
+.recommended h3{
+  margin: 45px auto 0 auto;
+  font-weight: 400;
+}
+
+
+.cards-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap:50px;
+}
+
+.card {
+  background-color: white;
+  transition: 0.3s;
+  width: max-content;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+button {
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 10px 25px;
+  background-color: white;
+  align-self: center;
+  cursor: pointer;
+}
+
+.rectangle{
+  background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../img/Rectangle1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: max-content;
+  margin: 50px 0;
+}
+
+.rectangle #text-container{
+  padding:70px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "main sidebar"
+  "main sidebar";
+}
+
+.rectangle #text-container button{
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  margin: auto auto;
+}
+
+.cards-container-nike{
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "header main aside"
+  "sidebar footer aside";
+}
+
+.cards-container-nike .card{
+  width: auto;
+  height: auto;
+  background-color: #F5F5F6;
+}
+
+.cards-container-nike .card img{
+  justify-self: center;
+  align-self: center;
+}
+
+#focus-card{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 3 ;
+}
+
+#focus-card img{
+  width:auto;
+  height: auto;
+}
+
+.trending{
+  padding: 0 200px;
+}
+
+/* .trending .cards-container .card{
+  background-color: #f2f2f2;
+} */
+
+.trending .cards-container .card .text-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.cards-container-nike .text-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.badge{
+  color: #FF4F04;
+  background-color: rgb(255, 79, 4, 0.1);
+  /* width: 60px;
+  height: 30px; */
+  border: none;
+  border-radius: 25px;
+  padding: 5px 10px;
+  align-self: center;
+}
+
+.cards-container-nike .badge{
+  background-color: white;
+}
+
+.card img{
+  border-radius: 10px;
+}
+
+footer {
+  margin: 10px 100px 100px 100px;
+  color: #302F2F;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-link:hover {
+  color:#FF4F04;
+}

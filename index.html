@@ -4,9 +4,267 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="index.css" rel="stylesheet">
+    <link rel="icon" href="img/logo.svg">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <title>Khoomi</title>
 </head>
 <body>
+    <!-- nav bar with two rows -->
+    <header>
+        <div class="nav1">
+            <img class="khoomi-logo" src="img/logo.svg">
+
+            <div class="search-bar"><input type="text" placeholder="Search For Products, Brands & Categories"><i class="fas fa-search"></i></div>
+            <div class="nav-icons">
+                <i class="fas fa-heart fa-lg nav-icon"></i>
+                <i class="fas fa-user fa-lg nav-icon"></i>
+                <i class="fas fa-shopping-cart fa-lg nav-icon"></i>
+            </div>
+        </div>
+        <div class="nav2">
+            <select name="cars" id="cars">
+                <option>All Categories</option>
+            </select>
+            <ul class="nav-links">
+                <li id="active">Home</li>
+                <li>New Arrivals</li>
+                <li>Trending</li>
+                <li>Deals For You</li>
+                <li>Discounts</li>
+                <li>Weekly Offers</li>
+                <li>Become a Vendor</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="iphone12" id="background-move">
+        <div id="text">
+            <h1>
+                GET THE NEW IPHONE 12 PRO
+            </h1>
+            <p>
+                A transformative triple‑camera system that adds tons of capability without complexity
+            </p>
+            <button id="orange-button">Buy Now &nbsp;&nbsp;<i class="fas fa-shopping-basket"></i></button>
+            <button id="transparent-button">With $599 with trade-in</button>
+        </div>
+        <div>
+            <img class="iphone12-mask" src="img/Mask Group 1.png">
+        </div>
+    </div>
+
+    <div class="recommended" id="two-colors">
+        <h3>EXPLORE AWESOME PRODUCTS</h3>
+        <h1>RECOMMENDED FOR YOU</h1>
+        <div class="cards-container">
+            <div class="card">
+                <img src="img/1.png" alt="Single Tour">
+                <div class="text-container">
+                  <h4><b>Single Tour</b></h4> 
+                  <p class="badge">$990</p> 
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/2.png" alt="Single Tour">
+                <div class="text-container">
+                  <h4><b>Single Tour</b></h4> 
+                  <p class="badge">$990</p> 
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/3.png" alt="Single Tour">
+                <div class="text-container">
+                  <h4><b>Single Tour</b></h4> 
+                  <p class="badge">$990</p> 
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/4.png" alt="Single Tour">
+                <div class="text-container">
+                  <h4><b>Single Tour</b></h4> 
+                  <p class="badge">$990</p> 
+                </div>
+            </div>
+        </div>
+        <br>
+        <button>Explore Other Products</button>
+    </div>
+    <br>
+
+    <div class="rectangle">
+        <div id="text-container">
+            <h1>Sneakers Never Run Out of Style <br> Get 50% Off Sitewide</h1>
+            <button>Start Shopping</button>
+        </div>
+    </div>
+    <br>
+
+    <div class="recommended">
+        <h3>STRAIGHT FROM NIKE</h3>
+        <h1>NEW COLLECTION</h1>
+        <div class="cards-container-nike">
+            <div class="card">
+                <img src="img/Image2.png" alt="Single Tour">
+                <div class="text-container">
+                  <h4><b>Nike Air Force 1</b></h4> 
+                  <p class="badge">$99</p> 
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Image3.png" alt="Single Tour">
+                <div class="text-container">
+                  <h4><b>NikeCourt Air</b></h4> 
+                  <p class="badge">$99</p> 
+                </div>
+            </div>
+            <div class="card" id="focus-card">
+                <img src="img/Image1.png" alt="Single Tour">
+                <div class="text-container">
+                  <h4><b>Nike Air Force 1 Shadow</b></h4> 
+                  <p class="badge">$99</p> 
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Image5.png" alt="Single Tour">
+                <div class="text-container">
+                  <h4><b>Nike SB Zoom</b></h4> 
+                  <p class="badge">$99</p> 
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Image4.png" alt="Single Tour">
+                <div class="text-container">
+                  <h4><b>Nike Signal</b></h4> 
+                  <p class="badge">$99</p> 
+                </div>
+            </div>
+        </div>
+        <br>
+        <button>Explore Other Products</button>
+
+    </div>
+    <br>
+
+    <div class="rectangle">
+        <div id="text-container">
+            <h1>Sneakers Never Run Out of Style <br> Get 50% Off Sitewide</h1>
+            <button>Start Shopping</button>
+        </div>
+    </div>
+    <br>
+
+    <div class="recommended trending">
+        <h3>TOP PRODUCTS</h3>
+        <h1>TRENDING THIS WEEK</h1>
+        <div class="cards-container">
+            <div class="card">
+                <img src="img/Image3.png" alt="Single Tour">
+                <div class="text-container">
+                  <h4><b>Nike Court Air</b></h4> 
+                  <p class="badge">$58</p> 
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Image2.png" alt="Single Tour">
+                <div class="text-container">
+                  <h4><b>Nike Air Force 1</b></h4> 
+                  <p class="badge">$58</p> 
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Image5.png" alt="Single Tour">
+                <div class="text-container">
+                  <h4><b>Nike SB Zoom</b></h4> 
+                  <p class="badge">$58</p> 
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Image4.png" alt="Single Tour">
+                <div class="text-container">
+                  <h4><b>Nike Signal</b></h4> 
+                  <p class="badge">$58</p> 
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Image3.png" alt="Single Tour">
+                <div class="text-container">
+                  <h4><b>Nike Court Air</b></h4> 
+                  <p class="badge">$58</p> 
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Image2.png" alt="Single Tour">
+                <div class="text-container">
+                  <h4><b>Nike Air Force 1</b></h4> 
+                  <p class="badge">$58</p> 
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Image5.png" alt="Single Tour">
+                <div class="text-container">
+                  <h4><b>Nike SB Zoom</b></h4> 
+                  <p class="badge">$58</p> 
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Image4.png" alt="Single Tour">
+                <div class="text-container">
+                  <h4><b>Nike Signal</b></h4> 
+                  <p class="badge">$58</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="rectangle">
+        <div id="text-container">
+            <h1>Sneakers Never Run Out of Style <br> Get 50% Off Sitewide</h1>
+            <button>Start Shopping</button>
+        </div>
+    </div>
+    <br>
+
     
+    <footer class="footer">
+        <div>
+            <img class="khoomi-logo" src="img/logo.svg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div>
+            <h4 class="contact-headers">Products</h4>
+            <ul class="footer-links">
+                <li class="footer-link">Trending</li>
+                <li class="footer-link">My Account</li>
+                <li class="footer-link">Vendors</li>
+                <li class="footer-link">Brands</li>
+                <li class="footer-link">Storefront</li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="contact-headers">Legals</h4>
+            <ul class="footer-links">
+                <li class="footer-link">License</li>
+                <li class="footer-link">Refund Policy</li>
+                <li class="footer-link">About Us</li>
+                <li class="footer-link">Contacts</li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="contact-headers">Contacts</h4>
+            <ul class="footer-links">
+                <li>Feel free to get in touch with us via phone or messages</li>
+                <li class="footer-link">+1 234 567 89 10</li>
+                <li class="footer-link" href="mailto:support@khoomi.com"><a>support@khoomi.com</a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 </html>
