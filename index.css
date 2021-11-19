@@ -103,7 +103,7 @@ nav ul {
 .hero_container button {
     height: 5vh;
     border-radius: 5px;
-    background-color: rgb(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.25);
     border: none;
     color: #ffffff;
     font-size: 1em;
@@ -220,8 +220,8 @@ nav ul {
     font-size: 2em;
     font-weight: bold;
     color: #ffffff;
-    text-transform: uppercase;
     text-shadow: 0 0 15px #000000;
+    text-transform: capitalize;
 }
 
 .banner_content button {
@@ -236,7 +236,8 @@ nav ul {
     margin-left: 15%;
 }
 
-.new_arrivals_container {
+.new_arrivals_container,
+.trending_container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -245,20 +246,27 @@ nav ul {
     width: 100%;
 }
 
-.new_arrivals_container h2 {
+.new_arrivals_container h2,
+.trending_container h2 {
     font-size: 2em;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 3%;
 }
 
-.new_arrivals_content {
+.new_arrivals_content,
+.trending_content {
     display: flex;
     align-items: start;
     justify-content: space-evenly;
 }
 
-.new_arrivals_items {
+.trending_content {
+    width: 100%;
+}
+
+.new_arrivals_items,
+.trending_items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -266,7 +274,13 @@ nav ul {
     width: 50%;
 }
 
-.new_arrivals_item {
+.trending_items {
+    width: 90%;
+}
+
+
+.new_arrivals_item,
+.trending_item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -279,12 +293,23 @@ nav ul {
     padding: 5% 0;
 }
 
-.new_arrivals_item img {
+.trending_item {
+    padding: 3% 0;
+}
+
+.trending_item {
+    width: 23%;
+    margin-bottom: 3%;
+}
+
+.new_arrivals_item img,
+.trending_item img {
     width: 75%;
     border-radius: 5px;
 }
 
-.new_arrivals_item_info {
+.new_arrivals_item_info,
+.trending_item_info {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -292,12 +317,13 @@ nav ul {
     width: 100%;
 }
 
-.new_arrivals_item_info h3 {
+.new_arrivals_item_info h3,
+.trending_item_info h3 {
     margin: 0;
 }
 
-.new_arrivals_item_info p {
-    font-size: 1.2em;
+.new_arrivals_item_info p,
+.trending_item_info p {
     color: var(--main-color);
     background-color: #ffffff;
     border-radius: 25px;
@@ -382,7 +408,65 @@ nav ul {
 
 }
 
+.footer_container {
+    width: 100%;
+}
+
+
+.footer_content {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    margin: 5% 0;
+}
+
+.footer_content .company_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 30%;
+    height: 100%;
+}
+
+.footer_content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer_content ul li {
+    margin: 2em 0;
+}
+
+.footer_content ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
 @media (max-width: 991.98px) {
+
+    .hero_container button {
+        background-color: rgb(0, 0, 0, 0.75)
+    }
+
+    .featured_container {
+        background: #fff;
+    }
+
+    .featured_items {
+        flex-wrap: wrap;
+    }
+
+    .featured_item {
+        margin-bottom: 3%;
+    }
+
+    .featured_item {
+        width: 50%;
+    }
 
     .new_arrivals_content {
         flex-direction: column;
@@ -391,10 +475,31 @@ nav ul {
 
     .new_arrivals_items {
         width: 90%;
+        justify-content: space-evenly;
     }
 
     .on_sale {
         width: 90%;
+    }
+
+    .new_arrivals_item h3,
+    .trending_item_info h3 {
+        font-size: 0.80em;
+        padding: 0 0.5em;
+    }
+
+    .trending_items {
+        justify-content: space-evenly;
+    }
+
+    .trending_item {
+        min-width: 200px;
+        margin-bottom: 5%;
+    }
+
+    .footer_content {
+        flex-wrap: wrap;
+        align-items: center;
     }
 
 }
@@ -412,13 +517,50 @@ nav ul {
         margin: 3% 0;
     }
 
+    .featured_container {
+        background: #fff;
+    }
+
     .featured_items {
+        min-width: 300px;
         flex-wrap: wrap;
+    }
+
+    .featured_item {
+        margin-bottom: 3%;
     }
 
     .featured_item {
         width: 50%;
     }
+
+    .new_arrivals_item h3,
+    .trending_item_info h3 {
+        font-size: 0.80em;
+        padding: 0 0.5em;
+    }
+
+
+    .trending_item {
+        min-width: 200px;
+        margin-bottom: 5%;
+    }
+
+    .trending_items {
+        justify-content: space-evenly;
+    }
+
+    .footer_content {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .footer_content .company_info {
+        min-width: 95%;
+        padding: 0 10%;
+        margin-bottom: 10%;
+    }
+
 
 }
 
@@ -461,10 +603,13 @@ nav ul {
 
 }
 
+
 @media (min-width: 1199.98px) {
 
     .hero {
         background-size: contain, cover;
     }
+
+
     
 }
