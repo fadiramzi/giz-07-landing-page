@@ -2,6 +2,29 @@
   font-family:'Poppins', sans-serif;
 }
 
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 79, 4, 0.2);
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(48, 47, 47, 0.8);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(48, 47, 47, 0.7);
+}
+
+
 body {
   margin: 0;
   text-align: left;
