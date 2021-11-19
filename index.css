@@ -117,7 +117,7 @@ body {
     position: relative;
     width: 100%;
     height: 85vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("./resources/p1.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("assets/images/p1.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -126,7 +126,7 @@ body {
     width: 50%;
     height: inherit;
     position: absolute;
-    background-image: url("./resources/p2.png");
+    background-image: url("assets/images/p2.png");
     background-repeat: no-repeat;
     right: 0;
     background-size: 910px 600px;
@@ -266,7 +266,7 @@ body {
     align-items: center;
     padding: 0 4em;
     height: 40vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("./resources/yellowShoes.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("assets/images/yellowShoes.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
