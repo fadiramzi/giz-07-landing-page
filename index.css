@@ -301,7 +301,7 @@ color: #111;
   }
   
   h2, h3 {
-    float: left;
+   
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1em;
@@ -316,14 +316,7 @@ color: #111;
     
     
   }
-  .price-contain{
-    width: 56px;
-    height: 31px;
-    border-radius: 15.5px;
-    background: rgba(255, 79, 4, 0.09);
-    
-  }
-  
+
   .price {
     font-family: Roboto;
     font-weight: 500;
@@ -331,6 +324,10 @@ color: #111;
     letter-spacing: -0.02em;
     text-align: center;
     color: #ff4f04;
- 
+    background: rgba(255, 79, 4, 0.09);
+    width: 56px;
+    height: 31px;
+    border-radius: 15.5px;
+    background: rgba(255, 79, 4, 0.09);
   }
 
