@@ -4,7 +4,7 @@ body{
   
 }
 
-#container{
+.container{
   position: fixed;
   top: 0;
   width: 100%;
@@ -13,6 +13,46 @@ body{
   min-height: 150px;
   max-height: 150px;
   background-color: white;
+}
+
+@media screen and (max-width:380px) {
+  .container{
+    position:unset;
+    min-height: 30px;
+    max-height: 30px;
+  }
+   .in,.ic1,.ics,.nav2,.li > li, hr, select{
+    display: none;
+  }
+ .logo{
+   margin-left:-90px;
+   margin-top:-30px;
+ }
+
+ img.mask{
+display: none;
+ }
+  .cards{
+    flex-direction: column;
+  }
+  .im{
+    width:200px;
+    height: 200px;
+    margin-left: 70px;
+    margin-top:90px
+  }
+  .rec img{
+    position: relative;
+    height: 400px;
+  }
+  .sne{
+    position: absolute;
+    top: 50%;
+    font-size:2px;
+  }
+  .rec button{
+    display: none;
+  }
 }
 input{
     width: 557px;
@@ -23,6 +63,7 @@ input{
     padding-block: 0.5px;
 
 }
+
 .in{
   position: relative;
 }
@@ -140,10 +181,11 @@ img.bg {
 
 img.mask{
   position: absolute;
+  height: 560px; 
+  width: inherit;
   right: 0;
   top:178px;
   overflow: hidden; 
-  height: 560px;
 }
 
 .sec2{
