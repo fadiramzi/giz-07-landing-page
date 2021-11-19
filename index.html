@@ -4,33 +4,258 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="./index.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
+    <link href="index.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>    <title>Document</title>
 </head>
 <body>
-    <header id="header">
-        <div id="header-container">
-            <!-- Top Div (search) -->
-            <div>
-                <div id="header-div-top">
-                    <img width="90px" src="./assets/images/1.jpg" />
-                    <input id="search" type="text" class="my-inputs"/>
-                    <!-- 3rd comp that contains icons -->
-                    <div id="icons">
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-user"></i>
-                        <i class="far fa-shopping-cart"></i>
-                    </div>
-                    <i id="menu" class="fas fa-bars"></i>
-                </div>
-            </div>
-            <!-- Bottom Div (menu items) -->
-            <div>
+<section class="header-section">
+    <div class="search">
+        <a href="#"><img class="logo" src="resources/logo.png" alt="the website logo 'khoomi' "/></a>
 
+        <div class="search-bar">
+            <input type="search" placeholder="Search For Products, Brands & Categories" aria-label="Search For Products, Brands & Categories" size="55">
+            <button>
+                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 17L22 22M19.5 10.75C19.5 15.5825 15.5825 19.5 10.75 19.5C5.91751 19.5 2 15.5825 2 10.75C2 5.91751 5.91751 2 10.75 2C15.5825 2 19.5 5.91751 19.5 10.75Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+
+        <ul class="shopping-functions">
+            <li><a href="#"><i class="far fa-heart"></i></a></li>
+            <li><a href="#"><i class="far fa-user"></i></a></li>
+            <li><a href="#"><i class="far fa-shopping-cart"></i></a></li>
+        </ul>
+    </div>
+
+    <hr>
+    <nav>
+        <button><i class="fas fa-bars menu"></i> All Categories <i class="fas fa-caret-down drop-down"></i></button>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Deals For You</a></li>
+            <li><a href="#">Discounts</a></li>
+            <li><a href="#">Weekly Offers</a></li>
+            <li><a href="#">Become A Vendor</a></li>
+        </ul>
+    </nav>
+</section>
+
+<section class="hero">
+    <div class="intro"></div>
+    <div class="description">
+        <h1>get the new iphone 12 <br> pro</h1>
+        <p>A transformative triple-camera system that adds tons of capability without<br>complexity</p>
+        <div class="btn-price-container">
+            <button class="buy-btn">Buy Now<i class="fas fa-shopping-basket"></i></button>
+            <div class="price">With $599 with trade-in</div>
+        </div>
+    </div>
+</section>
+
+<section class="recommended">
+    <div class="rec-description">
+        <p>explore awesome products</p>
+        <h3>recommended for you</h3>
+    </div>
+
+    <div class="products">
+        <div class="p">
+            <img src="resources/productTwo.png" alt="product picture"/>
+            <h4>Tudor Black Bay</h4>
+            <span>$350</span>
+        </div>
+        <div class="p">
+            <img src="resources/productOne.png" alt="product picture"/>
+            <h4>Patek Philippe Nautilus</h4>
+            <span>$200</span>
+        </div>
+        <div class="p">
+            <img src="resources/productTwo.png" alt="product picture"/>
+            <h4>Rolex Cellini</h4>
+            <span>$480</span>
+        </div>
+        <div class="p">
+            <img src="resources/productOne.png" alt="product picture"/>
+            <h4>Longines HydroConquest</h4>
+            <span>$290</span>
+        </div>
+    </div>
+
+    <button>explore other products</button>
+</section>
+
+<section class="offer">
+    <p>sneakers never run out of style <br> get 50% off sitewide</p>
+    <button>Start Shopping</button>
+</section>
+
+<section class="collection">
+    <div class="collection-desc">
+        <p>Straight From Nike</p>
+        <h3>New Collection</h3>
+    </div>
+
+    <div class="products">
+        <div class="p item1">
+
+            <div class="discount-price-container">
+                <span class="discount">SALE -50%</span>
+                <span class="price">$85</span>
+            </div>
+            <img src="resources/mainShoes.png" alt="product picture"/>
+            <h4>Nike Air Force 1 Shadow</h4>
+            <span>Brand: Nike</span>
+        </div>
+
+        <div class="p">
+            <img src="resources/redandwhiteShoes.png" alt="product picture"/>
+            <div class="p-info">
+                <h4>NikeCourt Air</h4>
+                <span>$43</span>
             </div>
         </div>
-    </header>
+        <div class="p">
+            <img src="resources/brownShoes.png" alt="product picture"/>
+            <div class="p-info">
+                <h4>Nike Air Force 1</h4>
+                <span>$100</span>
+            </div>
+        </div>
+        <div class="p">
+            <img src="resources/blueandblackShoes.png" alt="product picture"/>
+            <div class="p-info">
+                <h4>Nike Signal</h4>
+                <span>$98</span>
+            </div>
+        </div>
+        <div class="p">
+            <img src="resources/whiteandpink.png" alt="product picture"/>
+            <div class="p-info">
+                <h4>Nike Signal</h4>
+                <span>$87</span>
+            </div>
+        </div>
+    </div>
+
+    <button>explore other products</button>
+</section>
+
+<section class="offer">
+    <p>sneakers never run out of style <br> get 50% off sitewide</p>
+    <button>Start Shopping</button>
+</section>
+
+<section class="trending">
+    <div class="trending-desc">
+        <p>top products</p>
+        <h3>trending this week</h3>
+    </div>
+
+    <div class="products">
+        <div class="p">
+            <img src="resources/redandwhiteShoes.png" alt="product picture"/>
+            <div class="p-info">
+                <h4>NikeCourt Air</h4>
+                <span>$43</span>
+            </div>
+        </div>
+        <div class="p">
+            <img src="resources/brownShoes.png" alt="product picture"/>
+            <div class="p-info">
+                <h4>Nike Air Force 1</h4>
+                <span>$100</span>
+            </div>
+        </div>
+        <div class="p">
+            <img src="resources/whiteandpink.png" alt="product picture"/>
+            <div class="p-info">
+                <h4>Nike Signal</h4>
+                <span>$210</span>
+            </div>
+        </div>
+        <div class="p">
+            <img src="resources/blueandblackShoes.png" alt="product picture"/>
+            <div class="p-info">
+                <h4>Nike Signal</h4>
+                <span>$98</span>
+            </div>
+        </div>
+        <div class="p">
+            <img src="resources/redandwhiteShoes.png" alt="product picture"/>
+            <div class="p-info">
+                <h4>NikeCourt Air</h4>
+                <span>$43</span>
+            </div>
+        </div>
+        <div class="p">
+            <img src="resources/brownShoes.png" alt="product picture"/>
+            <div class="p-info">
+                <h4>Nike Air Force 1</h4>
+                <span>$100</span>
+            </div>
+        </div>
+        <div class="p">
+            <img src="resources/whiteandpink.png" alt="product picture"/>
+            <div class="p-info">
+                <h4>Nike Signal</h4>
+                <span>$210</span>
+            </div>
+        </div>
+        <div class="p">
+            <img src="resources/blueandblackShoes.png" alt="product picture"/>
+            <div class="p-info">
+                <h4>Nike Signal</h4>
+                <span>$98</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="offer">
+    <p>sneakers never run out of style <br> get 50% off sitewide</p>
+    <button>Start Shopping</button>
+</section>
+
+<section class="footer">
+    <div class="container">
+        <div class="about">
+            <a href="#"><img class="logo" src="resources/logo.png" alt="the website logo 'khoomi' "/></a>
+            <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do eiusmod tempor incididunt<br> ut labore et dolore  aliqua. Ut enim ad minim veniam, quis nostrud .</p>
+        </div>
+
+        <div class="links">
+            <div class="unordered-list">
+                <ul>
+                    <li class="title">Products</li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Vendors</a></li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Storefront</a></li>
+                </ul>
+            </div>
+            <div class="unordered-list">
+                <ul>
+                    <li class="title">Legals</li>
+                    <li><a href="#">License</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="unordered-list">
+                <ul>
+                    <li class="title">Contacts</li>
+                    <li class="inform">Fell free get in touch with us via phone or<br> send us a message</li>
+                    <li class="phone-num">+1 234 567 89 10</li>
+                    <li><a href="#">support@khoomi.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>

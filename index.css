@@ -1,55 +1,513 @@
-body{
-    background-color: bisque;
-}
-*{
-    margin: 0px;
-    padding: 0px;
-}
-#header{
-    min-height: 173px;
-    background-color: white;
-    padding-top: 30px;
-    box-sizing: border-box;
-    padding-right:50px;
-    padding-left:50px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap");
 
-#header-container{
-    /* background-color: blueviolet; */
-    min-height: 150px;
+
+body {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-.my-inputs{
-    width: 500px;
-    height: 40px;;
-}
 
-#header-div-top{
+.header-section .search {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em 3em;
+}
+.header-section .search .logo {
+    width: 85px;
+    height: 20px;
+}
+.header-section .search .search-bar {
+    display: flex;
+    gap: 2em;
+    border: 1px solid #c6c0c0;
+    border-radius: 0.3em;
+    padding: 0.5em 1.5em 0.5em 1em;
+}
+.header-section .search .search-bar input {
+    border: none;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+.header-section .search .search-bar button {
+    border: none;
+    margin-top: 0.2em;
+    background-color: unset;
+}
+.header-section .search .search-bar button:hover {
+    cursor: pointer;
+}
+.header-section .search .shopping-functions {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 1.5em;
+}
+.header-section .search .shopping-functions a {
+    width: 24px;
+    height: 24px;
+}
+.header-section .search .shopping-functions a .far {
+    color: black;
+    font-size: large;
+    font-weight: lighter;
+}
+.header-section hr {
+    background-color: #eee;
+    border: none;
+    color: #eee;
+    height: 1px;
+}
+.header-section nav {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+.header-section nav ul {
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    display: flex;
+    gap: 4em;
+    list-style-type: none;
+}
+.header-section nav ul li {
+    position: relative;
+}
+.header-section nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+.header-section nav ul li .active {
+    color: orangered;
+}
+.header-section nav ul li .active:after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: orangered;
+    position: absolute;
+    bottom: -14px;
+    left: -20px;
+}
+.header-section nav button {
+    padding: 1em;
+    margin-bottom: 0.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    font-size: 13.7px;
+    background-color: #efefef;
+    border: 1px solid #e7e7e7;
+    border-radius: 0.3em;
+}
+.header-section nav button .drop-down {
+    margin-left: 3em;
+}
+.header-section nav button .menu {
+    margin-right: 1em;
+}
+.header-section nav button:hover {
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("./resources/p1.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.hero .intro {
+    width: 50%;
+    height: inherit;
+    position: absolute;
+    background-image: url("./resources/p2.png");
+    background-repeat: no-repeat;
+    right: 0;
+    background-size: 910px 600px;
+}
+.hero .description {
+    width: 50%;
+    margin: auto auto auto 4.5em;
+}
+.hero .description h1 {
+    margin: 0;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.hero .description p {
+    color: white;
+    font-family: "Heebo", sans-serif;
+    font-size: 16px;
+    line-height: 2.5em;
+}
+.hero .description .btn-price-container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    color: white;
+    font-family: "Heebo", sans-serif;
+    margin-top: 2em;
+}
+.hero .description .btn-price-container .buy-btn {
+    font-family: inherit;
+    font-size: 13.7px;
+    font-weight: bold;
+    width: 130px;
+    height: 45px;
+    padding: 1em 1em 1em 1.5em;
+    color: white;
+    background-color: orangered;
+    border: none;
+    border-radius: 0.3em;
+}
+.hero .description .btn-price-container .buy-btn .fas {
+    margin-left: 1em;
+    font-size: 16px;
+    color: white;
+}
+.hero .description .btn-price-container .buy-btn:hover {
+    cursor: pointer;
+    background-color: #e83600;
+}
+.hero .description .btn-price-container .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 45px;
+    padding: 0 1.5em;
+    font-size: 13.7px;
+    font-weight: bold;
+    border-radius: 0.3em;
+    background: rgba(239, 239, 239, 0.15);
+}
+
+.recommended {
+    height: 100vh;
+    background-color: white;
+    position: relative;
+}
+.recommended .rec-description {
+    height: 40%;
+    background-color: #F8F8F8;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding-top: 3em;
+    text-transform: uppercase;
+}
+.recommended .rec-description p {
+    margin: 0;
+}
+.recommended .rec-description h3 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+.recommended .products {
+    display: flex;
+    gap: 2em;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    top: 23%;
+    left: 5%;
+}
+.recommended .products .p {
+    border: 1px none;
+    border-radius: 0.5em;
+}
+.recommended .products .p img {
+    width: 270px;
+    height: 270px;
+    border-radius: 0.5em;
+}
+.recommended .products .p h4 {
+    font-weight: 600;
+}
+.recommended .products .p span {
+    color: #e83600;
+    background-color: rgba(255, 79, 4, 0.086);
+    border-radius: 2em;
+    padding: 0.7em 1em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+.recommended button {
+    background-color: white;
+    color: #302F2F;
+    border: 1px solid #a6a3a3;
+    border-radius: 0.3em;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 1.2em 2.5em;
+    position: absolute;
+    left: 41%;
+    bottom: 5%;
+}
+.recommended button:hover {
+    cursor: pointer;
+}
+
+.offer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4em;
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("./resources/yellowShoes.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.offer p {
+    margin: 0;
+    color: white;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 33.5px;
+    line-height: 1.5em;
+}
+.offer button {
+    color: white;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 0.3em;
+    padding: 1.2em 4em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+.offer button:hover {
+    cursor: pointer;
+}
+
+.collection {
+    text-align: center;
+    padding: 3em 5em 2em;
+}
+.collection .collection-desc {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+.collection .collection-desc p {
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.collection .collection-desc h3 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.collection .products {
+    display: grid;
+    direction: rtl;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2.5em 2em;
+    padding-top: 2em;
+}
+.collection .products .p.item1 {
+    padding: 1.5em 2em 0 2em;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    grid-row: 1/span 2;
+}
+.collection .products .p.item1 img {
+    width: 531px;
+    height: 540px;
+}
+.collection .products .p.item1 .discount-price-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.collection .products .p.item1 .discount-price-container .discount {
+    color: white;
+    background-color: black;
+    border-radius: 2em;
+    padding: 0.5em 1.2em;
+    font-weight: 600;
+    font-size: 14px;
+}
+.collection .products .p.item1 .discount-price-container .price {
+    color: #e83600;
+    background-color: white;
+    border-radius: 2em;
+    padding: 0.5em 1.2em;
+    font-weight: normal;
+    font-size: 14px;
+}
+.collection .products .p.item1 h4 {
+    margin: 0 0 0.3em;
+    font-weight: 600;
+    font-size: 25px;
+}
+.collection .products .p.item1 span {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #7A7A7A;
+}
+.collection .products .p {
+    background-color: #F5F5F5;
+    border: 1px none;
+    border-radius: 0.5em;
+    padding: 0 1em 0.5em;
+}
+.collection .products .p img {
+    border-radius: 0.3em;
+    width: 214px;
+    height: 250px;
+}
+.collection .products .p .p-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 1.5em;
+    font-family: "Poppins", sans-serif;
+}
+.collection .products .p .p-info h4 {
+    font-weight: 600;
+}
+.collection .products .p .p-info span {
+    color: #e83600;
+    background-color: white;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+.collection button {
+    background-color: white;
+    color: #302F2F;
+    border: 1px solid #a6a3a3;
+    border-radius: 0.3em;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 1.2em 2.5em;
+    margin: 4em 4em 0 0;
+}
+.collection button:hover {
+    cursor: pointer;
+}
+
+.trending {
+    text-align: center;
+    padding: 3em 4em 0;
+    margin-bottom: 10em;
+}
+.trending .trending-desc {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+.trending .trending-desc p {
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px;
+}
+.trending .trending-desc h3 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+.trending .products {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1.5em 1em;
+    padding-top: 2em;
+}
+.trending .products .p {
+    border: 1px none;
+    border-radius: 0.5em;
+    padding: 0 1em 0.3em;
+}
+.trending .products .p img {
+    border-radius: 0.3em;
+    width: 250px;
+    height: 290px;
+}
+.trending .products .p .p-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+    font-family: "Poppins", sans-serif;
+}
+.trending .products .p .p-info h4 {
+    font-weight: 600;
+}
+.trending .products .p .p-info span {
+    color: #e83600;
+    background-color: rgba(255, 79, 4, 0.086);
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.footer {
+    padding: 3em 5em;
+}
+.footer .container {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-#header-div-top i.far{
-    margin-left: 25px;
+.footer .container .about {
+    margin-right: 2em;
 }
-
-#menu{
-    display: none;
-    font-size: 32px;
+.footer .container .about .logo {
+    width: 85px;
+    height: 20px;
 }
-
-@media screen and (max-width:900px)
-{
-    #search{
-        display: none;
-        
-    }
-    #icons{
-        display: none;
-    }
-    #menu{
-        display: inline;
-    }
+.footer .container .about p {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    color: #302F2F;
+    line-height: 2em;
+    margin-top: 2em;
+}
+.footer .container .links {
+    display: flex;
+}
+.footer .container .links .unordered-list ul {
+    list-style-type: none;
+}
+.footer .container .links .unordered-list ul li {
+    margin: 2em 0;
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+.footer .container .links .unordered-list ul li a {
+    text-decoration: none;
+    color: #302F2F;
+}
+.footer .container .links .unordered-list ul li.title {
+    font-family: Poppins, sans-serif;
+}
+.footer .container .links .unordered-list ul .phone-num, .footer .container .links .unordered-list ul .inform {
+    line-height: 2.3em;
+    color: #302F2F;
 }
