@@ -102,9 +102,7 @@ a:hover{
     /*padding-top: 50px;*/
 
 }
-body{
-    background-color: bisque;
-}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -157,5 +155,6 @@ body{
 }
 p {
     text-align: center;
-    color: red;
+    color: black;
+    font-size:20px
 }
