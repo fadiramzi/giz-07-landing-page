@@ -1,5 +1,5 @@
 body {
-  background-color: bisque;
+  background-color: white;
 }
 
 * {
@@ -14,23 +14,24 @@ body {
 
 /* Section Header */
 .header-container {
-  background-color: rgb(156, 212, 194);
   width: 100vw;
   height: 173px;
   position: sticky;
 }
 .upper-header {
-  background-color: blue;
   height: 110px;
+  width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 #icons {
+  height: 110px;
+  width: 25vw;
   display: flex;
-  text-align: center;
-  font-size: 24px;
-  gap: 24px;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
 }
 #search {
   width: 557px;
@@ -45,15 +46,17 @@ input::placeholder {
   color: #686868;
   border: none;
 }
+#header-img{
+  height: 110px;
+  width: 25vw;
+}
 .lower-header {
-  background-color: chocolate;
   width: 100vw;
   height: 63px;
   display: flex;
 }
 
 .tabs {
-  background-color: rgb(255, 255, 255);
   width: 70vw;
   height: 63px;
 }
@@ -83,7 +86,6 @@ a:hover {
 }
 
 .dropdown {
-  background-color: gray;
   width: 30vw;
   height: 63px;
   display: inline-block;
@@ -114,7 +116,7 @@ a:hover {
 
 /* Section 1: Get the new iPhone Pro */
 .sec1-container {
-  background-color: black;
+
   width: 100vw;
   height: 595px;
   background-image: url(./assets/images/sec2.png);
@@ -170,7 +172,7 @@ a:hover {
 
 /* Section 2: Watches */
 .sec2-container {
-  background-color: white;
+
   width: 100vw;
   height: 676px;
   padding: 15px;
@@ -200,7 +202,6 @@ a:hover {
 .card-img {
   height: 270px;
   width: 270px;
-  background-color: peru;
   border-radius: 10px;
 }
 
@@ -232,25 +233,24 @@ img {
 .section2-btn span {
   color: black;
 }
-.sec2-text{
+.sec2-text {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.upper-text{
+.upper-text {
   text-transform: uppercase;
 }
-.lower-text{
+.lower-text {
   font-size: 24px;
   text-transform: uppercase;
-  letter-spacing: 1px
+  letter-spacing: 1px;
 }
 
 /* End Section 2 */
 
 /* Section Ads. */
 .ads-container {
-  background-color: tomato;
   width: 100vw;
   height: 251px;
   background-image: url(./assets/images/Rectangle1.png);
@@ -266,12 +266,12 @@ img {
   align-items: center;
   padding: 50px;
 }
-.text{
+.text {
   padding-left: 30px;
   color: white;
   font-size: 32px;
 }
-.shoping-button{
+.shoping-button {
   height: 56px;
   width: 224px;
   display: flex;
@@ -284,58 +284,214 @@ img {
   border-style: solid;
   border-radius: 10px;
 }
-.shoping-button a{
+.shoping-button a {
   color: white;
 }
 /* End Section Ads. */
 
 /* Section 3: Shoes */
 .sec3-container {
-  background-color: olive;
-  width: 100vw;
   height: 1047px;
+  width: 100vw;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.sec3-grid {
+  height: 740px;
+  width: 90vw;
+  display: flex;
+}
+.left-grid {
+  height: 740px;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+}
+.upper-grid {
+  height: 370px;
+  width: 45vw;
+  display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.sec3-grid{
-  background-color: #302f2f;
-  height: 700px;
-  width: 90vw;
+.right-grid {
+  height: 740px;
+  width: 45vw;
+}
+
+/*Section3: small card */
+.sec3-card {
+  height: 313px;
+  width: 255px;
+  border-radius: 10px;
   display: flex;
-  
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-.left-grid{
-  background-color: aqua;
-  height: 700px;
-  width: 45vw;
+.sec3-card-img {
+  width: 214px;
+  height: 214px;
 }
-.upper-grid{
-  background-color: #ff4f04;
+.sec3-card-img img{
+  border-radius: 20px;
 }
-.lower-grid{
-  background-color: darkolivegreen;
+.sec3-card-details {
+  padding: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
 }
-.right-grid{
-  background-color: darkviolet;
-  height: 700px;
-  width: 45vw;
+.sec3-card-name {
+  font-weight: 1000;
+}
+.sec3-card-price {
+  background-color: white;
+  width: 63px;
+  height: 34px;
+  line-height: 34px;
+  font-weight: 1000;
+  color: #ff4f04;
+  text-align: center;
+  border-radius: 30px;
+}
+/*Section3: big card */
+.right-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec3-big-card {
+  padding: 20px;
+  height: 680px;
+  width: 41vw;
+  background-color: #F5F5F6;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.sec3-big-card-upper {
+  width: 540px;
+  display: flex;
+  justify-content: space-around;
+  gap: 300px;
+  align-items: center;
+}
+.sec3-big-card-upper-sale {
+  height: 34px;
+  width: 98px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 34px;
+  font-size: 14px;
+  font-weight: 1000;
+}
+.sec3-big-card-img {
+  height: 531px;
+  width: 520px;
+}
+.sec3-big-card-lower {
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.sec3-big-card-title {
+  font-weight: 1000;
+  font-size: 22px;
+}
+.sec3-card-brand {
+  font-weight: 300;
+  color: #7a7a7a;
+  font-size: 18px;
 }
 /* End Section 3 */
 
 /* Section 4: Trending */
 .sec4-container {
-  background-color: darkslategrey;
   width: 100vw;
   height: 1157px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.sec4-grid {
+  width: 90vw;
+  height: 350px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sec4-card {
+  height: 313px;
+  width: 255px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 /* End Section 4 */
 
 /* Section Footer */
 .footer-container {
-  background-color: rosybrown;
+  padding: 20px;
   width: 100vw;
   height: 353px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-details{
+  height: 353px;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding-left: 50px;
+}
+.footer-details img{
+height: 59px;
+width: 88px;
+}
+.footer-details p{
+  height: 78px;
+  width: 255px;
+}
+.footer-links{
+  height: 353px;
+  width: 65vw;
+  display: flex;
+  justify-content: space-around;
+  align-items:baseline;
+  padding: 50px;
+  
+}
+.links{
+display: flex;
+flex-direction: column;
+}
+.links a{
+  font-size: 12px;
+  font-weight: normal;
+  text-align: left; 
+  padding: 0;
+}
+.links h5{
+  text-align: left;
+  padding-bottom: 30px;
+
+}
+.links a{
+  padding: 0;
 }
 /* End Section Footer */
