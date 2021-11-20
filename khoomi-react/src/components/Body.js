@@ -8,7 +8,7 @@ import Bodypart5 from './Bodypart5'
 
 const Body = () => {
     return (
-        <div>
+        <div className={'mainBody'}>
            <BodyPart1 /> 
            <BodyPart2 />
            <BodyPart3 />
