@@ -1,10 +1,11 @@
 body{
-    background-color: bisque;
-}
-*{
+
+    /*background-color: bisque;*/
     margin: 0px;
     padding: 0px;
+    
 }
+
 #header{
     min-height: 173px;
     background-color: white;
@@ -101,14 +102,15 @@ body{
     z-index: 1;
   }
 
-  .banner-image{
+  .banner-bg{
 
-    background-image:  url("assets/images/banner.jpg");
-    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/banner.jpg");
+    min-height: 380px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: flex;
+    background-size: cover;
     position: relative;
+    
   }
 
 /****************** my code   ****************/
