@@ -1,13 +1,15 @@
 import './App.css';
+import  {  BreakpointProvider } from 'react-socks';
 import Body from './components/Body';
 import Header from './components/Header';
 
 function App() {
   return (
-    <div style={{width : "1370px"}}>
-      <Header />
-      <Body />
-    </div>
+     <BreakpointProvider>
+    <Header />
+    <Body />
+  </BreakpointProvider>
+
   );
 }
 
