@@ -6,31 +6,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./index.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 </head>
 <body>
-    <header id="header">
-        <div id="header-container">
-            <!-- Top Div (search) -->
-            <div>
-                <div id="header-div-top">
-                    <img width="90px" src="./assets/images/1.jpg" />
-                    <input id="search" type="text" class="my-inputs"/>
-                    <!-- 3rd comp that contains icons -->
-                    <div id="icons">
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-user"></i>
-                        <i class="far fa-shopping-cart"></i>
-                    </div>
-                    <i id="menu" class="fas fa-bars"></i>
-                </div>
-            </div>
-            <!-- Bottom Div (menu items) -->
-            <div>
-
-            </div>
+    <header class="header">
+        <nav class="nav_container">
+        <!-- Top Div -->
+        <div class="top_div">
+            <img class="logo" src="/assets/images/logo.svg">
+            <input type="text" class="search" placeholder="Search For Products, Brands & Categories">
+                <ul class="icons">
+                    <li><a href="#" class="nav-links"><img src="/assets/images/674aaa8a5939fb3fb007e77121fb1581.svg" alt=""></a></li>
+                    <li><a href="#" class="nav-links"><img src="/assets/images/6f0a18fad030e38fc7194c6a4c334793.svg" alt=""></a></li>
+                    <li><a href="#" class="nav-links"><img src="/assets/images/bdcb0c3f6d67999723518ef3c2ad5494.svg" alt=""></a></li>
+                </ul>
+            <ul class="menu">
+                <li><a href="#" class="nav-links">img</a></li>
+                <li><a href="#" class="nav-links">Favourite</a></li>
+                <li><a href="#" class="nav-links">Cart</a></li>
+            </ul>
         </div>
-    </header>
+        <!-- Bottom div -->
+        <ul class="categories">
+            <select name="All categories" class="select_categories">
+                <option value="" selected>All Categories</option>
+                <!-- Electromics Group-->
+                <optgroup label="Electronics">
+                    <option value="">Computers & Accessories</option>
+                    <option value="">Phone & Tablet</option>
+                    <option value="">Gaming</option>
+                </optgroup>
+                <!-- Fashion Group-->
+                <optgroup label="Fashion">
+                    <option value="men">Men</option>
+                    <option value="">Women</option>
+                    <option value="">Kids</option>
+                </optgroup>
+                <!-- Home Group-->
+                <optgroup label="Home & Kitchen">
+                    <option value="">Kitchen & Dining</option>
+                    <option value="">Home Decor</option>
+                    <option value="">Home Appliances</option>
+                </optgroup>
+            </select>
+            <li class="menu_item"><a href="#">Home</a></li>
+            <li class="menu_item"><a href="#">New Arrivals</a></li>
+            <li class="menu_item"><a href="#">Trending</a></li>
+            <li class="menu_item"><a href="#">Deals For You</a></li>
+            <li class="menu_item"><a href="#">Discounts</a></li>
+            <li class="menu_item"><a href="#">Weekly Offers</a></li>
+            <li class="menu_item"><a href="#">Become A Vendor</a></li>
+        </ul>
+    </nav>
+</header>
+<section>
+    <div class="offer_container">
+    <div class="offer">
+        <div class="content">
+        <h1>GET THE NEW IPHONE 12 <br> PRO </h1>
+        <p>A transformative triple‑camera system that adds tons of capability without complexity</p>
+        <button class="buy_now">Buy Now</button>
+        <button class="trade_in">With 599$ With Trade-in</button>
+    </div>
+        <img class="iphones" src="/assets/images/Mask Group 1.png" alt="">
+    </div>
+    </div>
+</div>
+<div class="recommended">
+    <div class="text">
+    <h2>Explore Awesome Products</h2>
+    <h1>Recommended For You</h1></div>
+    <div class="cards">
+    <div class="watch_card">
+        <img src="/assets/images/1.png" alt="">
+        <h3>Single Tour</h3>
+        <span class="price"><a href="">990$</a></span></div>
+    <div class="watch_card">
+        <img src="/assets/images/2.png" alt="">
+        <h3>Single Tour</h3>
+        <span class="price"><a href="">990$</a></span></div>
+    <div class="watch_card">
+        <img src="/assets/images/3.png" alt="">
+        <h3>Single Tour</h3>
+        <span class="price"><a href="">990$</a></span></div>
+    <div class="watch_card">
+        <img src="/assets/images/4.png" alt="">
+        <h3>Single Tour</h3>
+        <span class="price"><a href="">990$</a></span></div>
+    </div>
+    <button class="explore">Explore Other Products</button>
+</div>
+</div>
+<div class="ad">
+    <h1>Sneakers Never Run Out Style <br> Get 50% Sitewide</h1>
+    <button>Start Shopping</button>
+</div>
+<div class="nike">
+    <div class="big_card">
+        <img src="/assets/images/Image1.png" alt="">
+        <span>99$</span>
+        <h1>Nike Air Force 1 Shadow</h1>
+        <p>Brand Nike</p>
+    </div>
+    <div class="mini_cards">
+        <div>
+        <img src="/assets/images/Image2.png" alt="">
+        <span>99$</span>
+        <h1>Nike Air force</h1>
+        </div>
+        <div>
+        <img src="/assets/images/Image3.png" alt="">
+        <span>99$</span>
+        <h1>NikeCourt Air</h1>
+        </div>
+        <div>
+        <img src="/assets/images/Image4.png" alt="">
+        <span>99$</span>
+        <h1>Nike SB Zoom</h1>
+        </div>
+        <div>
+        <img src="/assets/images/Image5.png" alt="">
+        <span>99$</span>
+        <h1>Nike Signal</h1>
+        </div>
+    </div>
+    <button>Explore Other Products</button>
+</div>
+<div class="ad">
+    <h1>Sneakers Never Run Out Style <br> Get 50% Sitewide</h1>
+    <button>Start Shopping</button>
+</div>
+</section>
 </body>
 </html>
