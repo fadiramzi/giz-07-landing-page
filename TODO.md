@@ -1,0 +1,5 @@
+- integrate a lightweight UI framework that makes use of unused html tags
+- passing sass/scss variables with a global _variables.sass file
+- hot module replacement (HMR) [learn more]( https://www.snowpack.dev/concepts/hot-module-replacement )
+- remove file.ts in the future
+- document the sveltePreprocess pipeline
