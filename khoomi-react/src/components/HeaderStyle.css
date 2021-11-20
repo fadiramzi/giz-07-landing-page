@@ -39,13 +39,29 @@
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 20px;
+	align-items: baseline;
 }
 .menu {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
 }
-.menu h3 {
-	padding-left: 40px;
+.menu p {
+	margin-left: 30px;
+	font-size: larger;
+}
+.menu p:hover,
+p:focus {
+	color: red;
+	cursor: pointer;
+	border-bottom: medium solid red;
+	font-weight: bold;
+}
+.category {
+	position: relative;
+	font-family: Arial;
+	width: 198px;
+	height: 44px;
+	background-color: rgb(252, 246, 246);
+}
+.category:hover {
+	cursor: pointer;
 }

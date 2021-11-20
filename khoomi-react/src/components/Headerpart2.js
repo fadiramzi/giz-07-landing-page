@@ -4,16 +4,22 @@ const Headerpart2 = () => {
     return (
         <div className={'headerFooter'}>
             <div className={'dropboxheader'}>
-                Dropbox
+                <select className={'category'}>
+                 <option value="">All Categories</option>
+                 <option value="Shoes">Shoes</option>
+                 <option value="watches">watches</option>
+                 <option value="Balls">Balls</option>
+                 <option value="Phones">Phones</option>
+                </select>
             </div>
             <div className={'menu'}>
-                <h3>Home</h3>
-                <h3>New Arrivals</h3>
-                <h3>Trending</h3>
-                <h3>Deals For You</h3>
-                <h3>Discounts</h3>
-                <h3>Weekly Offers</h3>
-                <h3>Become A Vendor</h3>
+                <p>Home</p>
+                <p>New Arrivals</p>
+                <p>Trending</p>
+                <p>Deals For You</p>
+                <p>Discounts</p>
+                <p>Weekly Offers</p>
+                <p>Become A Vendor</p>
             </div>
 
             
