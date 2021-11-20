@@ -1,55 +1,341 @@
-body{
-    background-color: bisque;
-}
-*{
-    margin: 0px;
-    padding: 0px;
-}
-#header{
-    min-height: 173px;
-    background-color: white;
-    padding-top: 30px;
-    box-sizing: border-box;
-    padding-right:50px;
-    padding-left:50px;
+body {
+  background-color: bisque;
 }
 
-#header-container{
-    /* background-color: blueviolet; */
-    min-height: 150px;
-    box-sizing: border-box;
-}
-.my-inputs{
-    width: 500px;
-    height: 40px;;
-}
-
-#header-div-top{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto";
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-style: none;
 }
 
-#header-div-top i.far{
-    margin-left: 25px;
+/* Section Header */
+.header-container {
+  background-color: rgb(156, 212, 194);
+  width: 100vw;
+  height: 173px;
+  position: sticky;
+}
+.upper-header {
+  background-color: blue;
+  height: 110px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#icons {
+  display: flex;
+  text-align: center;
+  font-size: 24px;
+  gap: 24px;
+}
+#search {
+  width: 557px;
+  height: 48px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #dfdfdf;
+  background-color: white;
+}
+input::placeholder {
+  padding-left: 20px;
+  color: #686868;
+  border: none;
+}
+.lower-header {
+  background-color: chocolate;
+  width: 100vw;
+  height: 63px;
+  display: flex;
 }
 
-#menu{
-    display: none;
-    font-size: 32px;
+.tabs {
+  background-color: rgb(255, 255, 255);
+  width: 70vw;
+  height: 63px;
+}
+.tabs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+a {
+  color: #302f2f;
+  text-decoration: none;
+  padding: 22px 10px 22px 10px;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+}
+a:hover {
+  color: #ff4f04;
+}
+.tabs a:hover {
+  border-bottom: 3px solid #ff4f04;
+}
+.tabs a.active {
+  border-bottom: 3px solid #ff4f04;
 }
 
-@media screen and (max-width:900px)
-{
-    #search{
-        display: none;
-        
-    }
-    #icons{
-        display: none;
-    }
-    #menu{
-        display: inline;
-    }
+.dropdown {
+  background-color: gray;
+  width: 30vw;
+  height: 63px;
+  display: inline-block;
+  text-align: center;
 }
+.dropbtn {
+  width: 30vw;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropbtn a {
+  height: 63px;
+  background-color: #f8f8f8;
+  padding: 16px;
+  border-width: 1px;
+  border-color: #efefef;
+  border-radius: 5px;
+  border-style: solid;
+  font-size: 14px;
+  width: 197.4px;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+/* End Section Header */
+
+/* Section 1: Get the new iPhone Pro */
+.sec1-container {
+  background-color: black;
+  width: 100vw;
+  height: 595px;
+  background-image: url(./assets/images/sec2.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.section1 {
+  width: 50%;
+  padding: 5%;
+  padding-top: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.section1 a {
+  font-size: 16px;
+  color: white;
+}
+
+.buttons-group {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  /* font-style: none; */
+}
+
+#buy-now-btn {
+  padding: 2% 3% 2% 3%;
+  background-color: #ff4f04;
+  color: white;
+  border-radius: 5px;
+  width: 137px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+#trade-in-btn {
+  padding: 2% 3% 2% 3%;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  border-radius: 5px;
+  width: 224px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+/* End Section 1 */
+
+/* Section 2: Watches */
+.sec2-container {
+  background-color: white;
+  width: 100vw;
+  height: 676px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* .grey-background{
+  height: 282px;
+  width: 100vw;
+  background-color: #F8F8F8;
+} */
+.card-grid {
+  padding: 2%;
+  display: flex;
+  align-content: center;
+  gap: 1%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.card-img {
+  height: 270px;
+  width: 270px;
+  background-color: peru;
+  border-radius: 10px;
+}
+
+img {
+  width: 100%; /* or any custom size */
+  height: 100%;
+  object-fit: contain;
+}
+.card-price {
+  padding: 5px 10px 5px 10px;
+  border-radius: 40%;
+  color: rgb(255, 79, 4);
+  border: none;
+  background-color: rgb(255, 79, 4, 0.09);
+}
+.section2-btn {
+  height: 56px;
+  width: 224px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5% 1% 0.5% 1%;
+  color: black;
+  border-width: 1px;
+  border-color: #707070;
+  border-style: solid;
+  border-radius: 10px;
+}
+.section2-btn span {
+  color: black;
+}
+.sec2-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.upper-text{
+  text-transform: uppercase;
+}
+.lower-text{
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px
+}
+
+/* End Section 2 */
+
+/* Section Ads. */
+.ads-container {
+  background-color: tomato;
+  width: 100vw;
+  height: 251px;
+  background-image: url(./assets/images/Rectangle1.png);
+  background-position: center;
+  background-size: cover;
+}
+.overlay {
+  height: 250px;
+  width: 100vw;
+  background: rgb(0, 0, 0, 0.57);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+.text{
+  padding-left: 30px;
+  color: white;
+  font-size: 32px;
+}
+.shoping-button{
+  height: 56px;
+  width: 224px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5% 1% 0.5% 1%;
+  color: black;
+  border-width: 1px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 10px;
+}
+.shoping-button a{
+  color: white;
+}
+/* End Section Ads. */
+
+/* Section 3: Shoes */
+.sec3-container {
+  background-color: olive;
+  width: 100vw;
+  height: 1047px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.sec3-grid{
+  background-color: #302f2f;
+  height: 700px;
+  width: 90vw;
+  display: flex;
+  
+}
+.left-grid{
+  background-color: aqua;
+  height: 700px;
+  width: 45vw;
+}
+.upper-grid{
+  background-color: #ff4f04;
+}
+.lower-grid{
+  background-color: darkolivegreen;
+}
+.right-grid{
+  background-color: darkviolet;
+  height: 700px;
+  width: 45vw;
+}
+/* End Section 3 */
+
+/* Section 4: Trending */
+.sec4-container {
+  background-color: darkslategrey;
+  width: 100vw;
+  height: 1157px;
+}
+/* End Section 4 */
+
+/* Section Footer */
+.footer-container {
+  background-color: rosybrown;
+  width: 100vw;
+  height: 353px;
+}
+/* End Section Footer */

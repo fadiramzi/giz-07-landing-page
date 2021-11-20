@@ -1,36 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="./index.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="./index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
 </head>
+
 <body>
+    <!-- Section Header -->
     <header id="header">
-        <div id="header-container">
+        <div class="header-container">
             <!-- Top Div (search) -->
-            <div>
-                <div id="header-div-top">
-                    <img width="90px" src="./assets/images/1.jpg" />
-                    <input id="search" type="text" class="my-inputs"/>
-                    <!-- 3rd comp that contains icons -->
-                    <div id="icons">
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-user"></i>
-                        <i class="far fa-shopping-cart"></i>
-                    </div>
-                    <i id="menu" class="fas fa-bars"></i>
+            <div class="upper-header">
+                <img src="./assets/images/logo.svg" />
+                <input id="search" type="text" class="my-inputs"
+                    placeholder="Search For Products, Brands & Categories " />
+                <!-- 3rd comp that contains icons -->
+                <div id="icons">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-user"></i>
+                    <i class="far fa-shopping-cart"></i>
                 </div>
+                <!-- <i id="menu" class="fas fa-bars"></i> -->
             </div>
             <!-- Bottom Div (menu items) -->
-            <div>
-
+            <div class="lower-header">
+                <div class="dropdown">
+                    <div class="dropbtn">
+                        <a href="#">
+                            <i class="fas fa-bars"></i>
+                            <span>All Categories</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="tabs">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">New Arrivals Us</a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">Deals For You</a></li>
+                        <li><a href="#">Discounts</a></li>
+                        <li><a href="#">Weekly Offers</a></li>
+                        <li><a href="#">Become A Vendor</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
+    <!-- End Section Header -->
+
+
+
+    <!-- Section 1: Get the new iPhone Pro -->
+    <div class="sec1-container">
+        <div class="section1">
+            <h1>GET THE NEW IPHONE 12<br> <span>PRO</span></h1>
+            <p>A transformative triple‑camera system that adds tons of capability without complexity
+            </p>
+            <div class="buttons-group">
+                <div id="buy-now-btn">
+                    <a href="#">
+                        <span>Buy Now </span>
+                        <i class="fas fa-shopping-bag"></i>
+                    </a>
+                </div>
+                <div id="trade-in-btn">
+                    <a href="#">
+                        <span>With $599 with trade-in</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Section 1 -->
+
+
+
+    <!-- Section 2: Watches -->
+    <div class="sec2-container">
+        <div class="sec2-text">
+            <div class="upper-text">
+                <p>Explore Awesome Products</p>
+            </div>
+            <div class="lower-text">
+                <h3>Recommended For You</h3>
+            </div>
+        </div>
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-img">
+                    <img src="./assets/images/2.png" alt="" />
+                </div>
+                <span class="card-name">Single Tour</span>
+                <span class="card-price">$990</span>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="./assets/images/3.png" alt="" />
+                </div>
+                <span class="card-name">Single Tour</span>
+                <span class="card-price">$990</span>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="./assets/images/2.png" alt="" />
+                </div>
+                <span class="card-name">Single Tour</span>
+                <span class="card-price">$990</span>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="./assets/images/3.png" alt="" />
+                </div>
+                <span class="card-name">Single Tour</span>
+                <span class="card-price">$990</span>
+            </div>
+        </div>
+        <div class="section2-btn">
+            <a href="#">
+                <span>Explore Other Products</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- End Section 2 -->
+
+
+
+    <!-- Section Ads. -->
+    <div class="ads-container">
+        <div class="overlay">
+            <div class="text">
+                <p>Sneakers Never Run Out Of Style</p>
+                <p>Get 50% Off Sitewide</p>
+            </div>
+            <div class="shoping-button">
+                <a href="#">
+                    <span>Start Shopping</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Section Ads. -->
+
+
+
+    <!-- Section 3: Shoes -->
+    <div class="sec3-container">
+
+        <div class="sec2-text">
+            <div class="upper-text">
+                <p>Straight From Nike</p>
+            </div>
+            <div class="lower-text">
+                <h3>New Collection</h3>
+            </div>
+        </div>
+
+
+        <dic class="sec3-grid">
+            <div class="left-grid">
+                <div class="upper-grid">
+
+                </div>
+                <div class="lower-grid">
+
+                </div>
+            </div>
+            <div class="right-grid">
+
+            </div>
+        </dic>
+
+
+        <div class="section2-btn">
+            <a href="#">
+                <span>Explore Other Products</span>
+            </a>
+        </div>
+    </div>
+    <!-- End Section 3 -->
+
+
+
+    <!-- Section Ads. -->
+    <div class="ads-container">
+        <div class="ads-container">
+            <div class="overlay">
+                <div class="text">
+                    <p>Sneakers Never Run Out Of Style</p>
+                    <p>Get 50% Off Sitewide</p>
+                </div>
+                <div class="shoping-button">
+                    <a href="#">
+                        <span>Start Shopping</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End Section Ads. -->
+
+
+
+        <!-- Section 4: Trending -->
+        <div class="sec4-container">
+
+        </div>
+        <!-- End Section 4 -->
+
+
+
+        <!-- Section Ads. -->
+        <div class="ads-container">
+            <div class="overlay">
+                <div class="text">
+                    <p>Sneakers Never Run Out Of Style</p>
+                    <p>Get 50% Off Sitewide</p>
+                </div>
+                <div class="shoping-button">
+                    <a href="#">
+                        <span>Start Shopping</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End Section Ads. -->
+
+
+
+        <!-- Section Footer -->
+        <div class="footer-container">
+
+        </div>
+        <!-- End Section Footer -->
 </body>
+
 </html>
