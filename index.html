@@ -1,36 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="./index.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="./index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
 </head>
+
 <body>
     <header id="header">
         <div id="header-container">
             <!-- Top Div (search) -->
-            <div>
-                <div id="header-div-top">
-                    <img width="90px" src="./assets/images/1.jpg" />
-                    <input id="search" type="text" class="my-inputs"/>
-                    <!-- 3rd comp that contains icons -->
-                    <div id="icons">
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-user"></i>
-                        <i class="far fa-shopping-cart"></i>
+            <div class="fixd-po">
+                <div>
+                    <div id="header-div-top">
+                        <img width="90px" src="./assets/images/WhatsApp Image 2021-03-10 at 11.31.14.png" />
+                        <div id="input_container">
+                            <input id="search" type="text" class="my-inputs"
+                                placeholder="Search for Products, Brands & Categories" />
+                            <img src="./assets/images/Search.png" id="input_img">
+                        </div>
+                        <!-- 3rd comp that contains icons -->
+                        <div id="icons">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-user"></i>
+                            <i class="far fa-shopping-cart"></i>
+                        </div>
+                        <i id="menu" class="fas fa-bars"></i>
                     </div>
-                    <i id="menu" class="fas fa-bars"></i>
+                </div>
+                <div class="navbar">
+    
+                    <select name="cars" id="cars">
+                        <option value="All Categories">All Categories</option>
+                        <option value="saab">none</option>
+                        <option value="opel">none</option>
+                        <option value="audi">none</option>
+                    </select>
+    
+                    <a class="active" href="#">Home</a>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Trending</a>
+                    <a href="#">Deals For You</a>
+                    <a href="#">Discounts</a>
+                    <a href="#">Weekly Offers</a>
+                    <a href="#">Become A Vendor</a>
                 </div>
             </div>
-            <!-- Bottom Div (menu items) -->
             <div>
-
+                <div class="bg-img">
+                    <div class="content">
+                        <p class="text1">GET THE NEW IPHONE 12 PRO</p>
+                        <p class="text2">A transformative triple‑camera system that adds tons of capability without complexity</p>
+                        <div class="btn">
+                            <button class="btn1"> <p style="margin-right: 0.5rem;">Buy Now</p> <img src="./assets/images/Icon.png"> </button>
+                            <button class="btn2">With $599 with trade-in</button>
+                        </div>
+                    </div>
+                    <div class="content-img">
+                        <img class="conti" src="./assets/images/Mask Group 1.png">
+                    </div>
+                </div>
             </div>
         </div>
     </header>
+
+    <section>
+        <p>Explore Awesome Products</p>
+        <p>Recommended For You</p>
+        <div></div>
+    </section>
 </body>
+
 </html>
