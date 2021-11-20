@@ -1,36 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="./index.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
-</head>
-<body>
-    <header id="header">
-        <div id="header-container">
-            <!-- Top Div (search) -->
-            <div>
-                <div id="header-div-top">
-                    <img width="90px" src="./assets/images/1.jpg" />
-                    <input id="search" type="text" class="my-inputs"/>
-                    <!-- 3rd comp that contains icons -->
-                    <div id="icons">
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-user"></i>
-                        <i class="far fa-shopping-cart"></i>
-                    </div>
-                    <i id="menu" class="fas fa-bars"></i>
-                </div>
-            </div>
-            <!-- Bottom Div (menu items) -->
-            <div>
-
-            </div>
+    <link href="./index.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Poppins:wght@700&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <!-- Top div (Brand, search and icons)-->
+      <div class="header-div-top">
+        <div class="logo-section">
+          <img
+            id="logo"
+            src="./images/logo.svg"
+            alt="The logo of the company"
+          />
         </div>
+        <div class="search-section">
+          <input
+            type="text"
+            name="search"
+            id="search-bar"
+            placeholder="Search for Products, Brands & Categories"
+          />
+        </div>
+        <div class="right-nav-section">
+          <div class="burger">
+            <i id="menu" class="fas fa-bars"></i>
+          </div>
+          <div class="items">
+            <img src="./images/6f0a18fad030e38fc7194c6a4c334793.svg" alt="" />
+            <img src="./images/674aaa8a5939fb3fb007e77121fb1581.svg" alt="" />
+            <img src="./images/bdcb0c3f6d67999723518ef3c2ad5494.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- Bottom div()-->
+      <div class="header-div-bottom">
+        <div class="left-categories">
+          <button class="drop-btn">
+            <img src="./images/burger.png" alt="" id="burger-button-img" />
+            <span>All Categories</span>
+            <i class="fa fa-caret-down"></i>
+          </button>
+        </div>
+        <div class="right-menu">
+          <div class="menu-option"><a href="">Home</a></div>
+          <div class="menu-option"><a href="">New Arrivals</a></div>
+          <div class="menu-option"><a href="">Trending</a></div>
+          <div class="menu-option"><a href="">Deals For You</a></div>
+          <div class="menu-option"><a href="">Discounts</a></div>
+          <div class="menu-option"><a href="">Weekly Offers</a></div>
+          <div class="menu-option"><a href="">Become A Vendor</a></div>
+        </div>
+      </div>
     </header>
-</body>
+    <section class="highlight-content">
+      <div class="left-part">
+        <div class="iphone-headings">
+          <h1 class="big-heading">GET THE NEW IPHONE 12 PRO</h1>
+          <h2 class="small-heading">
+            A transformative triple‑camera system that adds tons of capability
+            without complexity
+          </h2>
+        </div>
+        <div class="iphone-btns">
+          <button class="buynow">
+            Buy Now <img src="./images/bag.png" alt="" />
+          </button>
+          <button class="trade-in">With $599 with trade-in</button>
+        </div>
+      </div>
+      <div class="right-part">
+        <img id="iphone-image" src="./images/Mask Group 1.png" alt="" />
+      </div>
+    </section>
+    <section class="recommended-section">
+      <div class="recommended-text">
+        <h2 class="rec-head-1">Explore Awesome Products</h2>
+        <h1 class="rec-head-2">Recommended For You</h1>
+      </div>
+      <div class="watches">
+        <div class="watch">
+          <img style="height: 67%" src="./images/1.png" alt="" />
+          <p class="name">Single Tour</p>
+          <p class="price">$990</p>
+        </div>
+        <div class="watch">
+          <img style="height: 67%" src="./images/2.png" alt="" />
+          <p class="name">Single Tour</p>
+          <p class="price">$990</p>
+        </div>
+        <div class="watch">
+          <img style="height: 67%" src="./images/3.png" alt="" />
+          <p class="name">Single Tour</p>
+          <p class="price">$990</p>
+        </div>
+        <div class="watch">
+          <img style="height: 67%" src="./images/4.png" alt="" />
+          <p class="name">Single Tour</p>
+          <p class="price">$990</p>
+        </div>
+      </div>
+      <div class="recommended-button">
+        <button class="other-products-button">Explore Other Products</button>
+      </div>
+    </section>
+  </body>
 </html>

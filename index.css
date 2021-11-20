@@ -1,55 +1,334 @@
-body{
-    background-color: bisque;
+body {
+  background-color: bisque;
 }
-*{
-    margin: 0px;
-    padding: 0px;
-}
-#header{
-    min-height: 173px;
-    background-color: white;
-    padding-top: 30px;
-    box-sizing: border-box;
-    padding-right:50px;
-    padding-left:50px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-#header-container{
-    /* background-color: blueviolet; */
-    min-height: 150px;
-    box-sizing: border-box;
+.header {
+  width: 100%;
+  height: 10.813rem;
+  background-color: antiquewhite;
 }
-.my-inputs{
-    width: 500px;
-    height: 40px;;
-}
-
-#header-div-top{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.header-div-top {
+  display: grid;
+  grid-template-columns: 24% 40% 36%;
+  height: 60%;
+  background-color: #fff;
 }
 
-#header-div-top i.far{
-    margin-left: 25px;
+.logo-section {
+  background-color: #fff;
 }
-
-#menu{
+#logo {
+  width: 88px;
+  height: 59px;
+  margin-left: 23%;
+  margin-top: 27px;
+}
+.search-section {
+  background-color: #fff;
+}
+#search-bar {
+  width: 100%;
+  height: 46%;
+  margin-top: 34px;
+  font-size: large;
+  border-radius: 5px;
+  padding-left: 27px;
+  background: url("./images/search.svg") no-repeat scroll 96% 7px;
+  padding-left: 3.4%;
+  box-sizing: border-box;
+}
+.right-nav-section {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.items {
+  display: flex;
+  align-items: center;
+}
+.items > img {
+  height: 21px;
+  margin: 0 11px 0;
+}
+@media screen and (max-width: 1000px) {
+  #search-bar {
+    font-size: 15px;
+    background: url("./images/search.svg") no-repeat scroll 99% 7px;
+  }
+}
+#menu {
+  display: none;
+}
+@media screen and (max-width: 840px) {
+  #search-bar {
     display: none;
-    font-size: 32px;
+  }
+  .items {
+    display: none;
+  }
+  #menu {
+    display: block;
+    font-size: 30px;
+  }
+  .burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50%;
+  }
+  .right-nav-section {
+    background-color: #fff;
+    grid-template-columns: 100%;
+  }
+}
+/* bottom of the navbar styles */
+.header-div-bottom {
+  height: 40%;
+  background-color: #fff;
+  display: flex;
+  border: #f8f8f8 solid 3px;
 }
 
-@media screen and (max-width:900px)
-{
-    #search{
-        display: none;
-        
-    }
-    #icons{
-        display: none;
-    }
-    #menu{
-        display: inline;
-    }
+.left-categories {
+  width: 23%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.drop-btn {
+  color: #302f2f;
+  font-size: 1rem;
+  background-color: #f8f8f8;
+  border: #f8f8f8;
+  width: 60%;
+  height: 73%;
+  margin-left: 24%;
+  margin-top: 8px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.right-menu {
+  width: 77%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+}
+.menu-option {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: #302f2f;
+  font-weight: 600;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14.2%;
+  padding: 5px;
+  background-color: #fff;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .header-div-bottom {
+    display: none;
+  }
+  .header {
+    height: 104px;
+  }
+  .header-div-top {
+    height: 100%;
+  }
+}
+.highlight-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-image: url(./images/Mask.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+}
+#iphone-image {
+  width: 100%;
+  height: 100%;
+}
+#left-part {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 67% 33%;
+}
+.iphone-headings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 67%;
+  box-sizing: border-box;
+  padding-left: 10%;
+  padding-top: 7rem;
+}
+
+.big-heading {
+  font-size: 57px;
+  color: #fff;
+  margin: 20px 0 20px;
+  font-family: "Poppins", sans-serif;
+}
+.small-heading {
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.92;
+  font-family: "Heebo", sans-serif;
+  margin: 10px 0 10px;
+}
+.iphone-btns {
+  display: flex;
+  padding-left: 20%;
+}
+.iphone-btns > button {
+  font-family: "Poppins", sans-serif;
+  padding: 7px;
+  border: 1px solid #4b44ab;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.92;
+  font-family: "Heebo", sans-serif;
+  margin: 10px 4px 10px;
+}
+.buynow {
+  height: 60px;
+  width: 150px;
+  margin: 4px;
+  background-color: #d53908;
+}
+.trade-in {
+  height: 60px;
+  width: 230px;
+  margin: 4px;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1450px) {
+  .iphone-btns {
+    display: flex;
+    padding-top: 10%;
+  }
+  .highlight-content {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 800px) {
+  .iphone-btns {
+    display: flex;
+    padding-top: 30%;
+  }
+  .highlight-content {
+    background-image: url(./images/Mask2.png);
+  }
+  #iphone-image {
+    width: 150%;
+    height: 100%;
+  }
+  .iphone-btns > button {
+    padding: 8px;
+    border: 1px solid #4b44ab;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+    opacity: 0.92;
+    font-family: "Heebo", sans-serif;
+    margin: 10px 4px 10px;
+  }
+  .highlight-content {
+    height: 120vh;
+  }
+}
+/* here ends the nav and highligh sections */
+
+.recommended-section {
+  width: 100%;
+}
+
+.recommended-text {
+  background-color: #f8f8f8;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+.rec-head-2 {
+  margin: 4px;
+  font-size: 35px;
+  color: #111;
+}
+.rec-head-1 {
+  margin: 4px 0 4px;
+  font-size: 21px;
+  color: #302f2f;
+}
+.watches {
+  background-color: #fff;
+  height: 41%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 4px;
+}
+.recommended-button {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.other-products-button {
+  margin-top: 3rem;
+  padding: 10px;
+  height: 50px;
+  background-color: #fff;
+  width: 210px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: #302f2f solid 1px;
+  border-radius: 5px;
+}
+.watch {
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 40px 0px;
+  border-radius: 5px;
+}
+.watch > * {
+  margin: 6px;
+  background-color: #f6f6f6;
+}
+.price {
+  border: #ff4f04 solid 1px;
+  background-color: #ffcdc2;
+  padding: 3px 6px 3px;
+  color: #ff4f04;
+  border-radius: 20%;
+  font-weight: 800;
 }
