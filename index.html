@@ -7,16 +7,16 @@
     <title>Document</title>
     <link href="./index.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-100">
     <header id="header">
         <div id="header-container">
             <!-- Top Div (search) -->
             <div>
                 <div id="header-div-top">
-                    <img width="90px" src="./assets/images/1.jpg" />
-                    <input id="search" type="text" class="my-inputs"/>
+                    <img width="90px" src="logo.svg" />
+                    <input id="search" type="text" class="my-inputs border border-gray-500"/>
                     <!-- 3rd comp that contains icons -->
                     <div id="icons">
                         <i class="far fa-heart"></i>
@@ -32,5 +32,131 @@
             </div>
         </div>
     </header>
+    <!-- navbar--> 
+    <div class="bg-white px-6 py-6">
+        
+        <div class="grid grid-cols-1 md:grid-cols-7 justify-items-center " >
+          <div class="mx-2">
+            <a href="#home" class="  px-4 py-1  bg-white hover:text-red-600 focus:text-red-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-50 hover:text-gray-800 focus:text-gray-800 hover:underline cursor-pointer ...">HOME </a>
+          </div>
+          <div class="mx-2">
+            <a href="#home" class="  px-4 py-1  bg-white hover:text-red-600 focus:text-red-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-50 hover:text-gray-800 focus:text-gray-800 hover:underline cursor-pointer ...">NEW Arrivals </a>
+          </div>
+          <div class="mx-2">
+            <a href="#home" class="  px-4 py-1  bg-white hover:text-red-600 focus:text-red-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-50 hover:text-gray-800 focus:text-gray-800 hover:underline cursor-pointer ...">Trending </a>
+          </div>
+          <div class="mx-2">
+            <a href="#home" class="  px-4 py-1  bg-white hover:text-red-600 focus:text-red-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-50 hover:text-gray-800 focus:text-gray-800 hover:underline cursor-pointer ...">Deals For Tou </a>
+          </div>
+          <div class="mx-2">
+            <a href="#home" class="  px-4 py-1  bg-white hover:text-red-600 focus:text-red-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-50 hover:text-gray-800 focus:text-gray-800 hover:underline cursor-pointer ...">Discount </a>
+          </div>
+          <div class="mx-2">
+            <a href="#home" class="  px-4 py-1  bg-white hover:text-red-600 focus:text-red-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-50 hover:text-gray-800 focus:text-gray-800 hover:underline cursor-pointer ...">Weekly offers </a>
+          </div>
+          <div class="mx-2">
+            <a href="#home" class="  px-4 py-1  bg-white hover:text-red-600 focus:text-red-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-50 hover:text-gray-800 focus:text-gray-800 hover:underline cursor-pointer ...">Become A Vendor </a>
+          </div>
+          </div>       
+    </div>
+<div class="bg-indigo-900" >
+
+</div>
+<div id="home" class=" text-white bg-indigo-900 flex grid grid-cols-1 md:grid-cols-2 justify-between items-center mt-20 ">
+    
+  <div id="app" class="px-16" >
+      <h1 class="py-10 text-6xl text-white  font-bold">
+          GET THE NEW IPHONE 12 PRO 
+          
+      </h1>
+      <p class="mt-4  py-12 text-2xl ">
+          A transformative triple-camera system the adds tons of capability without complexity
+      </p>
+      <button class=" mr-6 bg-red-600 border rounded-lg px-2 py-2 font-bold " >Buy Now </button>
+      <button class=" border rounded-lg  opacity-100 px-2 py-2 font-bold">With $599 with trade-in </button>
+     
+
+  </div>
+
+  <div >
+      <img src="Mask Group 1.png" alt="">
+  </div>
+
+</div>
+</div>
+<!--2-->
+
+<div class=" py-12 px-16 ">
+  <p class=" text-center ">EXPLORE AWESOME PRODUCTS</p>
+  <p class="text-4xl font-bold   text-center "> RECOMMENED FOR YOU  </p>
+</div>
+<div class=" my-16 mx-16  grid grid-cols-1 md:grid-cols-4 gap-6 xl:gap-8">
+  <div class="w-full  flex  shadow-lg">
+    <div class="w-full flex md:flex-col rounded-lg bg-white">
+       <div class=" flex items-center justify-cente sm:max-w-sm sm:flex-none md:w-auto md:flex-auto flex flex-col items-start relative z-10 p-6 xl:p-8">
+        <img class=" h-44 w-44 flex items-center justify-center" src="1.png"> 
+        <p class=" text-3xl my-6  "> Single Tour</p>   
+        <div class="col-start-1 row-start-3 space-y-3 ">
+            <p class="inline-block flex items-center text-white  font-medium">
+              <button type="button" class="bg-red-200 mt-2 text-red-600 text-base font-semibold px-2 py-1 rounded-full"> $990</button>
+  
+            </p>
+          </div>
+
+        </div>
+    </div>
+</div>
+<div class="w-full  flex  shadow-lg">
+  <div class="w-full flex md:flex-col rounded-lg bg-white">
+     <div class=" flex items-center justify-cente sm:max-w-sm sm:flex-none md:w-auto md:flex-auto flex flex-col items-start relative z-10 p-6 xl:p-8">
+      <img class=" h-44 w-44 flex items-center justify-center" src="2.png"> 
+      <p class=" text-3xl my-6  "> Single Tour</p>   
+     
+          
+      <div class="col-start-1 row-start-3 space-y-3 ">
+          <p class="flex  items-center text-white  font-medium">
+            <button type="button" class="bg-red-200 mt-2 text-red-600 text-base font-semibold px-2 py-1 rounded-full"> $990</button>
+
+          </p>
+        </div>
+      </div>
+  </div>
+</div>
+  <div class="w-full  flex  shadow-lg">
+      <div class="w-full flex md:flex-col rounded-lg bg-white">
+         <div class=" flex items-center justify-cente sm:max-w-sm sm:flex-none md:w-auto md:flex-auto flex flex-col items-start relative z-10 p-6 xl:p-8">
+          <img class=" h-44 w-44 flex items-center justify-center" src="1.png"> 
+          <p class=" text-3xl my-6  "> Single Tour</p>   
+          <div class="col-start-1 row-start-3 space-y-3 ">
+              <p class="inline-block flex items-center text-white  font-medium">
+                <button type="button" class="bg-red-200 mt-2 text-red-600 text-base font-semibold px-2 py-1 rounded-full"> $990</button>
+    
+              </p>
+            </div>
+
+          </div>
+      </div>
+  </div>
+  <div class="w-full  flex  shadow-lg">
+    <div class="w-full flex md:flex-col rounded-lg bg-white">
+       <div class=" flex items-center justify-cente sm:max-w-sm sm:flex-none md:w-auto md:flex-auto flex flex-col items-start relative z-10 p-6 xl:p-8">
+        <img class=" h-44 w-44 flex items-center justify-center" src="2.png"> 
+        <p class=" text-3xl my-6  "> Single Tour</p>   
+       
+            
+        <div class="col-start-1 row-start-3 space-y-3 ">
+            <p class="flex  items-center text-white  font-medium">
+              <button type="button" class="bg-red-200 mt-2 text-red-600 text-base font-semibold px-2 py-1 rounded-full"> $990</button>
+  
+            </p>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+
+  <button class="text-center border rounded-lg   justify-items-center ">Explore Other Products</button>
+</div>
+</div>
 </body>
 </html>
