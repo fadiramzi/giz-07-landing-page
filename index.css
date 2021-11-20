@@ -1,55 +1,277 @@
-body{
-    background-color: bisque;
-}
-*{
-    margin: 0px;
-    padding: 0px;
-}
-#header{
-    min-height: 173px;
-    background-color: white;
-    padding-top: 30px;
-    box-sizing: border-box;
-    padding-right:50px;
-    padding-left:50px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+  background-color: bisque;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2;
 }
 
-#header-container{
-    /* background-color: blueviolet; */
-    min-height: 150px;
-    box-sizing: border-box;
-}
-.my-inputs{
-    width: 500px;
-    height: 40px;;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: #302f2f;
 }
 
-#header-div-top{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+a {
+  text-decoration: none;
+  color: #302f2f;
 }
 
-#header-div-top i.far{
-    margin-left: 25px;
+li {
+  list-style: none;
 }
 
-#menu{
+#header {
+  min-height: 173px;
+  /* background-color: white; */
+  background-color: bisque;
+  padding-top: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+#header-container {
+  min-height: 150px;
+}
+.my-inputs {
+  width: 500px;
+  height: 40px;
+}
+
+#header-div-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-div-top i.far {
+  margin-left: 25px;
+}
+
+#menu {
+  display: none;
+  font-size: 32px;
+}
+
+/* HERO --------------------------------- */
+#hero {
+  background-size: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url('./assets/images/Mask.png') no-repeat;
+  height: 590px;
+}
+
+#hero_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 80px;
+}
+
+#hero_text {
+  width: 40%;
+}
+
+#hero_container h1,
+#hero_container p {
+  color: white;
+}
+
+#hero_container h1 {
+  font-size: 48px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+#hero_container button {
+  color: white;
+}
+
+.button-1 {
+  background-color: #ff4f04;
+}
+
+#hero_container img {
+  height: 590px;
+}
+/* NEW --------------------------------- */
+#new {
+  background-color: white;
+  padding: 88px 120px;
+  text-align: center;
+  color: black;
+}
+
+.new_products {
+  margin: 60px auto;
+  padding: 0 40px;
+  display: grid;
+  grid-auto-columns: max-content;
+  grid-auto-flow: dense;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 25px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.new {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 14px 12px;
+  margin: 8px;
+}
+
+.featured {
+}
+
+.new span {
+  background-color: white;
+}
+
+/* TRENDING --------------------------------- */
+#trending {
+  background-color: white;
+  padding: 88px 120px;
+  text-align: center;
+  color: black;
+}
+
+#trending h4,
+#new h4 {
+  font-weight: 300;
+}
+
+#trending h2,
+#new h2 {
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.trending_products {
+  margin: 60px auto;
+  padding: 0 40px;
+  display: grid;
+  grid-auto-columns: max-content;
+  grid-auto-flow: dense;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 25px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.product {
+  width: 250px;
+}
+
+.product img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.product_details {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: black;
+  font-size: 16px;
+}
+
+.product_price {
+  background-color: #fff0e9;
+  color: #ff550d;
+  padding: 4px 16px;
+  border-radius: 20px;
+}
+
+/* CTA --------------------------------- */
+#cta {
+  padding: 80px 160px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('./assets/images/Rectangle1.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#cta_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#cta_container h1 {
+  color: white;
+  font-size: 36px;
+  width: 46%;
+}
+
+#cta_container button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  align-self: center;
+  padding: 16px 42px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* FOOTER --------------------------------- */
+footer {
+  background-color: white;
+  padding: 40px 80px;
+  min-height: 200px;
+}
+
+#footer_container {
+  display: flex;
+}
+
+#footer_logo_div {
+  width: 40%;
+  padding-right: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer_menu {
+  width: 20%;
+  font-size: 16px;
+}
+
+footer h4 {
+  margin-bottom: 16px;
+}
+
+.footer_menu ul {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer_contact {
+  width: 25%;
+  padding-right: 80px;
+}
+
+#footer_contact #contact_message {
+  margin-bottom: 18px;
+}
+
+/* MEDIA QUERIES --------------------------------- */
+
+@media screen and (max-width: 900px) {
+  #search {
     display: none;
-    font-size: 32px;
-}
-
-@media screen and (max-width:900px)
-{
-    #search{
-        display: none;
-        
-    }
-    #icons{
-        display: none;
-    }
-    #menu{
-        display: inline;
-    }
+  }
+  #icons {
+    display: none;
+  }
+  #menu {
+    display: inline;
+  }
 }
