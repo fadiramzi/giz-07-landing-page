@@ -1,0 +1,380 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  /* background-color: rgb(238, 238, 238); */
+}
+
+ .site-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 4%;
+   padding-right: 6%;
+   padding-top: 10px;
+ }
+
+
+ .container {  
+   display: flex;  
+   color: rgb(129, 129, 129);
+   overflow: hidden;
+   list-style-type: none;
+   /* margin: 4%; */
+   margin-left: 4%;
+   margin-right: 4%;
+   margin-bottom: 1%;
+   margin-top: 1%;
+ }
+
+ .container > li {  
+   flex: 1;  
+ }
+ @media all and (max-width: 600px) {  
+    
+   .container {  
+     flex-wrap: wrap;  
+   }  
+     
+   .container > li {  
+     flex-basis: 50%;  
+   }
+ 
+ }
+ @media all and (max-width: 400px) {  
+   .container > li {  
+     flex-basis: 100%;  
+   } 
+    /*.search {  
+      order: 1;  
+    } */
+    }
+    .image-container {
+      /* display: flex; */
+      /* justify-content: center; */
+    }
+    li:hover {
+      color: rgb(255, 102, 0);
+      text-decoration-line:underline;
+    }
+    .dropbtn{
+      background-color: rgb(250, 246, 246);
+      width: 140px;
+      height: 40px;
+      border-radius: 8px;
+      border: none;
+      /* margin-bottom: 5px; */
+    }
+
+   table.table-1{
+       width: 100%;
+       text-align: center;
+   }
+  
+   .mask{
+       top: 30%;
+   }
+
+
+   .image1{
+       position: relative;
+       margin: 0 auto;
+       width: 100%;
+   }
+   .text1{
+       position: absolute;
+       color: white;
+       top: 35%;
+       width: 70%;
+       text-align: left;
+      
+   }
+   #get{
+      font-size: 30px;
+      font-weight:700;
+    }
+    .button1 {
+      border-radius: 10px;
+      background-color: rgb(255, 102, 0);
+      color: wheat;
+      font-weight:900;
+      border-style: none;
+    }
+    .button2 {
+      border-radius: 10px;
+      opacity: 0.3;
+      font-weight:900;
+      border-style: none;
+      
+    }
+    .start{
+      border-radius: 10px;
+      text-align: center;
+      position: absolute;
+      top: 55%;
+      right: 10%;
+      width: 180px;
+      height: 50px;
+      color: rgb(255, 255, 255);
+      background-color: transparent;
+      border-style:solid ;
+      font-weight: bold;
+    }
+    #sneak{
+      font-size: 30px;
+    }
+    .name{
+      font-size: 10px;
+    }
+    .image2{
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+  }
+  .text2{
+      position: absolute;
+      color: white;
+      top: 35%;
+      width: 70%;
+      text-align: left;
+      background-color: transparent;
+  }
+
+  .propartes
+  {
+    position: absolute;
+      color: rgb(7, 5, 5);
+      /* top: 35%; */
+      /* width: 70%; */
+      text-align: center;
+  }
+  .word1,.word2
+  {
+      margin-top: 5%;
+      margin-bottom: 5%;
+      text-align: center;
+     
+  }
+  #expl{
+    font-weight:350;
+    margin-bottom: 1%;
+  }
+  #rec{
+    font-weight:700;
+    font-size: 30px;
+    
+  }
+  .wristwatch {
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: auto;
+    position: relative;
+    /* text-align: center; */
+    width: 100%;
+  }
+  div.gallery {
+    margin: 2%;
+    /* border: 0px solid rgb(255, 255, 255); */
+    /* float: left; */
+    text-align: center;
+  }
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    
+  }
+  #sing{
+    font-weight: bold;
+    margin-bottom: 5%;
+  }
+  .gallery-2 img ,.gallery-3 img
+  {
+     border-radius: 5%;
+  }
+  .gallery-2,.gallery-3
+  {
+    text-align: center;
+    margin: 2%;
+  }
+ 
+  .table-2,.table-3
+  {
+    border-spacing: 0; 
+    width: 87%;
+
+    position: relative;
+    margin-left: 10% ;
+    padding-bottom: 5%;
+  }
+  table.fer{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 10%;
+    border: none;
+    text-align: left;
+  }
+
+  
+  th, td {
+    text-align: left;
+    padding:0px;
+  }
+
+  .desc {
+    /* padding: 15px; */
+    text-align: center;
+    background-color:pink;
+    color: orangered;
+    border-style: none;
+    border-radius: 20px;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight:700;
+  }
+  .other{
+    margin-top: 7%;
+    font-weight:300;
+    border-radius: 5px;
+    width: 230px;
+    height: 60px;
+    margin-bottom: 5%;
+    background-color: transparent;
+
+  }
+  .other_p{
+    text-align: center;
+  }
+  
+  
+    @media (min-width:500px) {
+      .text1,.text2{
+          top: 35%;
+          width: 55%;
+          left: 6%;
+         }
+         #get{
+          font-size: 20px;
+          margin-bottom: 5%;
+         }
+         #trans{
+             font-size: 10px;
+             margin-bottom: 5%;
+         }
+         .button1 {
+          width: 80px;
+          height: 30px;
+          font-size: 10px;
+         }
+         .button2{
+          width: 130px;
+          height: 30px;
+          font-size: 10px;
+         }
+         #sneak{
+          font-size: 20px;
+          
+         }
+        
+        
+
+  }
+  @media (min-width:768px) {
+
+      .text1,.text2{
+          top: 50%;
+          width: 45%;
+          left: 6%;
+         }
+         
+  }
+  @media (min-width:1024px) {
+      .text1,.text2{
+       top: 35%;
+       width: 35%;
+       left: 6%;
+      }
+     
+      #get{
+          font-size: 30px;
+          margin-bottom: 5%;
+          width: 100%;
+         }
+         #trans{
+          font-size: 20px;
+          margin-bottom: 5%;
+      }
+      .button1 {
+       
+       font-size: 10px;
+       width: 120px;
+       height: 40px;
+       font-size: 15px;
+      }
+      .button2{
+       width: 210px;
+       height: 40px;
+       font-size: 15px;
+      }
+      #sneak{
+          font-size: 30px;
+         }
+        
+  }
+  .top-left {
+    position: absolute;
+    top: 8%;
+    left: 47%;
+    width: 5%;
+  }
+  .sale {
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-weight:700;
+    border-style: none;
+    width: 160%;
+     font-size: 100%;
+     font-weight: normal;
+  }
+  .cost4{
+    border-radius: 10px;
+    color: rgb(255, 102, 0);
+    background-color: rgb(255, 255, 255);
+    font-weight:700;
+    border-style: none;
+    width: 100%;
+     font-size: 100%;
+  }
+  .top-right {
+    position: absolute;
+    top: 8%;
+    right: 7%;
+    width: 3%;
+    
+  }
+  
+  .bottom-left {
+    position: absolute;
+    bottom: 18%;
+    left:47%;
+    text-align: left;
+  }
+  p.nice1{
+    font-size: 30px;
+    font-weight:bolder;
+  }
+
+  p.brand{
+    font-size: 14px;
+    font-weight:normal;
+    opacity: 0.6;
+  }
+  .all-1{
+    position: relative;
+    /* text-align: center; */
+    color: rgb(5, 4, 4);
+  }
+ 
