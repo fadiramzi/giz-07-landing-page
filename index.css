@@ -1,5 +1,5 @@
 body {
-  background-color: #f8f8f8;
+  background-color: white;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
@@ -168,7 +168,7 @@ li:first-child a {
   width: 100%;
   align-items: center;
   gap: 10px;
-  background-color: #f8f8f8;
+  background-color: #f5f5f6;
 }
 .small-text {
   font-size: 14px;
@@ -198,7 +198,10 @@ li:first-child a {
   font-weight: bold;
   font-size: 16px;
 }
-
+.item-brand {
+  color: #7a7a7a;
+  font-size: 14px;
+}
 .item-price {
   font-weight: bold;
   color: #ff4f04;
@@ -206,6 +209,14 @@ li:first-child a {
   padding: 5px;
   border-radius: 15px;
   margin-top: 10px;
+}
+.special-item-price {
+  font-weight: bold;
+  color: #ff4f04;
+  background-color: rgb(255 79 4 / 9%);
+  padding: 5px;
+  border-radius: 15px;
+  margin-right: 2rem;
 }
 .recommended-items-button {
   padding: 20px 30px;
@@ -259,7 +270,7 @@ li:first-child a {
   column-gap: 35px;
 }
 .item {
-  background-color: #f8f8f8;
+  background-color: #f5f5f6;
   border-radius: solid 15px;
 }
 .special-item {
@@ -267,12 +278,42 @@ li:first-child a {
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 3;
+  position: relative;
+  background-color: #f5f5f6;
+}
+.image-extra {
+  position: absolute;
+  display: flex;
+  left: 5px;
+  top: 5px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+}
+.sale {
+  font: bold;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  padding: 10px;
 }
 .shoes-text {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
+}
+.special-shoes-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  gap: 10px;
+  padding: 0px 20px;
+  padding-bottom: 30px;
 }
 .shoes-text > p {
   margin-top: 0;
@@ -308,6 +349,9 @@ li:first-child a {
 .first-option {
   font-weight: bold;
   margin-bottom: 20px;
+}
+.special-title {
+  font-size: 25px;
 }
 @media screen and (max-width: 600px) {
   #search {
