@@ -91,3 +91,24 @@
 	flex-direction: row;
 	background-image: url("./assisst/part3.png");
 }
+.BodyPart4Parent {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px;
+	flex-direction: column;
+	min-height: 840px;
+}
+.shoes2Div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1160px;
+}
+.columnDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 638px;
+}
