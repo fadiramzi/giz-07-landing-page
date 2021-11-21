@@ -1,29 +1,3 @@
-.part1Div {
-	width: 1370px;
-	padding-top: 104px;
-	background-image: url("./assisst/part1.png");
-	background-repeat: no-repeat;
-}
-.tableBody {
-	border-collapse: collapse;
-}
-
-.center {
-	text-align: center;
-	align-items: center;
-	align-content: center;
-}
-.padding {
-	padding-left: 100px;
-}
-
-.part3Div {
-	width: 1370px;
-	height: 256px;
-	background-image: url("./assisst/part3.png");
-	background-repeat: no-repeat;
-}
-/* use it */
 .BodyPart1Parent {
 	background-image: url("./assisst/part1.png");
 	display: flex;
@@ -108,4 +82,12 @@
 	margin: auto;
 	display: block;
 	border-radius: 10px;
+}
+.BodyPart3Parent {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px;
+	flex-direction: row;
+	background-image: url("./assisst/part3.png");
 }
