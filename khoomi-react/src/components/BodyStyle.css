@@ -112,3 +112,11 @@
 	justify-content: space-between;
 	min-height: 638px;
 }
+.BodyPart5Parent {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px;
+	flex-direction: column;
+	min-height: 840px;
+}
