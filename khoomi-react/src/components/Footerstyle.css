@@ -1,0 +1,23 @@
+.footerDivParent {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 50px;
+}
+.optDiv {
+	font-size: 1em;
+	font-weight: bold;
+}
+.footerDiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 200px;
+}
+.footerDiv2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 750px;
+}
