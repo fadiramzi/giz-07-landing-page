@@ -13,10 +13,8 @@ const Body = () => {
            <BodyPart2 />
            <BodyPart3 />
            <BodyPart4 />
-           <br />
            <BodyPart3 />
            <Bodypart5 />
-           <br />
            <BodyPart3 />
         </div>
     )
