@@ -16,14 +16,7 @@
 .padding {
 	padding-left: 100px;
 }
-.btn2 {
-	background-color: white;
-	width: 224px;
-	height: 57px;
-	margin: auto;
-	display: block;
-	border-radius: 10px;
-}
+
 .part3Div {
 	width: 1370px;
 	height: 256px;
@@ -79,4 +72,40 @@
 }
 .mainBody {
 	box-sizing: border-box;
+}
+.wtchBtn {
+	background-color: pink;
+	width: 45px;
+	border-radius: 20px;
+}
+.BodyPart2Parent {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px;
+	flex-direction: column;
+	min-height: 670px;
+}
+.wtchDiv {
+	display: flex;
+	width: 1150px;
+	justify-content: space-between;
+}
+.wtchDiv div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.bodyTop {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.btn2 {
+	background-color: white;
+	width: 224px;
+	height: 57px;
+	margin: auto;
+	display: block;
+	border-radius: 10px;
 }
