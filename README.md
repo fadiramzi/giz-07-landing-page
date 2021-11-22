@@ -1,4 +1,4 @@
-# GIZ-07-landing-page
+# GIZ-06-landing-page
 ## TO DO:
 * Fork the repo
 * Clone the forked repo to your local machine
