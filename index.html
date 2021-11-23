@@ -4,33 +4,242 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="./index.css" rel="stylesheet"/>
+    <title>Land Page</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
+    <link href="./index.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
 </head>
 <body>
-    <header id="header">
-        <div id="header-container">
-            <!-- Top Div (search) -->
-            <div>
-                <div id="header-div-top">
-                    <img width="90px" src="./assets/images/1.jpg" />
-                    <input id="search" type="text" class="my-inputs"/>
-                    <!-- 3rd comp that contains icons -->
-                    <div id="icons">
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-user"></i>
-                        <i class="far fa-shopping-cart"></i>
-                    </div>
-                    <i id="menu" class="fas fa-bars"></i>
-                </div>
-            </div>
-            <!-- Bottom Div (menu items) -->
-            <div>
+  <header>
+    <nav id="main" >
+      <img id="logo" src = "assets/images/logo.svg" alt="Khoomi" width="88" height="59"/>
+      <div id="search"><input placeholder="Search For Products, Brands & Categories"/><i id="search-icon" class="fas fa-search"></i></div>
+      <ul class="icons">
+        <li><i class="fas fa-heart"></i></li>
+        <li><i class="fas fa-user"></i></li>
+        <li><i class="fas fa-cart-plus"></i></li>
+      </ul>
+    </nav>
+    <nav id="menu">
+      <ul class="menu">
+        <ul>
+          <li><img class="icon"/><i class="fas fa-bars"></i></li>
+          <li>All Categories</li>
+          <li><img class="icon"/><i class="fas fa-caret-down"></i></li>
+        </ul>
+        <li><a href="#">Home</a></li>
+        <li><a>New Arrivals</a></li>
+        <li><a>Trending</a></li>
+        <li><a>Deals For You</a></li>
+        <li><a>Discounts</a></li>
+        <li><a>Weekly Offers</a></li>
+        <li><a>Become A vendor</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            </div>
+  <section>
+    <div id="main-offer">
+      <img src="assets/images/big-bg.png" id="main-offer-bg" />
+      <img src="assets/images/big-bg-2.png" id="main-offer-product"/>
+      <div class="main-offer-caption">
+        <h1>GET THE NEW IPHONE 12 PRO</h1>
+        <p>A transformative triple-camera system that adds tons of capabliity without complexity</p>
+        <button class="btn btn-orange">Buy Now <img class="icon" src="assets/images/cart.svg" style="margin-top: -5px;"/></button>
+        <button class="btn btn-light">With $599 with trade-in</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="items-section">
+    <p>EXPLORE AWESOME PRODUCTS</p>
+    <h2>RECOMMENDED FOR YOU</h2>
+    <div id="items samples">
+      <div class="item">
+        <img />
+        <div class="item-title">Single Tour</div>
+        <div >$990</div>
+      </div>
+      <div class="item">
+        <img />
+        <div class="item-title">Single Tour</div>
+        <div class="tag">$990</div>
+      </div>
+      <div class="item">
+        <img />
+        <div class="item-title">Single Tour</div>
+        <div class="tag">$990</div>
+      </div>
+      <div class="item">
+        <img />
+        <div class="item-title">Single Tour</div>
+        <div class="tag">$990</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ads">
+    <h3>Sneakers Never Run Out Of Style</h3>
+    <h3>Get 50% OFF Sitewide</h3>
+    <button>Start Shopping</button>
+  </section>
+
+  <section class="items-section">
+    <p>STRAIGHT FROM NIKE</p>
+    <h4>NEW COLLECTION</h4>
+    <div class="items">
+      <div class="grid">
+        <div class="item">
+          <img />
+          <div class="item-title">Single Tour</div>
+          <div class="tag">$990</div>
         </div>
-    </header>
+        <div class="item">
+          <img />
+          <div class="item-title">Single Tour</div>
+          <div class="tag">$990</div>
+        </div>
+        <div class="item">
+          <img />
+          <div class="item-title">Single Tour</div>
+          <div class="tag">$990</div>
+        </div>
+        <div class="item">
+          <img />
+          <div class="item-title">Single Tour</div>
+          <div class="tag">$990</div>
+        </div>
+      </div>
+      <div class="item x4">
+        <img />
+        <div class="tag">SALE -50%</div>
+        <div class="item-title">Single Tour</div>
+        <div class="tag">$990</div>
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="ads">
+    <h3>Sneakers Never Run Out Of Style</h3>
+    <h3>Get 50% OFF Sitewide</h3>
+    <button>Start Shopping</button>
+  </section>
+
+  <section class="items-section">
+    <p>TOP PRODUCTS</p>
+    <h4>TRENDING THIS WEEK</h4>
+    <ul id="items grid">
+      <div class="item">
+        <img />
+        <div class="item-title">Single Tour</div>
+        <div class="tag">$990</div>
+      </div>
+      <div class="item">
+        <img />
+        <div class="item-title">Single Tour</div>
+        <div class="tag">$990</div>
+      </div>
+      <div class="item">
+        <img />
+        <div class="item-title">Single Tour</div>
+        <div class="tag">$990</div>
+      </div>
+      <div class="item">
+        <img />
+        <div class="item-title">Single Tour</div>
+        <div class="tag">$990</div>
+      </div>
+      <div class="item">
+        <img />
+        <div class="item-title">Single Tour</div>
+        <div class="tag">$990</div>
+      </div>
+      <div class="item">
+        <img />
+        <div class="item-title">Single Tour</div>
+        <div class="tag">$990</div>
+      </div>
+      <div class="item">
+        <img />
+        <div class="item-title">Single Tour</div>
+        <div class="tag">$990</div>
+      </div>
+      <div class="item">
+        <img />
+        <div class="item-title">Single Tour</div>
+        <div class="tag">$990</div>
+      </div>
+    </ul>
+  </section>
+
+  <section class="ads">
+    <h3>Sneakers Never Run Out Of Style</h3>
+    <h3>Get 50% OFF Sitewide</h3>
+    <button>Start Shopping</button>
+  </section>
+
+  <footer>
+    <div class="about">
+      <img id="logo"/>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut facliis quas amet lilo laborum officiis, enim quisquam beatae numquam quidem eaque eveniet, odio iure nihli doloremque veniam, inventore autem aliquam!</p>
+    </div>
+    <div class="list">
+      <ul class="items-list">
+        <li>
+          <a href="#">Products</a>
+        </li>
+        <li>
+          <a href="#">Trending</a>
+        </li>
+        <li>
+          <a href="#">My Account</a>
+        </li>
+        <li>
+          <a href="#">Vendors</a>
+        </li>
+        <li>
+          <a href="#">Brands</a>
+        </li>
+        <li>
+          <a href="#">Storefront</a>
+        </li>
+      </ul>
+    </div>
+    <div class="list">
+      <ul class="items-list">
+        <li>
+          <a href="#">Legals</a>
+        </li>
+        <li>
+          <a href="#">License</a>
+        </li>
+        <li>
+          <a href="#">Refund Policy</a>
+        </li>
+        <li>
+          <a href="#">About Us</a>
+        </li>
+        <li>
+          <a href="#">Contacts</a>
+        </li>
+      </ul>
+    </div>
+    <div class="list">
+      <ul class="items-list">
+        <li>
+          <a href="#">Fell free get in touch with us via phone or send us a message</a>
+        </li>
+        <li>
+          <a href="#">+1 234 567 89 10</a>
+        </li>
+        <li>
+          <a href="#">support@khoomi.com</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
