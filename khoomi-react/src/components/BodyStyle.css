@@ -1,0 +1,122 @@
+.BodyPart1Parent {
+	background-image: url("./assisst/part1.png");
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.bottomDisc {
+	font-size: 1.25em;
+	color: white;
+}
+.topDisc {
+	font-size: 3.5em;
+	color: white;
+	font-weight: bold;
+}
+.leftDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 50px;
+}
+.btnOrange {
+	width: 137px;
+	height: 50px;
+	background-color: orangered;
+	color: white;
+	font-weight: bold;
+	border-radius: 10px;
+}
+.btnAqua {
+	width: 224px;
+	height: 50px;
+	background-color: transparent;
+	color: white;
+	font-weight: bold;
+	border-radius: 10px;
+}
+.btn1Cls {
+	display: flex;
+	flex-direction: row;
+	width: 380px;
+	justify-content: space-between;
+}
+.btn1Cls button {
+	padding-left: 10px;
+}
+.mainBody {
+	box-sizing: border-box;
+}
+.wtchBtn {
+	background-color: pink;
+	width: 45px;
+	border-radius: 20px;
+}
+.BodyPart2Parent {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px;
+	flex-direction: column;
+	min-height: 670px;
+}
+.wtchDiv {
+	display: flex;
+	width: 1150px;
+	justify-content: space-between;
+}
+.wtchDiv div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.bodyTop {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.btn2 {
+	background-color: white;
+	width: 224px;
+	height: 57px;
+	margin: auto;
+	display: block;
+	border-radius: 10px;
+}
+.BodyPart3Parent {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px;
+	flex-direction: row;
+	background-image: url("./assisst/part3.png");
+}
+.BodyPart4Parent {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px;
+	flex-direction: column;
+	min-height: 840px;
+}
+.shoes2Div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1160px;
+}
+.columnDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 638px;
+}
+.BodyPart5Parent {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px;
+	flex-direction: column;
+	min-height: 840px;
+}

@@ -1,0 +1,67 @@
+.headercls {
+	min-height: 173px;
+	padding-top: 34px;
+	background-color: white;
+	box-sizing: border-box;
+	padding-left: 50px;
+	padding-right: 50px;
+	/* This feature make problem for me when i used it */
+	/* position: fixed; */
+}
+.searchInput {
+	background-color: var(--white);
+	border: 1px solid #dfdfdf;
+	border-radius: 5px;
+	height: 48px;
+	width: 557px;
+	color: #686868;
+	font-family: var(--font-family-roboto);
+	font-size: var(--font-size-s);
+	font-weight: 300;
+}
+
+.Divparent {
+	min-height: 110px;
+	box-sizing: border-box;
+}
+.top {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.top img.noti {
+	margin-left: 10px;
+}
+.headerFooter {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	align-items: baseline;
+}
+.menu {
+	display: flex;
+}
+.menu p {
+	margin-left: 30px;
+	font-size: larger;
+}
+.menu p:hover,
+p:focus {
+	color: red;
+	cursor: pointer;
+	border-bottom: medium solid red;
+	font-weight: bold;
+}
+.category {
+	position: relative;
+	font-family: Arial;
+	width: 198px;
+	height: 44px;
+	background-color: rgb(252, 246, 246);
+}
+.category:hover {
+	cursor: pointer;
+}
