@@ -1,5 +1,5 @@
 body{
-    background-color: bisque;
+    background-color: #ddd;
 }
 *{
     margin: 0px;
@@ -39,7 +39,128 @@ body{
     display: none;
     font-size: 32px;
 }
+ ul {
 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(243, 241, 241) ;
+}
+
+li {
+
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(207, 204, 204) ;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+ 
+.section2
+{
+    text-align: center;
+    height: 400px;
+width: 100%;
+    background-image: url('./assets/images/bg1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section3
+{
+    padding-top: 40px;
+    text-align: center;
+
+}
+.section4
+{
+    height: 200px;
+width: 100%;
+margin-top: 30px;
+background-image: url('./assets/images/bg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section5
+{
+    padding-top: 40px;
+
+    text-align: center;
+
+}
+.section6
+{
+    margin-top: 30px;
+    height: 200px;
+    width: 100%;
+        background-image: url('./assets/images/bg2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
+.section7
+{    padding-top: 40px;
+    text-align: center;
+
+}
+.section8
+{margin-top: 30px;
+
+    height: 200px;
+    width: 100%;
+        background-image: url('./assets/images/bg2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+      padding-top: 50px;
+      padding-left: 20px;
+    float: left;
+    width: 25%;
+     height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    padding-top: 50px;
+
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+.big_img{
+    width: 35%;
+    margin-right:80px;
+    float: right;
+}
 @media screen and (max-width:900px)
 {
     #search{
@@ -52,4 +173,5 @@ body{
     #menu{
         display: inline;
     }
+   
 }
