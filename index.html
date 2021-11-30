@@ -4,33 +4,263 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <title>Document</title>
     <link href="./index.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 </head>
 <body>
-    <header id="header">
-        <div id="header-container">
-            <!-- Top Div (search) -->
-            <div>
-                <div id="header-div-top">
-                    <img width="90px" src="./assets/images/1.jpg" />
-                    <input id="search" type="text" class="my-inputs"/>
-                    <!-- 3rd comp that contains icons -->
-                    <div id="icons">
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-user"></i>
-                        <i class="far fa-shopping-cart"></i>
-                    </div>
-                    <i id="menu" class="fas fa-bars"></i>
-                </div>
-            </div>
-            <!-- Bottom Div (menu items) -->
-            <div>
+    <div class="flex-container">
+      <div class="logo">
+          <img src="images\logo.svg">
+      </div>
 
+      <div>
+          <input class="search" type="text" placeholder="Search For Products, Brands & Categories">
+      </div>
+
+      <div class="f-a-c">
+
+          <a href="#"><img style="margin: 10px" src="images\favorite.svg"></a>
+
+          <a href=""><img style="margin: 10px" src="images\account.svg"></a>
+          
+          <a href=""><img style="margin: 10px" src="images\cart.svg"></a>
+          
+      </div>
+    </div>
+    <hr>
+
+    <nav class="sticky">
+            
+        <div class="topnav">
+            <div id="category">
+                <div style="margin-top: 19px; margin-left: 120px; position:absolute;" class="fa fa-bars"></div>
+                <select>
+                  <option>All Categories</option>
+                  <option>Category 1</option>
+                  <option>Category 2</option>
+                  <option>Category 3</option>
+                </select>
+            </div>
+            <div class="nav">
+                <a href="#" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-orange">Home</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-orange">New Arrivals</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-orange">Trending</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-orange">Deals For You</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-orange">Discounts</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-orange">Weekly Offers</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-orange">Become A Vendor</a>
             </div>
         </div>
-    </header>
+    </nav>
+
+    <div class="parent">
+        <img class="image1"  src="images\Mask.PNG" height="497" width="1400"/>
+        <div style="background-color: rgba(0,0,0,0.5); position:absolute; margin-top: -499px; width: 1400px; height: 497px;">
+            <h1 style="
+      color: white; font-size: 45px; font-family: inherit; margin-top: 100px; margin-left:60px"><b>GET THE NEW IPHONE 12<br>PRO</b></h1>
+      <p style="
+      color: white; font-size: 14px; font-family: unset; margin-left:60px">A transformative triple-camera system that adds tons of capability without <br>complexity</p>
+        </div>
+        <div style="margin-top:-170px; margin-left: 60px; position:absolute;">
+            <button class="btn1"><b>Buy Now</b></button>
+            <button class="btn2"><b>With $599 with trade-in</b></button>
+            
+        </div>
+        
+        <img class="image2" src="images\Mask Group 1.PNG" width="574" height="496" style="margin-left: 660px;" />
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <p style="font-size: 14px;">EXPLORE AWESOME PRODUCTS</p>
+        <h3><b>RECOMMENDED FOR YOU</b></h3>
+    </div>
+
+    <div class="product">
+        <img  class="products" src="images\1.PNG">
+        <img class="products" src="images\2.PNG">
+        <img class="products" src="images\3.PNG">
+        <img class="products" src="images\4.PNG">
+    </div>
+    <div>
+        <h5 style="display: inline; margin-left: 170px;"><b>Single Tour</b></h5>
+        <h5 style="display: inline; margin-left: 180px;"><b>Single Tour</b></h5>
+        <h5 style="display: inline; margin-left: 175px;"><b>Single Tour</b></h5>
+        <h5 style="display: inline; margin-left: 180px;"><b>Single Tour</b></h5>
+    </div>
+    <br>
+    <div>
+        <button style="background-color: #ffd5b5; border:none; border-radius: 15px; color:#f56b02; margin-left: 185px;"><b>$990</b></button>
+        <button style="background-color: #ffd5b5; border:none; border-radius: 15px; color:#f56b02; margin-left: 220px;"><b>$990</b></button>
+        <button style="background-color: #ffd5b5; border:none; border-radius: 15px; color:#f56b02; margin-left: 220px;"><b>$990</b></button>
+        <button style="background-color: #ffd5b5; border:none; border-radius: 15px; color:#f56b02; margin-left: 220px;"><b>$990</b></button>
+    </div>
+    <div style="text-align:center;">
+        <button class="btn3" style="background-color:white; border-radius:5px; border: 2px solid gray; padding: 10px; margin-top:50px; font-size:16px;">Explore Other Products</button>
+    </div>
+    <br>
+    <br>
+    <img class="image1"  src="images\Rectangle1.PNG" height="251" width="1366"/>
+    <div style="background-color: rgba(0,0,0,0.5); position:absolute; margin-top: -250px; width: 1366px; height: 251px;">
+    </div>
+    <div style="margin-top:-170px; margin-left: 60px; position:absolute;">
+        <h1 style="
+  color: white; font-size: 33px; font-family: inherit;"><b>Sneakers Never Run Out Of Style<br> Get 50% Off Sitewide</b></h1>
+        
+    </div>
+    <button class="btn4"><b>Start Shopping</b></button>
+    <br>
+    <div style="text-align: center;">
+        <p style="font-size: 15px;">STRAIGHT FROM NIKE</p>
+        <h2><b>NEW COLLECTION</b></h2>
+    </div>
+    <br>
+    <br>
+
+    <div class="product">
+        <div style="margin-right: 450px;">
+            <img class="products3" src="images\Image5.PNG">
+            <button style="position: absolute; background-color: #ffd5b5; border:none; border-radius: 15px; color:#f56b02; margin-left: 185px; margin-top: 230px;"><b>$99</b></button>
+            <p style="margin-left: 430px; margin-top: -40px; position: absolute; font-size:16px;"><b>Nike Air Force 1</b></p>
+            <img class="products3" src="images\Image2.PNG">
+            <button style="position: absolute; background-color: #ffd5b5; border:none; border-radius: 15px; color:#f56b02; margin-left: -350px; margin-top: 230px;"><b>$99</b></button>
+            <p style="margin-left: 170px; margin-top: -40px; position: absolute; font-size:16px;"><b>Nike SB Zoom</b></p>
+            <br>
+            <br>
+        </div>
+
+        <div style="margin-right: 450px; height: 280px;">
+            <img class="products3" src="images\Image3.PNG">
+            <button style="position: absolute; background-color: #ffd5b5; border:none; border-radius: 15px; color:#f56b02; margin-left: 185px; margin-top: 230px;"><b>$99</b></button>
+            <p style="margin-left: 450px; margin-top: -40px; position: absolute; font-size:16px;"><b>Nike Signal</b></p>
+
+            <img class="products3" src="images\Image4.PNG">
+            <button style="position: absolute; background-color: #ffd5b5; border:none; border-radius: 15px; color:#f56b02; margin-left: -350px; margin-top: 230px;"><b>$99</b></button>
+            <p style="margin-left: 175px; margin-top: -40px; position: absolute; font-size:16px;"><b>NikeCout Air</b></p>
+            <br>
+        </div>
+        <img style="margin-left:650px; margin-top: -610px; width:520; height:541;" class="products2" src="images\Image1.PNG">
+        <button style="position: absolute; background-color: #ffd5b5; border:none; border-radius: 15px; color:#f56b02; margin-left: -90px; margin-top: -530px;"><b>$99</b></button>
+        <button style="position: absolute; background-color: black; border:none; border-radius: 15px; color:white; margin-left: -490px; margin-top: -530px; padding-left: 10px;"><b>SALE-50%</b></button>
+        <p style="margin-left: 720px; margin-top: -130px; position: absolute; font-size:20px;"><b>Nike Air Force 1 Shadow</b></p>
+        <p style="margin-left: 720px; margin-top: -90px; position: absolute; font-size:12px; color: gray;"><b>Brand: Nike</b></p>
+    </div>
+    <br>
+        <div style="text-align:center;">
+        <button class="btn3" style="background-color:white; border-radius:5px; border: 2px solid gray; padding: 10px; margin-top:50px; font-size:16px;">Explore Other Products</button>
+    </div>
+    <br>
+    <br>
+    <img class="image1"  src="images\Rectangle1.PNG" height="251" width="1366"/>
+    <div style="background-color: rgba(0,0,0,0.5); position:absolute; margin-top: -250px; width: 1366px; height: 251px;">
+    </div>
+    <div style="margin-top:-170px; margin-left: 60px; position:absolute;">
+        <h1 style="
+  color: white; font-size: 33px; font-family: inherit;"><b>Sneakers Never Run Out Of Style<br> Get 50% Off Sitewide</b></h1>
+        
+    </div>
+    <button class="btn4"><b>Start Shopping</b></button>
+    <br>
+    <div style="text-align: center;">
+        <p style="font-size: 15px;">TOP PRODUCTS</p>
+        <h2><b>TRENDING THIS WEEK</b></h2>
+    </div>
+    <br>
+    <div class="product">
+        <img  class="products4" src="images\Image3.PNG">
+        <button style="position: absolute; background-color: #ffd5b5; border:none; border-radius: 15px; color:#f56b02; margin-left: -90px; margin-top: 280px;"><b>$99</b></button>
+            <p style="margin-left: 115px; margin-top: 10px; position: absolute; font-size:16px;"><b>NikeCout Air</b></p>
+
+        <img class="products4" src="images\Image2.PNG">
+        <button style="position: absolute; background-color: #ffd5b5; border:none; border-radius: 15px; color:#f56b02; margin-left: -70px; margin-top: 280px;"><b>$99</b></button>
+            <p style="margin-left:380px; margin-top: 10px; position: absolute; font-size:16px;"><b>Nike Air Force 1</b></p>
+
+        <img class="products4" src="images\Image4.PNG">
+        <button style="position: absolute; background-color: #ffd5b5; border:none; border-radius: 15px; color:#f56b02; margin-left: -70px; margin-top: 280px;"><b>$99</b></button>
+            <p style="margin-left:660px; margin-top: 10px; position: absolute; font-size:16px;"><b>Nike Air Force 1</b></p>
+
+        <img class="products4" src="images\Image5.PNG">
+        <button style="position: absolute; background-color: #ffd5b5; border:none; border-radius: 15px; color:#f56b02; margin-left: -70px; margin-top: 280px;"><b>$99</b></button>
+            <p style="margin-left:930px; margin-top: 10px; position: absolute; font-size:16px;"><b>Nike Air Force 1</b></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="product">
+        <img  class="products4" src="images\Image3.PNG">
+        <button style="position: absolute; background-color: #ffd5b5; border:none; border-radius: 15px; color:#f56b02; margin-left: -90px; margin-top: 280px;"><b>$99</b></button>
+            <p style="margin-left: 115px; margin-top: 10px; position: absolute; font-size:16px;"><b>NikeCout Air</b></p>
+
+        <img class="products4" src="images\Image2.PNG">
+        <button style="position: absolute; background-color: #ffd5b5; border:none; border-radius: 15px; color:#f56b02; margin-left: -70px; margin-top: 280px;"><b>$99</b></button>
+            <p style="margin-left:380px; margin-top: 10px; position: absolute; font-size:16px;"><b>Nike Air Force 1</b></p>
+
+        <img class="products4" src="images\Image4.PNG">
+        <button style="position: absolute; background-color: #ffd5b5; border:none; border-radius: 15px; color:#f56b02; margin-left: -70px; margin-top: 280px;"><b>$99</b></button>
+            <p style="margin-left:660px; margin-top: 10px; position: absolute; font-size:16px;"><b>Nike Air Force 1</b></p>
+
+        <img class="products4" src="images\Image5.PNG">
+        <button style="position: absolute; background-color: #ffd5b5; border:none; border-radius: 15px; color:#f56b02; margin-left: -70px; margin-top: 280px;"><b>$99</b></button>
+            <p style="margin-left:930px; margin-top: 10px; position: absolute; font-size:16px;"><b>Nike Air Force 1</b></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <img class="image1"  src="images\Rectangle1.PNG" height="251" width="1366"/>
+    <div style="background-color: rgba(0,0,0,0.5); position:absolute; margin-top: -250px; width: 1366px; height: 251px;">
+    </div>
+    <div style="margin-top:-170px; margin-left: 60px; position:absolute;">
+        <h1 style="
+  color: white; font-size: 33px; font-family: inherit;"><b>Sneakers Never Run Out Of Style<br> Get 50% Off Sitewide</b></h1>
+        
+    </div>
+    <button class="btn4"><b>Start Shopping</b></button>
+    <br>
+    <br>
+
+    <div>
+       <div>
+          <img style="margin-left:93px;" src="images\logo.svg">
+          <p style="margin-left:100px;">Lorem ipsum dolor sit amet,<br> 
+            consectetur adipisicing elit, sed do<br>
+            eiusmod tempor incididunt ut labore</p>
+      </div>
+
+      <div style="margin-left:593px; margin-top: -150px;">
+          <p><b>Products</b></p>
+          <p>Trending</p>
+          <p>My Account</p>
+          <p>Vendors</p>
+          <p>Brands</p>
+          <p>Stroefront</p>
+      </div>
+
+      <div style="margin-left:793px; margin-top: -225px;">
+          <p><b>Legals</b></p>
+          <p>Licence</p>
+          <p>Refund Policy</p>
+          <p>About Us</p>
+          <p>Contact</p>
+      </div>
+
+      <div style="margin-left:993px; margin-top: -189px;">
+          <p><b>Contacts</b></p>
+          <p>Fell free get in touch with us via phone or send us a message</p>
+          <p>+1 234 567 89 10</p>
+          <a href="mailto:support@khoomi.com">support@khoomi.com</a>
+      </div> 
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
 </html>
