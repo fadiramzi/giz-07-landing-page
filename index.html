@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>E-commerce</title>
     <link href="./index.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
@@ -14,12 +14,12 @@
         <div id="header-container">
             <!-- Top Div (search) -->
             <div>
-                <div id="header-div-top">
+                <div class="header-div-top">
                     <img width="90px" src="./assets/images/1.jpg" />
                     <input id="search" type="text" class="my-inputs"/>
                     <!-- 3rd comp that contains icons -->
-                    <div id="icons">
-                        <i class="far fa-heart"></i>
+                    <div id="icons" >
+                        <i class="far fa-heart" ></i>
                         <i class="far fa-user"></i>
                         <i class="far fa-shopping-cart"></i>
                     </div>
@@ -27,10 +27,237 @@
                 </div>
             </div>
             <!-- Bottom Div (menu items) -->
-            <div>
+            <div id="nav-container">
+                <div >
+                <label class="dropdown">
 
+                    <div class="dd-button">
+                        <img width="20px" src="./assets/images/m2.png" style="padding-right: 10px;" />
+                      All Category 
+                    </div>
+                  
+                    <input type="checkbox" class="dd-input" id="test">
+                  
+                    <ul class="dd-menu">
+                      <li>Action</li>
+                      <li>Another action</li>
+                      <li>Something else here</li>
+                      <li class="divider"></li>
+                      <li>
+                        <a href="#">this is another one </a>
+                      </li>
+                    </ul>
+                    
+                </label>
+                
+                </div>
+                <div>
+                    <ul class="nav-section">
+                        
+                        <li><a href="#" class="notification">Home</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">Deals for you</a></li>
+                        <li><a href="#">Discounts</a></li>
+                        <li><a href="#">Weekly Offers</a></li>
+                        <li><a href="#">Become A Vender</a></li>
+                      </ul>
+                </div>
             </div>
         </div>
     </header>
+    <!-- section 1 -->
+    <section id="imag-sty">
+        <div>
+            <div style=" float: right;">
+                <img src="assets/images/Mask Group 1.png" >
+            </div>
+            <div id="img-tex">
+                <h1 style="font-size: 40px; color: aliceblue;"> GET THE NEW IPHONE 12</h1><br>
+                <h1 style="font-size: 40px; color: aliceblue;">PRO<br></h1>
+                <p style="font-size: 20px; color: aliceblue;">A tranformation triple-camera system that adds tons of capabelty without complexity<br></p>
+            <button id="btn-sty1"><b>Bay Now</b></button> <button id="btn-sty2">With 599$ with trad-in</button>
+            </div>
+        </div>
+    </section>
+    <!-- section 2-->
+    <section>
+        <div style="background-color: rgb(241, 237, 237); height:300px">
+            <div>
+            <p style="font-size: 15px;  text-align: center; padding-top: 40px;" >EXPLORE AWESOME PRODUCT</p>
+            <H1 style="font-size: 30px;  text-align: center; padding-top: 5px; padding-bottom: 50px;">RECOMMENDED FOR YOU</H1>
+         </div>
+            <div class="sct2" >
+                <div> <img src="./assets/images/1.png" width="210px">
+                      <p  id="tex">Sigle Tour</p>
+                      <div id="price">$990</div>
+                </div>
+                <div><img src="./assets/images/2.png" width="210px"> 
+                    <p  id="tex">Sigle Tour</p>
+                    <div id="price">$990</div>
+                </div>
+                <div><img src="./assets/images/3.png" width="210px"> 
+                    <p  id="tex">Sigle Tour</p>
+                    <div id="price">$990</div>
+                </div>
+                <div ><img src="./assets/images/4.png" width="210px"> 
+                    <p id="tex">Sigle Tour</p>
+                    <div id="price" >$990</div>
+                </div>
+            </div>
+        </div>
+        <div >
+            <button id="btn-sct2">Explore Other Product </button>
+        </div>
+    </section>
+    <section style="margin-top:40px;">
+        <div id="sct3-img">
+            <div id="sct3-tex"> <b>Sneakers Never Run Out Of Style Get 50% Off Sitwide </b></div>
+            <div  ><button id="btn-sct3"><b>Start Shopping</b></button> </div>
+        </div >
+        
+    </section>
+
+    <section style="margin-top: 30px;">
+        <div>  <p style="font-size: 15px;  text-align: center; padding-top: 40px;" >STARTING FROM NIKE</p>
+               <H1 style="font-size: 30px;  text-align: center; padding-top: 5px; padding-bottom: 50px;">New Collection</H1>
+        </div>
+        <div id="sct4-contenair">
+        <div id="item" ><img src="assets/images/Image5.png" height="250px" width="250px" > <div class="tit-sct3" > Nike Air force1 </div>
+        <div class="prc"  >$99</div></div>
+        <div id="item"><img src="assets/images/Image2.png"  height="250px" width="250px"> <div class="tit-sct3">Nike Air force1 </div>
+        <div class="prc">$99</div></div>
+        <div id="item"> <img src="assets/images/Image3.png"  height="250px" width="250px"><div class="tit-sct3">Nike Air force1 </div>
+        <div class="prc">$99</div></div>
+        <div id="item"><img src="assets/images/Image4.png"  height="250px" width="250px"> <div class="tit-sct3">Nike Air force1 </div>
+        <div class="prc">$99</div></div>
+        <div id="item6"> <img src="assets/images/Image1.png" > <div class="tit-sct4" style="position: absolute; bottom:80px; left: 30px; font-size: 25px;">Nike Air force 1 shadow </div>
+        <div class="tit-sct4" style="position: absolute; bottom:60px; left: 30px; font-size: 15px; color: grey;">Brad: Nike </div>
+        <div class="prc-st4" style=" position: absolute; top: 20px; left: 450px;">$99</div>
+        <div class="sale" style=" position: absolute; top: 20px; left: 30px;">SALE-50%</div></div>
+        </div>
+
+        <div>
+            <button id="btn-sct2">Explore Other Product </button>
+        </div>
+
+    </section>
+    <section style="margin-top:40px;">
+        <div id="sct3-img">
+            <div id="sct3-tex"> <b>Sneakers Never Run Out Of Style Get 50% Off Sitwide </b></div>
+            <div  ><button id="btn-sct3"><b>Start Shopping</b></button> </div>
+        </div >
+        
+    </section>
+    <!-- section -->
+    <section style="margin-top: 30px;">
+        <div>  <p style="font-size: 15px;  text-align: center; padding-top: 40px;" >Top products</p>
+               <H1 style="font-size: 30px;  text-align: center; padding-top: 5px; padding-bottom: 50px;">Trending this week</H1>
+        </div>
+        <div id="sct4-contenair2">
+        <div id="item2" ><img src="assets/images/Image5.png" height="250px" width="250px" > <div class="tit-sct5" > Nike Air force1 </div>
+        <div class="prc"  >$58</div></div>
+        <div id="item2" ><img src="assets/images/Image5.png" height="250px" width="250px" > <div class="tit-sct5" > Nike Air force1 </div>
+        <div class="prc"  >$58</div></div>
+        <div id="item2" ><img src="assets/images/Image5.png" height="250px" width="250px" > <div class="tit-sct5" > Nike Air force1 </div>
+        <div class="prc"  >$58</div></div>
+        <div id="item2" ><img src="assets/images/Image5.png" height="250px" width="250px" > <div class="tit-sct5" > Nike Air force1 </div>
+        <div class="prc"  >$58</div></div>
+        <div id="item2"><img src="assets/images/Image2.png"  height="250px" width="250px"> <div class="tit-sct5">Nike Air force1 </div>
+        <div class="prc">$58</div></div>
+        <div id="item2"> <img src="assets/images/Image3.png"  height="250px" width="250px"><div class="tit-sct5">Nike Air force1 </div>
+        <div class="prc">$58</div></div>
+        <div id="item2"><img src="assets/images/Image4.png"  height="250px" width="250px"> <div class="tit-sct5">Nike Air force1 </div>
+        <div class="prc">$58</div></div>
+        <div id="item2"><img src="assets/images/Image4.png"  height="250px" width="250px"> <div class="tit-sct5">Nike Air force1 </div>
+        <div class="prc">$58</div></div>
+       
+        </div>
+        <!--section 3-->
+        <section style="margin-top:40px;">
+            <div id="sct3-img">
+                <div id="sct3-tex"> <b>Sneakers Never Run Out Of Style Get 50% Off Sitwide </b></div>
+                <div  ><button id="btn-sct3"><b>Start Shopping</b></button> </div>
+            </div >
+
+            <!--Footer-->
+        </section >
+        <footer style="margin-top: 30px;" id="fotr-cont">
+            <div id="fotr-div"><img src="./assets/images/1.jpg" height="80px" width="80px" > <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                In dignissim erat in elementum interdum. 
+                Nullam sit amet turpis eget magna rutrum convallis aliquet in sapien.</p></div>
+            <div id="fotr-tbl">
+                <table >
+                    <tr>
+                        <td style="padding :0px 65px 0px 65px; ">
+                           <b> products </b>
+
+                        </td>
+                        <td style="padding :0px 65px 0px 65px;  ">
+                            <b>Legals</b>
+                        </td>
+                        <td style="padding :0px 65px 0px 65px; " >
+                           <b> Contacts </b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding :15px 65px 0px 65px; ">
+                            <a href="#" style="font-size: small;">Trending</a>
+                        </td >
+                        <td style="padding :15px 65px 0px 65px; ">
+                           <a href="#" style="font-size: small;">Licence</a>
+                        </td>
+                        <td style="padding :15px 65px 0px 65px; " style="font-size: small;">
+                            fell free get in touch with us via phone or send us a messege
+                         </td>
+                    </tr>
+                    <tr>
+                        <td style="padding :15px 65px 0px 65px; ">
+                            <a href="#" style="font-size: small;">My Account</a>
+                        </td >
+                        <td style="padding :15px 65px 0px 65px; ">
+                           <a href="#" style="font-size: small;">Refund policy</a>
+                        </td>
+                        <td style="padding :15px 65px 0px 65px; ">
+                            
+                         </td>
+                    </tr>
+                    <tr>
+                        <td style="padding :15px 65px 0px 65px; ">
+                            <a href="#" style="font-size: small;">Venders</a>
+                        </td >
+                        <td style="padding :15px 65px 0px 65px; ">
+                           <a href="#" style="font-size: small;">About Us</a>
+                        </td>
+                        <td style="padding :15px 65px 0px 65px; ">
+                            <a href="#" style="font-size: small;">+1 234 567 89 10</a>
+                         </td>
+                    </tr>
+                    <tr>
+                        <td style="padding :15px 65px 0px 65px; ">
+                            <a href="#" style="font-size: small;">Brands</a>
+                        </td >
+                        <td style="padding :15px 65px 0px 65px; ">
+                           <a href="#" style="font-size: small;">Contacts</a>
+                        </td>
+                        <td style="padding :15px 65px 0px 65px; ">
+                            <a href="#" style="font-size: small;">Suport@khoomi.com</a>
+                         </td>
+                    </tr>
+                    <tr>
+                        <td style="padding :15px 65px 0px 65px; ">
+                            <a href="#" style="font-size: small;">Storefornt</a>
+                        </td >
+                        <td style="padding :15px 65px 0px 65px; ">
+                           
+                        </td>
+                        <td style="padding :15px 65px 0px 65px; ">
+                            
+                         </td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </footer>
 </body>
 </html>
