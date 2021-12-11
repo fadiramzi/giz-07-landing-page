@@ -4,33 +4,265 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="./index.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
+    <title>Khoomi</title>
+    <link href="normalize.css" rel="stylesheet"/>
+    <link href="index.css" rel="stylesheet"/>
 </head>
-<body>
-    <header id="header">
-        <div id="header-container">
-            <!-- Top Div (search) -->
-            <div>
-                <div id="header-div-top">
-                    <img width="90px" src="./assets/images/1.jpg" />
-                    <input id="search" type="text" class="my-inputs"/>
-                    <!-- 3rd comp that contains icons -->
-                    <div id="icons">
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-user"></i>
-                        <i class="far fa-shopping-cart"></i>
-                    </div>
-                    <i id="menu" class="fas fa-bars"></i>
-                </div>
-            </div>
-            <!-- Bottom Div (menu items) -->
-            <div>
 
+<body>
+    <header>
+        <div class="header_container">
+            <div id="logo">
+                <img src="assets/logo.svg" alt="Logo"/>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search"/>
+                <img src="assets/search.svg" alt="Search">
+            </div>
+            <div id="icons">
+                <img class="favorites" src="assets/favorites.svg" alt="Favorites"/>
+                <img src="assets/user.svg" alt="User"/>
+                <img class="cart" src="assets/cart.svg" alt="Cart"/>
             </div>
         </div>
     </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>New Arrivals</li>
+            <li>Trending</li>
+            <li>Deals For You</li>
+            <li>Discounts</li>
+            <li>Weekly Offers</li>
+            <li>Become A Vendor</li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="hero_container">
+            <div class="hero_content">
+                <h1>Get the new iphone 12 pro</h1>
+                <p>A transformative triple‑camera system that adds tons of capability without complexity</p>
+                <button class="call_to_action">Shop Now</button>
+                <button>With $599 with trade-in</button>
+            </div>
+        </div>
+    </section>
+    <section class="featured">
+        <div class="featured_container">
+            <div class="featured_content">
+                <p>Explore awesome products</p>
+                <h2>Recommended for you</h2>
+                <div class="featured_items">
+                    <div class="featured_item">
+                        <img src="assets/smartwatch-1.png" alt="iPhone 12 Pro"/>
+                        <div class="featured_item_info">
+                            <h3>Single Tour</h3>
+                            <p>$990</p>
+                        </div>
+                    </div>
+                    <div class="featured_item">
+                        <img src="assets/smartwatch-2.png" alt="iPhone 12 Pro"/>
+                        <div class="featured_item_info">
+                            <h3>Single Tour</h3>
+                            <p>$990</p>
+                        </div>
+                    </div>
+                    <div class="featured_item">
+                        <img src="assets/smartwatch-3.png" alt="iPhone 12 Pro"/>
+                        <div class="featured_item_info">
+                            <h3>Single Tour</h3>
+                            <p>$990</p>
+                        </div>
+                    </div>
+                    <div class="featured_item">
+                        <img src="assets/smartwatch-3.png" alt="iPhone 12 Pro"/>
+                        <div class="featured_item_info">
+                            <h3>Single Tour</h3>
+                            <p>$990</p>
+                        </div>
+                    </div>
+                </div>
+                <button>Explore other products</button>
+            </div>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="banner_container">
+            <div class="banner_content">
+                <h2>Sneakers never run out of style get 50% off sitewide</h2>
+                <button>Start shopping</button>
+            </div>
+        </div>
+    </section>
+    <section class="new_arrivals">
+        <div class="new_arrivals_container">
+            <p>Straight From Nike</p>
+            <h2>New Collection</h2>
+            <div class="new_arrivals_content">
+                <div class="new_arrivals_items">
+                    <div class="new_arrivals_item">
+                        <img src="assets/shoes-2.png" alt="iPhone 12 Pro"/>
+                        <div class="new_arrivals_item_info">
+                            <h3>Nike Air Force 1</h3>
+                            <p>$99</p>
+                        </div>
+                    </div>
+                    <div class="new_arrivals_item">
+                        <img src="assets/shoes-3.png" alt="iPhone 12 Pro"/>
+                        <div class="new_arrivals_item_info">
+                            <h3>NikeCourt Air</h3>
+                            <p>$99</p>
+                        </div>
+                    </div>
+                    <div class="new_arrivals_item">
+                        <img src="assets/shoes-5.png" alt="iPhone 12 Pro"/>
+                        <div class="new_arrivals_item_info">
+                            <h3>Nike SB Zoom</h3>
+                            <p>$99</p>
+                        </div>
+                    </div>
+                    <div class="new_arrivals_item">
+                        <img src="assets/shoes-4.png" alt="iPhone 12 Pro"/>
+                        <div class="new_arrivals_item_info">
+                            <h3>Nike Signal</h3>
+                            <p>$99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="on_sale">
+                    <div class="on_sale_item_info">
+                        <h3 class="sale">Sale -50%</h3>
+                        <p class="price">$99</p>
+                    </div>
+                    <img src="assets/shoes-1.png" alt="iPhone 12 Pro"/>
+                    <div class="on_sale_item_info bottom_info">
+                        <h3>Nike Air Force 1 Shadow</h3>
+                        <p>Brand: Nike</p>
+                    </div>
+                </div>
+            </div>
+            <button>Explore other products</button>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="banner_container">
+            <div class="banner_content">
+                <h2>Sneakers never run out of style get 50% off sitewide</h2>
+                <button>Start shopping</button>
+            </div>
+        </div>
+    </section>
+    <section class="trending">
+        <div class="trending_container">
+            <p>Top products</p>
+            <h2>Trending this week</h2>
+            <div class="trending_content">
+                <div class="trending_items">
+                    <div class="trending_item">
+                        <img src="assets/shoes-2.png" alt="iPhone 12 Pro"/>
+                        <div class="trending_item_info">
+                            <h3>Nike Air Force 1</h3>
+                            <p>$99</p>
+                        </div>
+                    </div>
+                    <div class="trending_item">
+                        <img src="assets/shoes-3.png" alt="iPhone 12 Pro"/>
+                        <div class="trending_item_info">
+                            <h3>NikeCourt Air</h3>
+                            <p>$99</p>
+                        </div>
+                    </div>
+                    <div class="trending_item">
+                        <img src="assets/shoes-5.png" alt="iPhone 12 Pro"/>
+                        <div class="trending_item_info">
+                            <h3>Nike SB Zoom</h3>
+                            <p>$99</p>
+                        </div>
+                    </div>
+                    <div class="trending_item">
+                        <img src="assets/shoes-4.png" alt="iPhone 12 Pro"/>
+                        <div class="trending_item_info">
+                            <h3>Nike Signal</h3>
+                            <p>$99</p>
+                        </div>
+                    </div>
+                    <div class="trending_item">
+                        <img src="assets/shoes-2.png" alt="iPhone 12 Pro"/>
+                        <div class="trending_item_info">
+                            <h3>Nike Air Force 1</h3>
+                            <p>$99</p>
+                        </div>
+                    </div>
+                    <div class="trending_item">
+                        <img src="assets/shoes-3.png" alt="iPhone 12 Pro"/>
+                        <div class="trending_item_info">
+                            <h3>NikeCourt Air</h3>
+                            <p>$99</p>
+                        </div>
+                    </div>
+                    <div class="trending_item">
+                        <img src="assets/shoes-5.png" alt="iPhone 12 Pro"/>
+                        <div class="trending_item_info">
+                            <h3>Nike SB Zoom</h3>
+                            <p>$99</p>
+                        </div>
+                    </div>
+                    <div class="trending_item">
+                        <img src="assets/shoes-4.png" alt="iPhone 12 Pro"/>
+                        <div class="trending_item_info">
+                            <h3>Nike Signal</h3>
+                            <p>$99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="banner_container">
+            <div class="banner_content">
+                <h2>Sneakers never run out of style get 50% off sitewide</h2>
+                <button>Start shopping</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_content">
+                <div class="footer_content_item company_info">
+                    <h3>About us</h3>
+                    <img src="assets/logo.svg" alt="Logo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="footer_content_item">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="">Trending</a></li>
+                        <li><a href="">My account</a></li>
+                        <li><a href="">Vendors</a></li>
+                        <li><a href="">Brands</a></li>
+                        <li><a href="">Storefront</a></li>
+                    </ul>
+                </div>
+                <div class="footer_content_item">
+                    <h3>Customer service</h3>
+                    <ul>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">Returns</a></li>
+                        <li><a href="">Site map</a></li>
+                    </ul>
+                </div>
+                <div class="footer_content_item">
+                    <h3>Legals</h3>
+                    <ul>
+                        <li><a href="">License</a></li>
+                        <li><a href="">Refund Policy</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
