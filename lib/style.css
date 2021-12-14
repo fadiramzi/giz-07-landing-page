@@ -1,0 +1,517 @@
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+a {
+  text-decoration: none;
+}
+header {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  height: 18vh;
+  min-height: 80px;
+  width: 100%;
+}
+header .topbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+}
+.topbar .logo {
+  width: 10%;
+  min-width: 75px;
+  height: 80%;
+  min-height: 50px;
+  left: 2%;
+  overflow: hidden;
+}
+.topbar .logo img {
+  width: 100%;
+  min-width: 60px;
+  height: 100%;
+  min-height: 40px;
+}
+.topbar .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 30%;
+  height: 50%;
+}
+.topbar input[type="search"] {
+  font-size: 1vw;
+  outline: none;
+  cursor: text;
+  width: 100%;
+  height: 100%;
+}
+.topbar .search img {
+  position: absolute;
+  right: 0px;
+  width: 5%;
+  min-width: 10px;
+  height: 70%;
+}
+
+.topbar .icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 10%;
+}
+.topbar .icons img {
+  width: 30%;
+  max-width: 29px;
+  height: 100%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+header nav .menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.1vw;
+  width: 70%;
+  height: 100%;
+  list-style: none;
+}
+header nav .menu li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+}
+header .menu li:after {
+  content: "";
+}
+header .menu li:hover::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4%;
+  bottom: 0px;
+  transform: rotateZ(180deg);
+  background-color: black;
+}
+header nav .categories {
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1%;
+  width: 13%;
+  height: 53%;
+}
+.section1 {
+  height: 400px;
+  width: 100%;
+  background-color: black;
+}
+.categories button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.categories button span:nth-child(1) {
+  margin-left: 2%;
+  transform: rotateZ(90deg);
+}
+.categories button span:nth-child(2) {
+  font-weight: bold;
+}
+.categories button span:nth-child(3) {
+  border-bottom-color: white;
+  margin-right: 2%;
+  width: 8px;
+  height: 8px;
+  transform: rotateZ(50deg);
+  background-color: black;
+}
+.products {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.categories ul {
+  list-style: none;
+}
+.categories ul li {
+  margin-top: 10%;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  background-color: wheat;
+}
+.categories button:focus + .products {
+  display: flex;
+}
+.body {
+  width: 100%;
+  height: 82vh;
+  min-height: 500px;
+  background-color: skyblue;
+  overflow: auto;
+}
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  background-image: url("img/Mask.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.section1 div {
+  position: relative;
+  height: 100%;
+  width: 40%;
+  text-align: center;
+  color: white;
+}
+.section1 img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+  right: 0px;
+}
+.section1 p {
+  margin: 1% auto 10%;
+  width: 50%;
+}
+.section1 div button {
+  position: relative;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  width: 22%;
+  height: 10%;
+  color: white;
+}
+.section1 div button img {
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0px;
+  right: 5%;
+  bottom: 0px;
+  width: 10%;
+  height: 50%;
+}
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 80%;
+  width: 100%;
+}
+.section2 .a {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 50%;
+  background-color: #f8f8f8;
+}
+.section2 .b {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 50%;
+  background-color: #ffffff;
+}
+.section2 .title {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent;
+}
+.section2 .title p,
+h1 {
+  text-align: center;
+  height: 20%;
+  width: 100%;
+}
+.section2 .title {
+  margin: 1% auto;
+}
+.section2 .cart {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  z-index: 100000;
+  height: 50%;
+  width: 12%;
+}
+.section2 .cart img {
+  width: 95%;
+  height: 80%;
+}
+.section2 .cart p {
+  text-align: center;
+  margin: 5%;
+  color: wite;
+}
+.section2 .cart p span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 8px;
+  width: 50px;
+  height: 20px;
+  background-color: burlywood;
+}
+.section2 .fotter {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 5%;
+  height: 40px;
+  z-index: 1000;
+  width: 15%;
+  background-color: transparent;
+}
+.section3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40%;
+  width: 100%;
+  background-image: url("img/Rectangle1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.section3 p {
+  margin-left: 10%;
+  font-size: 30px;
+  height: 20%;
+  width: 25%;
+  color: white;
+}
+.section3 button {
+  margin-right: 20%;
+  border-radius: 5px;
+  font-size: 30px;
+  color: white;
+  width: 15%;
+  height: 20%;
+  background-color: transparent;
+}
+.section4 {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+.section4 .title {
+  height: 50px;
+  text-align: center;
+  background-color: transparent;
+}
+.section4 .contner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 80%;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1;
+}
+.section4 .contner .left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+  overflow: hidden;
+}
+.section4 .contner .left div {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  display: inline-block;
+  height: 35%;
+  width: 40%;
+}
+.section4 .contner .left div p {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+.section4 .contner .left div p span:nth-child(3) {
+  position: absolute;
+  left: 0px;
+}
+.section4 .contner .left div p span:nth-child(3) {
+  position: absolute;
+  right: 0px;
+}
+.section4 .contner .left div img {
+  width: 100%;
+}
+.section4 .contner .right {
+  height: 87%;
+  width: 30%;
+}
+.section4 .contner .right div {
+  content: "";
+  /*   background-color: red; */
+}
+.section4 .contner .right img {
+  width: 100%;
+  height: 100%;
+}
+.section4 .right div {
+  position: relative;
+}
+.section4 .right div .topsalses {
+  position: absolute;
+  margin: auto;
+  top: 1%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+.section4 .right .topsalses span {
+  text-align: center;
+  width: 20%;
+  border-radius: 15px;
+  color: white;
+  background-color: black;
+}
+
+.section4 .fotter {
+  display: flex;
+  border: 2px solid chartreuse;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 20%;
+  height: 10%;
+}
+.section5 {
+  height: 80%;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+.section5 header {
+  height: 20%;
+}
+.section5 header p {
+  text-align: center;
+  width: 100%;
+}
+.section5 header h1 {
+  margin: 0px;
+  font-size: 40px;
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+.section5 .contner {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 80%;
+}
+.section5 .contner div {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 40%;
+  width: 100%;
+  background-color: red;
+}
+footer div {
+  display: inline-block;
+  height: 100%;
+}
+footer .left {
+  width: 30%;
+  background-color: skyblue;
+}
+footer .right {
+  width: 70%;
+  background-color: white;
+}
+/*****************
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #d62929;
+}
+*/
