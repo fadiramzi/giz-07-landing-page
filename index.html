@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./index.css" rel="stylesheet"/>
+    <link href="./assets/css/dropdown.css" rel="stylesheet"/>
+    <script type="text/javascript" src="./assets/js/dropdown.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
 </head>
 <body>
     <header id="header">
@@ -15,22 +16,335 @@
             <!-- Top Div (search) -->
             <div>
                 <div id="header-div-top">
-                    <img width="90px" src="./assets/images/1.jpg" />
-                    <input id="search" type="text" class="my-inputs"/>
+                    <img width="88px" height="59px" src="./assets/images/brand.svg"/>
+                    <div id="search">
+                        <input type="search" class="my-inputs" placeholder="Search For Products, Brands & Categories">
+                        <button class="img-search header-icon">
+                            <i class="far fa-search" width="25"></i>                        
+                        </button>
+                    </div>
+
                     <!-- 3rd comp that contains icons -->
                     <div id="icons">
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-user"></i>
-                        <i class="far fa-shopping-cart"></i>
+                        <button class="header-icon">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="header-icon">
+                            <i class="far fa-user"></i>
+                        </button>
+                        <button class="header-icon">
+                            <i class="far fa-shopping-cart"></i>
+                        </button>
                     </div>
                     <i id="menu" class="fas fa-bars"></i>
                 </div>
             </div>
             <!-- Bottom Div (menu items) -->
             <div>
+                <div id="menu-items">
+                    <span class="dropdown header-link">
+                        <button onclick="myFunction()" class="dropbtn">
+                            <i class="fas fa-bars bars"></i>
+                            All Categories
+                            <i class="fas fa-caret-down caret"></i>
+                        </button>
+                        <span id="myDropdown" class="dropdown-content">
+                        <a href="#">Shoes</a>
+                        <a href="#">Jeans</a>
+                        <a href="#">Watches</a>
+                        </span>
+                    </span>
 
+                    <span class="header-link"> <a href="#">Home</a> </span>
+                    <span class="header-link"> <a href="#">New Arrivals</a> </span>
+                    <span class="header-link"> <a href="#">Trending</a> </span>
+                    <span class="header-link"> <a href="#">Deals For You</a> </span>
+                    <span class="header-link"> <a href="#">Discounts</a> </span>
+                    <span class="header-link"> <a href="#">Weekly Offers</a> </span>
+                    <span class="header-link"> <a href="#">Become A Vendor</a> </span>
+                </div>    
             </div>
         </div>
     </header>
+
+    <section id="sec1">
+        <div>
+            <div id="sec1-h">
+                <h1>GET THE NEW IPHONE 12 PRO</h1>
+            </div>
+
+            <div id="sec1-p">
+                <p>A transformative triple‑camera system that adds tons of capability without complexity</p>
+            </div>
+
+            <div >
+                <button id="sec1-btn1">
+                    <a>Buy Now <i class="fas fa-shopping-basket"></i></a>
+                </button>
+                <button id="sec1-btn2">
+                    <a>With $599 with trade-in</a>
+                </button>
+            </div>
+        </div>   
+         <img id="sec1-img" src="./assets/images/phone.svg" alt="Iphone Image">
+    </section>
+
+    <section id="sec2">
+        <div id="sec2-up">
+            <div id="sec2-head">
+                <h1>Explore Awesome Products</h1>
+                <h2>Recommended For You</h2>
+            </div>
+        </div>
+
+        <div id="sec2-down">
+            <div id="sec2-container">
+                <div class="sec2-container-item">
+                    <img src="assets/images/watch1.svg" alt="Image of a watch">
+                    <p>Single Tour</p>
+                    <span class="sec2-item-price"> <p>$990</p> </span>
+                </div>
+                <div class="sec2-container-item">
+                    <img src="assets/images/watch2.svg" alt="Image of a watch">
+                    <p>Single Tour</p>
+                    <span class="sec2-item-price"> <p>$990</p> </span>
+                </div>
+                <div class="sec2-container-item">
+                    <img src="assets/images/watch1.svg" alt="Image of a watch">
+                    <p>Single Tour</p>
+                    <span class="sec2-item-price"> <p>$990</p> </span>
+                </div>
+                <div class="sec2-container-item">
+                    <img src="assets/images/watch2.svg" alt="Image of a watch">
+                    <p>Single Tour</p>
+                    <span class="sec2-item-price"> <p>$990</p> </span>
+                </div>
+            </div>
+
+            <div id="sec2-btn">
+                <button>Explore Other Products</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="sneakers-sec">
+        <div class="sneakers-head">
+            <h1>Sneakers Never Run Out Of Style
+                <br> Get 50% Off Sitewide
+            </h1>
+        </div>
+        <div class="sneakers-button">
+            <button>Start Shopping</button>
+        </div>
+    </section>
+
+    <section id="sec3">
+        
+        <div id="sec3-heading">
+            <h1>STRAIGHT FROM NIKE</h1>
+            <h2>NEW COLLECTION</h2>
+        </div>
+
+        <div id="sec3-container">
+            <div id="sec3-small-container">
+                <div class="sec3-small-item">
+                    <img src="assets/images/sneakers1.svg" alt="Image of a pair of ">
+                    <div class="sec3-item-details">
+                        <span class="sec3-item-name"><p>Nike Air Force 1</p></span>
+                        <span class="sec3-item-price"> <p>$99</p> </span>
+                    </div>
+                </div>
+                
+                <div class="sec3-small-item">
+                    <img src="assets/images/sneakers2.svg" alt="Image of a pair of ">
+                    <div class="sec3-item-details">
+                        <span class="sec3-item-name"><p>NikeCourt Air</p></span>
+                        <span class="sec3-item-price"> <p>$99</p> </span>
+                    </div>
+                </div>
+
+                <div class="sec3-small-item">
+                    <img src="assets/images/sneakers3.svg" alt="Image of a pair of ">
+                    <div class="sec3-item-details">
+                        <span class="sec3-item-name"><p>Nike SB Zoom</p></span>
+                        <span class="sec3-item-price"> <p>$99</p> </span>
+                    </div>
+                </div>
+
+                <div class="sec3-small-item">
+                    <img src="assets/images/sneakers4.svg" alt="Image of a pair of ">
+                    <div class="sec3-item-details">
+                        <span class="sec3-item-name"><p>Nike Signal</p></span>
+                        <span class="sec3-item-price"> <p>$99</p> </span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sec3-big-container">
+                <div class="sec3-big-item">
+                    <div id="sec3-item-head">
+                        <span class="sec3-item-price"> <p>$99</p> </span>
+                        <span class="sec3-item-sale"> <p>SALE -50%</p> </span>
+                    </div>
+                    <img src="assets/images/big-sneakers.svg" alt="Image of a pair of ">
+                    <div class="sec3-item-details">
+                        <span class="sec3-item-name"><p>Nike Air Force 1 Shadow</p></span>
+                        <span class="sec3-item-brand"> <p>Brand Nike</p> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sec3-button">
+            <div id="sec2-btn">
+                <button>Explore Other Products</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sneakers-sec">
+        <div class="sneakers-head">
+            <h1>Sneakers Never Run Out Of Style
+                <br> Get 50% Off Sitewide
+            </h1>
+        </div>
+        <div class="sneakers-button">
+            <button>Start Shopping</button>
+        </div>
+    </section>
+
+    <section id="sec4">
+        <div id="sec4-heading">
+            <div class="sec4-headings">
+                <h1>TOP PRODUCTS</h1>
+                <h2>TRENDING THIS WEEK</h2>
+            </div>
+        </div>
+
+        <div id="sec4-container">
+            <div class="sec3-small-item">
+                <img src="assets/images/sneakers2.svg" alt="Image of a pair of ">
+                <div class="sec3-item-details">
+                    <span class="sec3-item-name"><p>Nike Court Air</p></span>
+                    <span class="sec2-item-price"> <p>$58</p> </span>
+                </div>
+            </div>
+
+            <div class="sec3-small-item">
+                <img src="assets/images/sneakers1.svg" alt="Image of a pair of ">
+                <div class="sec3-item-details">
+                    <span class="sec3-item-name"><p>Nike Air Force 1</p></span>
+                    <span class="sec2-item-price"> <p>$58</p> </span>
+                </div>
+            </div>
+
+            <div class="sec3-small-item">
+                <img src="assets/images/sneakers3.svg" alt="Image of a pair of ">
+                <div class="sec3-item-details">
+                    <span class="sec3-item-name"><p>Nike Air Force 1</p></span>
+                    <span class="sec2-item-price"> <p>$58</p> </span>
+                </div>
+            </div>
+
+            <div class="sec3-small-item">
+                <img src="assets/images/sneakers4.svg" alt="Image of a pair of ">
+                <div class="sec3-item-details">
+                    <span class="sec3-item-name"><p>Nike SB Zoom</p></span>
+                    <span class="sec2-item-price"> <p>$58</p> </span>
+                </div>
+            </div>
+
+            <div class="sec3-small-item">
+                <img src="assets/images/sneakers2.svg" alt="Image of a pair of ">
+                <div class="sec3-item-details">
+                    <span class="sec3-item-name"><p>Nike Court Air</p></span>
+                    <span class="sec2-item-price"> <p>$58</p> </span>
+                </div>
+            </div>
+
+            <div class="sec3-small-item">
+                <img src="assets/images/sneakers1.svg" alt="Image of a pair of ">
+                <div class="sec3-item-details">
+                    <span class="sec3-item-name"><p>Nike Air Force 1</p></span>
+                    <span class="sec2-item-price"> <p>$58</p> </span>
+                </div>
+            </div>
+
+            <div class="sec3-small-item">
+                <img src="assets/images/sneakers3.svg" alt="Image of a pair of ">
+                <div class="sec3-item-details">
+                    <span class="sec3-item-name"><p>Nike Air Force 1</p></span>
+                    <span class="sec2-item-price"> <p>$58</p> </span>
+                </div>
+            </div>
+
+            <div class="sec3-small-item">
+                <img src="assets/images/sneakers4.svg" alt="Image of a pair of ">
+                <div class="sec3-item-details">
+                    <span class="sec3-item-name"><p>Nike SB Zoom</p></span>
+                    <span class="sec2-item-price"> <p>$58</p> </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sneakers-sec">
+        <div class="sneakers-head">
+            <h1>Sneakers Never Run Out Of Style
+                <br> Get 50% Off Sitewide
+            </h1>
+        </div>
+        <div class="sneakers-button">
+            <button>Start Shopping</button>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div id="footer-container">
+            <div id="footer-heading">
+                <img width="88px" height="59px" src="./assets/images/brand.svg"/>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                </p>
+            </div>
+
+            <div id="footer-sub-container">
+                <div id="list1" class="footer-list">
+                    <h6>Products</h6>
+                    <ul class="footer-links">
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Vendors</a></li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Storefront</a></li>
+                    </ul>
+                </div>
+                
+                <div id="list2" class="footer-list">
+                    <h6>Legals</h6>
+                    <ul class="footer-links">
+                    <li><a href="#">License</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+
+                <div id="list3" class="footer-list">
+                    <h6>Contacts</h6>
+                    <ul class="footer-links">
+                    <li><a href="#">Fell free get in touch with us via phone or
+                                    <br>send us a message
+                        </a>
+                    </li>
+                    <li><a href="#">+1 234 567 89 10</a></li>
+                    <li><a href="#">support@khoomi.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

@@ -1,17 +1,66 @@
 body{
-    background-color: bisque;
+    width: 100%;
+    height: 100%;
 }
 *{
     margin: 0px;
     padding: 0px;
 }
 #header{
+    width: 100%;
     min-height: 173px;
     background-color: white;
     padding-top: 30px;
     box-sizing: border-box;
-    padding-right:50px;
-    padding-left:50px;
+    align-items:center;
+    vertical-align:middle;
+    justify-content: space-around;
+}
+
+#header-div-top{
+    padding-bottom: 20px;
+}
+
+#header-div-top img{
+    padding-left: 100px;
+}
+
+#header-div-top #icons{
+    padding-right: 100px;
+}
+
+header #search {
+    display: flex;
+    justify-content: space-between;
+    border: solid 0.1px #70707044;
+    padding:9px 12px;
+    width: 557px;
+    height: 38px;
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    display: table-cell; 
+    vertical-align: middle;
+}
+
+header #search input{
+    border: none;
+    font-size: medium;
+}
+
+header #search input:focus{
+    outline: none;
+}
+
+.header-icon{
+    background:transparent;
+    border: none;
+    font-size: 18px;
+}
+
+.header-icon:hover {
+    color: #FF4F04;
 }
 
 #header-container{
@@ -39,6 +88,492 @@ body{
     display: none;
     font-size: 32px;
 }
+
+#menu-items{
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+    border-top: solid 0.1px #F0F0F0;
+}
+
+#menu-items a{
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    color: #302F2F;
+}
+
+#menu-items a:active, #menu-items a:hover, #menu-items a:focus{
+    color: #FF4F04;
+}
+
+.header-link{
+    padding: 0 35px;
+}
+
+#sec1 {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    background-image: url(./assets/images/wallpaper.svg);
+    background-size: cover;
+    display: flex;
+}
+
+#sec1-h{
+    font-family: poppins;
+    font-size: 45px;
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    margin-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+#sec1-p{
+    color: #FFFFFF;
+    text-align: left;
+    font-family: heebo;
+    font-size: 22px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+}
+
+#sec1-btn1{
+    background-color: #FF4F04;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 15px;
+    margin-left: 40px
+}
+
+#sec1-btn1:hover, #sec1-btn1:focus{
+    background-color: rgb(255, 79, 4, 0.2);
+    color: #FF4F04;
+}
+
+#sec1-btn2{
+    background-color: rgb(112, 112, 112, 0.52);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 15px;
+    margin-left: 25px
+}
+
+#sec1-btn2:hover, #sec1-btn2:focus{
+    background-color: rgb(90, 90, 90, 0.52);
+    color: rgb(200, 200, 200);
+}
+#sec1-img{
+    padding: 0%;
+    margin: 0%;
+    float: right;
+    position: relative;
+}
+
+#sec2-up{
+    background-color: #F8F8F8;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+}
+
+#sec2-head{
+    padding: 40px;
+}
+
+#sec2-head h1{
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#sec2-head h2{
+    font-family: poppins;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#sec2-down{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 400px;
+}
+
+#sec2-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.sec2-container-item{
+    background-color: #FFFFFF;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: -120px;
+}
+
+.sec2-container-item:hover, .sec2-container-item:focus{
+    border: solid 0.1px #FF4F04;
+}
+
+
+.sec2-container-item p{
+    font-family: poppins;
+    font-size: 16px;
+}
+
+.sec2-item-price p{
+    font-family: roboto;
+    font-size: 14px;
+    border-radius: 40%;
+    background-color: rgb(255, 79, 4, 0.2);
+    color: #FF4F04;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#sec2-btn{
+    text-align: center;
+}
+
+#sec2-btn button{
+    border: solid 0.1px black;
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px;
+    font-family: roboto;
+    font-size: 16px;
+    position: relative;
+    bottom: 70px;
+}
+
+#sec2-btn button:focus, #sec2-btn button:hover{
+    border: solid 0.1px #FF4F04;
+    color: #FF4F04;
+}
+
+.sneakers-sec{
+    width: 100%;
+    height: 280px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./assets/images/sneakers-background.svg");
+    background-size: cover;
+}
+
+.sneakers-head{
+    position: relative;
+    left: 80px;
+    top: 100px;
+}
+
+.sneakers-head h1{
+    font-family: poppins;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+.sneakers-button{
+    text-align: right;
+}
+
+.sneakers-button button{
+    background-color: transparent;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: solid 0.3px white;
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+
+#sec3{
+    background-color: white;
+}
+
+#sec3-heading{
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#sec3-heading h1{
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#sec3-heading h2{
+    font-family: poppins;
+    font-size: 30px;
+}
+
+#sec3-container{
+    display: flex;
+    justify-content: center;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+#sec3-small-container{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    width: 100%;
+
+}
+
+.sec3-small-item{
+    width: 270px;
+    height: 320px;
+    border-radius: 5px;
+    margin-bottom: 60px;
+}
+
+.sec3-small-item img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 214px;
+    height: 214px;
+}
+
+.sec3-small-item .sec3-item-details{
+    margin-top: 40px;
+}
+
+.sec3-big-item{
+    display: block;
+    border-radius: 5px;
+    width: 570px;
+    height: 700px;
+}
+
+.sec3-item-sale p{
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    padding: 8px 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.sec3-big-item .sec3-item-price{
+    margin-top: 15px;
+}
+
+.sec3-big-item img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sec3-big-item .sec3-item-details{
+    margin-left: 20px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+.sec3-big-item .sec3-item-name{
+    font-family: poppins;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.sec3-big-item .sec3-item-brand{
+    font-family: roboto;
+    font-size: 14px;
+}
+
+.sec3-small-item, .sec3-big-item{
+    background-color: #F5F5F5;
+    border-radius: 5px;
+}
+
+#sec3 .sec3-small-item:hover, #sec3 .sec3-big-item:hover,
+#sec3 .sec3-small-item:focus, #sec3 .sec3-big-item:focus{
+    border: solid 0.1px #FF4F04;
+}
+
+.sec3-small-item .sec3-item-name{
+    display: inline-block;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.sec3-item-price{
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+}
+
+.sec3-small-item .sec3-item-name p{
+    font-family: poppins;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sec3-item-price p{
+    border-radius: 40%;
+    background-color: white;
+    color: #FF4F04;
+    text-align: center;
+    display: inline-block;
+    padding: 8px 15px;
+    margin-top: 5px;
+    font-family: poppins;
+    font-size: 16;
+    font-weight: 500;
+}
+
+#sec3-button{
+    width: 100%;
+    height: 100px;
+}
+
+#sec3-button button{
+    position: relative;
+    bottom: 5px;
+}
+
+#sec4-heading{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+
+.sec4-headings{
+    margin-top: 50px;
+}
+
+#sec4-heading h1{
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#sec4-heading h2{
+    font-family: poppins;
+    font-size: 30px;
+}
+
+#sec4-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    width: 100%;
+    justify-content: center;
+    font-size: 16px;
+}
+
+#sec4-container .sec3-small-item img{
+    width: 300px;
+    height: 250px;
+}
+
+#sec4-container .sec3-item-details{
+    width: 100%;
+    height: 20px;
+    position: relative;
+    margin-top: 10px;
+}
+
+#sec4-container .sec3-small-item{
+    margin: 20px;
+    background-color: white;
+}
+
+#sec4-container .sec3-item-price{
+    padding: 0px;
+    float: right;
+}
+
+#sec4-container .sec3-item-name p{
+    float: left;
+    margin-left: 5px;
+}
+
+#sec4-container .sec3-item-name p:hover, #sec4-container .sec3-item-name p:focus{
+    color: #FF4F04;
+}
+
+#sec4-container .sec2-item-price p{
+    padding: 5px 10px;
+    float: right;
+    margin-top: 5px;
+}
+
+#footer{
+    padding: 70px;
+}
+
+#footer-heading p{
+    width: 255px;
+    font-family: roboto;
+    font-size: 16px;
+}
+
+#footer-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+}
+
+#footer-sub-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+}
+
+#footer h6{
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+
+#footer li{
+    padding: 10px;
+    text-align: left;
+}
+
+#footer a{
+    text-decoration: none;
+    font-family: roboto;
+    font-size: 14px;
+    color: #302F2F;
+}
+
+#footer a:hover, #footer a:focus{
+    color: #FF4F04;
+}
+
+#footer ul{
+    list-style-type: none;
+}
+
 
 @media screen and (max-width:900px)
 {
